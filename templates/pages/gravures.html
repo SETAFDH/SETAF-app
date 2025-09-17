@@ -1,0 +1,147 @@
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Gravure • SETAF</title>
+        <meta name="description" content="Présentation d'une gravure issue des Faits"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+        <!-- CSS & scripts -->
+        <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+        <link rel="stylesheet" href="resources/css/engravings.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <script src="resources/scripts/magnifierglass.js" type="application/javascript"/>
+    </head>
+    
+    <body class="page-illustration">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <pb-document id="document1" data-template="pages:pb-document"/>
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" fixed="fixed">
+                        <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <span data-template="app:breadcrumb-engraving"/>
+                    
+                    <main>
+                        <!-- Gallerie d'images -->
+                        <section>
+                            <h1 class="page-illustration__titre"><pb-i18n key="engraving.frieze">Frise comparative</pb-i18n> 
+                                <pb-popover theme="light">
+                                    <span class="page-illustration__helpIcon" slot="default"><iron-icon icon="icons:help"/></span>
+                                    <template slot="alternate"><p>Cette frise présente une sélection d'images similaires à la gravure des Faits présentée sur cette page. Elle replace les Faits de Jean-Michel, marqué par un rectangle vert, dans un contexte de production plus large.</p></template>
+                                </pb-popover>
+                            </h1>
+                            <div class="carousel">
+                                <div class="not-to-scroll">
+                                    <div class="img-container to-scroll">
+                                        <div data-template="app:image-gallery"/>
+                                    </div>
+                                </div>
+                                
+                                <i class="arrow left" id="left-arr" role="button">
+                                    <paper-icon-button icon="icons:chevron-left" style="padding:0; width:30px; height:30px;"/>
+                                </i>
+                                
+                                <i class="arrow right" id="right-arr" role="button">
+                                    <paper-icon-button icon="icons:chevron-right" style="padding:0; width:30px; height:30px;"/>
+                                </i>
+                            </div>
+                            
+                            <div id="pop-up-container"/>
+                        </section>
+                        
+                        <!-- Information à propos de la gravure -->
+                        <section>
+                            <h1 class="page-illustration__titre"><span data-template="app:title-engraving"/></h1>
+                            
+                            <div class="page-illustration__content-body">
+                                <!-- Métadonnées -->
+                                <pb-view id="page-illustration__view1" src="document1" xpath="//teiHeader" view="single">
+                                    <pb-param name="mode" value="gravure"/>
+                                </pb-view>
+                                
+                                <!-- Gravures -->
+                                <div class="image-container page-illustration__img">
+                                    <div data-template="app:display-illustration"/>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+        
+        <!-- Affichage de la loupe -->
+        <script>
+            const images = document.querySelectorAll('.magnify-image');
+            Array.from(images).forEach((image) =&gt; {
+              Zoom(image, 3);
+            });
+        </script>
+        
+        <!-- Galerie d'images scrollable -->
+        <script>
+            const imgContainer = document.querySelector(".img-container");
+    
+            function scrollLeft() {
+              imgContainer.scrollBy(-100, 0);
+            }
+            
+            function scrollRight() {
+              imgContainer.scrollBy(100, 0);
+              //checking if it's the end of gallery
+              if (
+                imgContainer.offsetWidth + imgContainer.scrollLeft &gt;=
+                imgContainer.scrollWidth
+              ) {
+                imgContainer.scrollBy(-imgContainer.scrollWidth, 0);
+              }
+            }
+            
+            let Arrowleft = document.getElementById("left-arr");
+            let ArrowRight = document.getElementById("right-arr");
+            
+            Arrowleft.addEventListener("click", scrollLeft);
+            ArrowRight.addEventListener("click", scrollRight);
+        </script>
+        
+        <!-- Affichage des informations sur les gravures de comparaison -->
+        <script>
+            function openPopUp(overlay) {
+                var popContent = overlay.nextElementSibling;
+                var popContainer = document.getElementById("pop-up-container");
+                popContainer.innerHTML = popContent.innerHTML;
+                
+                popContainer.style.display='flex';
+                popContainer.style.width='85%';
+                popContainer.style.justifyContent='space-between';
+                popContainer.style.margin='2em auto';
+                popContainer.style.border='1px solid var(--pb-color-red)';
+                /*popContainer.style.backgroundColor='white';
+                popContainer.style.position='absolute';
+                popContainer.style.left='18%';
+                popContainer.style.top='15%';
+                popContainer.style.zIndex='100';*/
+            
+            
+                /*var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                var popUpImg = document.getElementById("pop-up-img");
+                var popUpText = document.getElementById("pop-up-text");
+                
+                expandImg.src = popUpImg.src;
+                imgText.innerHTML = popUpText;
+                expandImg.parentElement.style.display = "block";*/
+            }
+        </script>
+    </body>  
+</html>

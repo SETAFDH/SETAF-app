@@ -1,0 +1,148 @@
+<app-toolbar class="menubar" data-template="pages:parse-params">
+    <a href="${app}/accueil.html" class="logo"/>
+    <pb-media-query query="min-width: 1024px">
+        <a href="${app}/accueil.html" role="button"><pb-i18n key="pages.home">Accueil</pb-i18n></a>
+        
+        <!-- Édition critique -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" role="button"><pb-i18n key="pages.edition">Édition critique</pb-i18n></a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/static/about-edition" role="button"><pb-i18n key="pages.about-edition">À propos des Faits</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/criteres-edition" role="button"><pb-i18n key="pages.principles-edition">Critères d'édition</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/edition-critique/edCrit_v1.xml"><pb-i18n key="pages.access-edition" role="button">Accès à l'édition</pb-i18n></a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Gravures -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" role="button"><pb-i18n key="pages.engravings">Gravures</pb-i18n></a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/static/about-gravures" role="button"><pb-i18n key="pages.about-engravings">À propos des gravures des Faits</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/criteres-selection"><pb-i18n key="pages.principles-engravings">À propos des gravures des Faits</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/index_gravures.html" role="button"><pb-i18n key="pages.access-engravings">Accès aux gravures</pb-i18n></a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Corpus -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" role="button"><pb-i18n key="pages.corpus">Corpus Réformé Romand</pb-i18n></a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/static/about-crr" role="button"><pb-i18n key="pages.corpus-about">À propos du Corpus Réformé Romand (CRR)</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/criteres-corpus" role="button"><pb-i18n key="pages.principles-edition">Critères d'édition</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/index.html?collection=corpus" role="button"><pb-i18n key="pages.corpus-access">Accès au corpus</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/aide" role="button"><pb-i18n key="pages.help">Aide à la recherche</pb-i18n></a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Projet -->
+        <paper-menu-button>
+            <a slot="dropdown-trigger"><pb-i18n key="pages.project">Projet</pb-i18n></a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/static/presentation-projet" role="button"><pb-i18n key="pages.project-presentation">Présentation</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/equipe.html" role="button"><pb-i18n key="pages.project-team">Équipe</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/reseau.html" role="button"><pb-i18n key="pages.project-network">Réseau</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/publications.html" role="button"><pb-i18n key="pages.publications">Publications et communications</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/activites.html" role="button"><pb-i18n key="pages.project-events">Activités</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/bibliographie.html"><pb-i18n key="pages.bibliography">Bibliographie</pb-i18n></a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- À propos -->
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" role="button"><pb-i18n key="pages.about">À propos</pb-i18n></a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="${app}/static/aspects-techniques" role="button"><pb-i18n key="pages.about-technical">Aspects techniques</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/mentions-legales" role="button"><pb-i18n key="pages.about-terms">Mentions légales</pb-i18n></a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/contacts.html" role="button">Contacts</a>
+                </paper-item>
+                <paper-item>
+                    <a href="${app}/static/comment-citer" role="button"><pb-i18n key="pages.about-citation">Comment citer ?</pb-i18n></a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+        
+        <!-- Only when logged in -->    
+        <pb-restricted>
+            <paper-menu-button>
+                <a slot="dropdown-trigger"><pb-i18n key="menu.admin.title">Admin</pb-i18n></a>
+                <paper-listbox slot="dropdown-content">
+                    <paper-item data-template="pages:edit-odd-list"/>
+                    <paper-item>
+                        <pb-download url="api/apps/download">
+                            <pb-i18n key="appgen.xar-download">Download App as .xar</pb-i18n>
+                        </pb-download>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/api.html" data-template="pages:parse-params" target="_blank">API Documentation</a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="https://cdn.tei-publisher.com/" target="_blank">Webcomponents API</a>
+                    </paper-item>
+                </paper-listbox>
+            </paper-menu-button>
+        </pb-restricted>
+    </pb-media-query>
+    
+    <!-- Search input -->
+    <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
+    <pb-media-query query="min-width: 1024px">
+        <pb-lang name="lang" data-template="pages:languages"/>
+        <!--<pb-login id="login" group="tei"/>-->
+    </pb-media-query>
+    
+    <pb-media-query query="(max-width: 1023px)">
+        <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
+    </pb-media-query>
+    <div id="menubar-after" style="display: none;"/>
+    
+    <!--<paper-dialog id="downloadDialog">
+        <h2>
+            <pb-i18n key="dialogs.generatingFile">Generating file ...</pb-i18n>
+        </h2>
+        <paper-dialog-scrollable>
+            <pb-i18n key="dialogs.downloadMessage"/>
+        </paper-dialog-scrollable>
+        <div class="buttons">
+            <paper-button dialog-confirm="dialog-confirm" autofocus="autofocus">
+                <pb-i18n key="dialogs.close">Close</pb-i18n>
+            </paper-button>
+        </div>
+    </paper-dialog>-->
+</app-toolbar>

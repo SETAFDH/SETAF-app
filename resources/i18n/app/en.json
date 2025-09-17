@@ -1,0 +1,68 @@
+{
+    "facets": {
+        "author": "Authors",
+        "printer": "Printers",
+        "places": "Places",
+        "other-places": "False places"
+    },
+    
+    "buttons": {
+        "submit": "Submit",
+        "clear": "Clear",
+        "metadata": "Metadata",
+        "ling": "Linguistic annotations"
+    },
+    
+    "pages": {
+        "home": "Home",
+        "edition": "Critical edition",
+        "about-edition": "About Les Faits",
+        "principles-edition": "Editorial principles",
+        "access-edition": "Critical edition access",
+        "engravings": "Prints",
+        "about-engravings": "About the prints",
+        "principles-engravings": "Prints selection principles",
+        "access-engravings": "Prints access",
+        "corpus": "Corpus Réformé Romand",
+        "corpus-about": "About the Corpus Réformé Romand (CRR)",
+        "corpus-access": "Corpus access",
+        "help": "Help search",
+        "project": "Project",
+        "project-presentation": "Presentation",
+        "project-team": "Team",
+        "project-network": "Network",
+        "project-events": "Activities",
+        "publications": "Publications and communications", 
+        "about": "About",
+        "about-technical": "Technical Aspects",
+        "about-terms": "Terms and conditions",
+        "about-citation": "How to cite?",
+        "site-map": "Site map",
+        "bibliography": "Bibliography" 
+    },
+
+    "metadata": {
+        "title": "Title",
+        "author": "Author",
+        "printer": "Printer",
+        "place": "Place",
+        "pages": "Pages or leafs",
+        "theme": "Theme",
+        "desc": "Description/Commentary",
+        "credits": "Credits",
+        "copy": "Copy",
+        "ocr": "OCR correction",
+        "normalisation": "Text normalisation",
+        "refBiblio": "Bibliographical references",
+        "biblio": "Bibliography",
+        "ref": "References",
+        "artist": "Artist",
+        "id": "SETAF identifier" 
+    },
+    
+    "engraving": {
+        "frieze": "Comparative frieze",
+        "metadata": "Metadata" 
+    }
+
+}

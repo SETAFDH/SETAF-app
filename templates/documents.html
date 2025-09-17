@@ -1,0 +1,21 @@
+<div data-template="browse:is-writeable" class="collection">
+    <div data-template="browse:dispatch-action"/>
+    
+    <div>
+        <!--<paper-button class="parent-link" data-template="browse:parent-collection">
+            <iron-icon icon="icons:folder"/>
+            <pb-i18n key="browse.up">Up</pb-i18n>
+        </paper-button>-->
+        
+        <ul class="documents" data-template="browse:browse" data-template-per-page="10">
+            <li class="document">
+                <div class="document-info">
+                    <header data-template="browse:short-header"/>
+                    
+                    <div class="matches" data-template="browse:show-hits"/>
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

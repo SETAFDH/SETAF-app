@@ -1,0 +1,83 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Vue en parallèle des trois éditions des Faits avec l'outil de visualisation Mirador"/>
+        <title>Mirador • SETAF</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+        <!-- Script -->
+        <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"/>
+        <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+    </head>
+    <body>
+        <div class="loader">.</div>
+        <div id="mirador"/>
+        <script type="text/javascript">
+            const mirador = Mirador.viewer({
+                "id": "mirador",
+                "language": 'fr',
+                "selectedTheme": "light",
+                "themes": {
+                    dark: {
+                        palette: {
+                          type: 'dark',
+                          primary: {
+                            main: '#6A1D44',
+                          },
+                          secondary: {
+                            main: '#235E00',
+                          }
+                        },
+                    },
+                    light: {
+                        palette: {
+                          type: 'light',
+                          primary: {
+                            main: '#6A1D44',
+                          },
+                          secondary: {
+                            main: '#235E00',
+                          }
+                        }
+                    }
+                },
+                "openManifestsPage": true,
+                "window": {
+                    "defaultView": 'single',
+                    "panels": {
+                        "annotations": false
+                    }
+                },
+                
+                "workspace": {
+                    "isWorkspaceAddVisible": false,
+                    "showZoomControls": true
+                },
+                
+                "windows":[ 
+                    {
+                    "manifestId": "https://gallica.bnf.fr/iiif/ark:/12148/bd6t53789915t/manifest.json",
+                    "canvasIndex": 4,
+                    "view":'single'
+                    },
+                    {
+                    "manifestId": "https://luna.manchester.ac.uk/luna/servlet/iiif/m/Manchester~91~1~425957~192597/manifest",
+                    "canvasIndex": 4,
+                    "view":'single'
+                    },
+                    {
+                    "manifestId": "https://www.e-rara.ch/i3f/v20/3930463/manifest",
+                    "canvasId": "https://www.e-rara.ch/i3f/v20/3930463/canvas/4518832",
+                    "view":'single'
+                    }
+                ],
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+/* Responsive design */
+@media (max-width : 1023px) {
+    .search-panel,
+    .browse aside {
+        display: none;
+    }
+    
+    .toolbar pb-search {
+        padding-left: 0;
+    }
+        
+    .search-page_main #results {
+        border-left: none !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* Search.html */
+.toolbar_results {
+    background-color: white;
+}
+
+.search-page_main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.search-page_main .search-panel {
+    flex: 1 1;
+    margin: 0 20px;
+}
+
+.search-page_main .search-panel paper-card {
+    width: 100%;
+    box-shadow: none;
+}
+
+.search-page_main .targets paper-checkbox {
+    margin-top: 10px;
+}
+
+.search-page_main #results {
+    flex: 2 1;
+    margin: 0 20px;
+    border-left: 1px solid var(--pb-color-red);
+    padding-left: 31px;
+    /*height: calc(100vh - 140px);*/
+}
+
+.search-page_main #results paper-card {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    font-family: var(--pb-base-font-family);
+    box-shadow: none;
+    border-bottom: 1px dotted var(--pb-color-red);
+}
+
+.search-page_main #results paper-card:last-child {
+    border-bottom: none;
+}
+
+.search-page_main #results header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-page_main .breadcrumb:link,
+.search-page_main #results .count {
+    color: var(--pb-color-red);
+}
+
+.search-page_main #results .count {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.search-page_main .breadcrumb:link {
+    text-decoration: none;
+}
+
+.search-page_main #download-button,
+.search-page_main .menu-edit-odd {
+    display: none;
+}
+
+.matches {
+    display: table;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.matches p {
+    display: table-row;
+}
+.matches p * {
+    display: table-cell;
+    padding: 4px 8px;
+}
+
+.matches .hi {
+    color: var(--pb-color-green);
+    display: block;
+}
+
+/*.matches .count {
+    margin-top: 1em;
+}
+
+.matches .count::before {
+    content: '[';
+}
+
+.matches .count::after {
+    content: ']';
+}*/

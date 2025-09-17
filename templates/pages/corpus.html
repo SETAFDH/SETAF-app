@@ -1,0 +1,88 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Édition (CRR) • SETAF</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    <meta name="description" content="Édition numérique du Corpus Réformé Romand (CRR)"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+    <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+    <!-- CSS & scripts -->
+    <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+    <link rel="stylesheet" href="resources/css/editions.css"/>
+    <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    <script type="module" src="pb-tify.js" data-template="pages:load-components"/>
+</head>
+
+<body class="page_corpus">
+    <pb-page data-template="pages:pb-page" unresolved="unresolved" theme="resources/css/components.css" locales="resources/i18n/{{ns}}/{{lng}}.json">
+        <pb-document id="document1" data-template="pages:pb-document"/>
+        <app-drawer-layout force-narrow="force-narrow">
+            <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+            <app-header-layout>
+                <app-header slot="header" fixed="fixed">
+                    <app-toolbar data-template="lib:include" data-template-path="templates/menu_corpus.html"/>
+                    <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+                    <app-toolbar data-template="lib:include" data-template-path="templates/toolbar.html"/>
+                </app-header>
+                
+                <!-- Display the metadata -->
+                <pb-drawer toggle="metadataToggle" class="tocDrawer" emit="metadata" subscribe="transcription">
+                    <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
+                    <div class="drawer-content">
+                        <pb-view id="infos" src="document1" xpath="//teiHeader" view="single" subscribe="metadata">
+                            <pb-param name="mode" value="infos"/>
+                        </pb-view>
+                    </div>
+                </pb-drawer>
+                
+                <!-- Display "How to cite" content -->
+                <pb-drawer toggle="citationToggle" class="tocDrawer" emit="citation" subscribe="transcription">
+                    <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
+                    <div class="drawer-content">
+                        <h2>Comment citer ?</h2>
+                        <span data-template="app:citation"/>
+                        
+                        <h2>Responsabilités</h2>
+                        <ul class="listResp"><span data-template="app:resp"/></ul>
+                    </div>
+                </pb-drawer>
+                
+                <main class="content-body">
+                    <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+                        <paper-icon-button class="navigation_chevron" icon="icons:chevron-left"/>
+                    </pb-navigation>
+                    
+                    <!-- Text -->
+                    <pb-panel emit="transcription" id="view1" label="Options de consultation">
+                        <template title="Normalisée">
+                            <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                <pb-param name="view" value="normalized"/>
+                            </pb-view>
+                        </template>
+                        <template title="Originale">
+                            <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                <pb-param name="view" value="original"/>
+                            </pb-view>
+                        </template>
+                    </pb-panel>
+                    
+                    <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+                        <paper-icon-button class="navigation_chevron" icon="icons:chevron-right"/>
+                    </pb-navigation>
+                    
+                    <!-- Facsimile -->
+                    <pb-facsimile id="facsimile" default-zoom-level="0" show-navigation-control="" show-home-control="" show-full-page-control="" show-download-control="" show-navigator="" subscribe="transcription"/>
+                    <!--<pb-tify subscribe="transcription" emit="transcription"/>-->
+                </main>
+            </app-header-layout>
+        </app-drawer-layout>
+    </pb-page>
+    <div class="splash"/>
+</body>
+
+</html>

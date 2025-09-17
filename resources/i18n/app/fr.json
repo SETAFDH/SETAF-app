@@ -1,0 +1,68 @@
+{
+	"facets": {
+	    "author": "Auteurs/Autrices",
+	    "printer": "Imprimeurs",
+	    "places": "Lieux",
+	    "other-places": "Fausses adresses"  
+	},
+	
+	"buttons": {
+	    "submit": "Soumettre",
+	    "clear": "Effacer",
+	    "metadata": "Métadonnées",
+	    "ling": "Annotations linguistiques"  
+	},
+	
+	"pages": {
+	    "home": "Accueil",
+	    "edition": "Édition critique",
+	    "about-edition": "À propos des Faits",
+	    "principles-edition": "Critères d'édition",
+	    "access-edition": "Accès à l'édition",
+	    "engravings": "Gravures",
+	    "about-engravings": "À propos des gravures",
+	    "principles-engravings": "Critères de sélection des gravures",
+	    "access-engravings": "Accès aux gravures",
+	    "corpus": "Corpus Réformé Romand",
+	    "corpus-about": "À propos du Corpus Réformé Romand (CRR)",
+	    "corpus-access": "Accès au corpus",
+	    "help": "Aide à la recherche",
+	    "project": "Projet",
+	    "project-presentation": "Présentation",
+	    "project-team": "Équipe",
+	    "project-network": "Réseau",
+	    "project-publications": "Publications",
+	    "project-events": "Activités",
+        "publications": "Publications et communications",
+	    "about": "À propos",
+	    "about-technical": "Aspects techniques",
+	    "about-terms": "Mentions légales",
+	    "about-citation": "Comment citer ?",
+	    "site-map": "Plan du site",
+	    "bibliography": "Bibliographie" 
+	},
+	
+	"metadata": {
+        "title": "Titre",
+        "author": "Auteur/Autrice",
+        "printer": "Imprimeur",
+        "place": "Lieu",
+        "pages": "Pages ou feuillets",
+        "theme": "Thème",
+        "desc": "Description/Commentaire",
+        "credits": "Crédits",
+        "copy": "Exemplaires",
+        "ocr": "Correction de l'OCR",
+        "normalisation": "Normalisation du texte",
+        "refBiblio": "Références bibliographiques",
+        "biblio": "Bibliographie",
+        "ref": "Références",
+        "artist": "Artiste",
+        "id": "Identifiant SETAF"
+    },
+    
+    "engraving": {
+        "frieze": "Frise comparative",
+        "metadata": "Metadonnées" 
+    }
+}

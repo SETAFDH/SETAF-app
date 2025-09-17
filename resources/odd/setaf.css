@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+.metadata h1 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.metadata ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-inline-start: 0;
+}
+
+.metadata a,
+.fn-back,
+a[rel="footnote"],
+.canon {
+    color: #235E00 !important;
+}
+
+.metadata a:hover,
+.fn-back:hover,
+a[rel="footnote"]:hover,
+.canon:hover {
+    color: #6A1D44 !important;
+}
+
+.lettrine {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+    display: contents;
+}
+
+.float {
+    float: right;
+}
+
+.title-corpus {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.margin-note {
+    background: none !important;
+    margin-right: 0 !important;
+    width: 62px !important;
+    line-height: 2.1 !important;
+}
+
+.static-title {
+    font-family: var(--pb-cursive-font-family);
+}
+
+.left {
+    float: left;
+}
+
+.para-ed-crit {
+    margin: 0;
+}
+
+#footnotes {
+    margin-top: 6em;
+    font-size: small;
+}
+
+.fn-content {
+    margin-inline-start: 20px;
+}
+
+.fn-back {
+    margin-left: 0.5em;
+}
+
+a[rel="footnote"] {
+    text-decoration: underline !important;
+}
+
+a[rel="footnote"]:hover {
+    text-decoration: none !important;
+}
+
+.biblical-ref .ref::before {
+    content: "  [";
+}
+
+.biblical-ref .ref::after {
+    content: "]";
+}
+
+.biblical-ref .ref {
+    font-size: small;
+}
+
+.title-faits {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.engraving-faits img {
+    display: block;
+    margin: 1em 8em;
+}
+
+.terme-glossaire,
+.persName {
+    text-decoration: underline;
+    cursor: help;
+}
+
+.terme-glossaire {
+    color: #6A1D44 !important;
+    text-decoration-style: dotted;
+}
+
+.persName {
+    text-decoration-style: dashed;
+}

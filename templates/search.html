@@ -1,0 +1,81 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Résultats • SETAF</title>
+        <meta name="description" content="Liste des résultats suite à une recherche dans le texte"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+        <!-- CSS & scripts -->
+        <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+        <link rel="stylesheet" href="resources/css/search.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+
+    <body class="search-page">
+        <pb-page data-template="pages:pb-page" api-version="1.0" unresolved="unresolved" theme="resources/css/components.css" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                
+                <!-- Hamburger menu for screens under 1023px -->
+                <app-drawer slot="drawer" align="right">
+                    <div class="drawer-content">
+                        <pb-media-query query="(max-width: 1023px)">
+                            <div data-template="lib:include" data-template-path="templates/menu-drawer.html"/>
+                        </pb-media-query>
+                    </div>
+                </app-drawer>
+                
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <!-- Navigation bar -->
+                        <app-toolbar data-template="lib:include" data-template-path="templates/menu_corpus.html">
+                            <pb-progress subscribe="results" indeterminate="indeterminate" bottom-item="bottom-item" data-target="menubar-after"/>
+                        </app-toolbar>
+                        
+                        <!-- Number of results -->
+                        <app-toolbar class="toolbar_results" sticky="sticky">
+                            <pb-paginate per-page="10" range="5" subscribe="results" emit="search"/>
+                        </app-toolbar>
+                    </app-header>
+                    
+                    <main class="search-page_main">
+                        <!-- Seaarch bar -->
+                        <div class="search-panel">
+                            <paper-card>
+                                <div class="card-content">
+                                    <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" submit-on-load="submit-on-load">
+                                        <!-- Native webcomponent -->
+                                        <!--<pb-custom-form class="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>-->
+                                        
+                                        <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="results" emit="search">
+                                            <paper-button slot="resetButton" class="reset-button" onclick="clearFacets()" data-i18n="buttons.clear">Effacer</paper-button>  
+                                            <paper-button slot="searchButtonBottom" class="search-button" data-i18n="buttons.submit">Soumettre</paper-button>
+                                        </pb-custom-form>
+                                    </pb-search>
+                                </div>
+                            </paper-card>
+                        </div>
+                        
+                        <!-- Results list -->
+                        <pb-load id="results" url="api/search" emit="results"/>
+                    </main>
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        
+        <div class="splash"/>
+        <!--<script src="resources/scripts/browse.js"/>-->
+        <script>
+            function clearFacets() {
+                let urlString = document.URL;
+                let newUrl = urlString.split('&amp;')[0];
+                    window.location.replace(newUrl);
+            }
+        </script>
+    </body>
+</html>

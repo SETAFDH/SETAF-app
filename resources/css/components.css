@@ -1,0 +1,17 @@
+pb-clipboard div {
+    padding: 0;
+}
+
+pb-clipboard paper-icon-button {
+    margin-bottom: 3em;
+}
+
+pb-collapse #trigger {
+    display: flex;
+}
+
+pb-panel #toolbar {
+    margin-bottom: 1em;
+}
+
+

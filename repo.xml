@@ -1,0 +1,13 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>SETAF</description>
+    <author/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <prepare>pre-install.xql</prepare>
+    <finish>post-install.xql</finish>
+    <target>setaf</target>
+    <permissions user="setaf" group="tei" mode="rw-r--r--"/>
+    
+<deployed>2025-09-09T11:21:27.413+02:00</deployed></meta>

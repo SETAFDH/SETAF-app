@@ -1,0 +1,106 @@
+<app-drawer slot="drawer" align="right" data-template="pages:parse-params">
+    <div class="drawer-content">
+        <pb-media-query query="max-width: 1023px">
+            <!-- language selector -->
+            <pb-lang name="lang" data-template="pages:languages"/>
+            
+            <h3 class="drawer-content-title"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a></h3>
+            
+            <!-- Édition critique -->
+            <pb-collapse>
+                <h3 slot="collapse-trigger" class="drawer-content-title"><pb-i18n key="pages.edition">Édition critique</pb-i18n></h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="${app}/static/about-edition"><pb-i18n key="pages.about-edition">À propos des Faits</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/criteres-edition"><pb-i18n key="pages.principles-edition">Critères d'édition</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/edition-critique/edCrit_v1.xml"><pb-i18n key="pages.access-edition">Accès à l'édition</pb-i18n></a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
+            
+            <!-- Gravures -->
+            <pb-collapse>
+                <h3 slot="collapse-trigger" class="drawer-content-title"><pb-i18n key="pages.engravings">Gravures</pb-i18n></h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="${app}/static/about-gravures"><pb-i18n key="pages.about-engravings">À propos des gravures des Faits</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/criteres-selection"><pb-i18n key="pages.principles-engravings">À propos des gravures des Faits</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/index_gravures.html"><pb-i18n key="pages.access-engravings">Accès aux gravures</pb-i18n></a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
+            
+            <!-- Corpus -->
+            <pb-collapse>
+                <h3 slot="collapse-trigger" class="drawer-content-title"><pb-i18n key="pages.corpus">Corpus Réformé Romand</pb-i18n></h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="${app}/static/about-crr"><pb-i18n key="pages.corpus-about">À propos du Corpus Réformé Romand (CRR)</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/criteres-corpus"><pb-i18n key="pages.principles-edition">Critères d'édition</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/index.html?collection=corpus"><pb-i18n key="pages.corpus-access">Accès au corpus</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/aide"><pb-i18n key="pages.help">Aide à la recherche</pb-i18n></a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
+            
+            <!-- Projet -->
+            <pb-collapse>
+                <h3 slot="collapse-trigger" class="drawer-content-title"><pb-i18n key="pages.project">Projet</pb-i18n></h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="${app}/static/presentation-projet"><pb-i18n key="pages.project-presentation">Présentation</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/equipe.html"><pb-i18n key="pages.project-team">Équipe</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/reseau.html"><pb-i18n key="pages.project-network">Réseau</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/publications.html"><pb-i18n key="pages.publications">Publications et communications</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/activites.html"><pb-i18n key="pages.project-events">Activités</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/bibliographie.html"><pb-i18n key="pages.bibliography">Bibliographie</pb-i18n></a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
+            
+            <!-- À propos -->
+            <pb-collapse>
+                <h3 slot="collapse-trigger" class="drawer-content-title"><pb-i18n key="pages.about">À propos</pb-i18n></h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="${app}/static/aspects-techniques"><pb-i18n key="pages.about-technical">Aspects techniques</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/mentions-legales"><pb-i18n key="pages.about-terms">Mentions légales</pb-i18n></a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/contacts.html">Contacts</a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="${app}/static/comment-citer"><pb-i18n key="pages.about-citation">Comment citer ?</pb-i18n></a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
+            
+        </pb-media-query>
+    </div>
+</app-drawer>

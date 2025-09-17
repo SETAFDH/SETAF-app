@@ -1,0 +1,137 @@
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Édition critique • SETAF</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <meta name="description" content="Édition critique des Faits de Jésus-Christ et du Pape"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+        <!-- CSS & scripts -->
+        <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+        <link rel="stylesheet" href="resources/css/editions.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <script type="module" src="pb-tify.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body class="page_corpus">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" theme="resources/css/components.css" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <pb-document id="document1" data-template="pages:pb-document"/>
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" fixed="fixed">
+                        <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                        <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+                        <app-toolbar data-template="lib:include" data-template-path="templates/toolbar-edCrit.html"/>
+                    </app-header>
+                    
+                    <!-- Display the metadata -->
+                    <pb-drawer toggle="metadataToggle" class="tocDrawer" emit="metadata" subscribe="transcription">
+                        <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
+                        <div class="drawer-content metadata-edcrit">
+                            <h1>Titre long</h1>
+                            <span>Les faitz de Jésus Christ et du pape, par lesquelz chascun pourra facilement congnoistre la grande différence d'entre eulx, nouvellement reveuz, corrigez, et augmentez selon la verité de la saincte Escripture, et des droictz canons, par le lecteur du sainct Palais.</span>
+                            
+                            <h1>Auteur</h1>
+                            <span>Anonyme</span>
+                            
+                            <h1>Imprimeur</h1>
+                            <span>Jean Michel</span>
+                            
+                            <h1>Lieu</h1>
+                            <span>Genève</span>
+                            
+                            <h1>Date</h1>
+                            <span>1538/44</span>
+                            
+                            <h1>Lieu</h1>
+                            <span>Genève</span>
+                            
+                            <h1>Dimensions</h1>
+                            <span>in-4°, 21 cm</span>
+                            
+                            <h1>Pages ou feuillets</h1>
+                            <span>96 f.</span>
+                            
+                            <h1>Signatures</h1>
+                            <span>A-M4</span>
+                            
+                            <h1>Exemplaire</h1>
+                            <span>Genève, Musée historique de la Réformation, MHR K LUT 8 (<a href="https://www.e-rara.ch/mhr_g/content/titleinfo/3930463" target="_blank" class="link">e-rara</a>)</span>
+                            
+                            <h1>Autres exemplaires</h1>
+                            <ul>
+                                <li>Vienne, Österreichische Nationalbibliothek, 78.G.48</li>
+                                <li>Strasbourg, Collegium Wilhelmitanum Bibliothèque, 16.4(10)</li>
+                                <li>Berne, Universitätsbibliothek, B644</li>
+                                <li>Berne, Universitätsbibliothek, ZB Bong V 25:5</li>
+                            </ul>
+                            
+                            <h1>Licences</h1>
+                            <ul>
+                                <li>Images: Public Domain Mark</li>
+                                <li>Édition : CC-BY</li>
+                            </ul>
+                            
+                            <h1>Références bibliographiques</h1>
+                            <span><a href="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406" target="_blank" class="link">GLN 1406</a></span>
+                        </div>
+                    </pb-drawer>
+                    
+                    <!-- Display the citation -->
+                    <pb-drawer toggle="citationToggle" class="tocDrawer" emit="citation" subscribe="transcription">
+                        <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
+                        <div class="drawer-content">
+                            <h2>Comment citer ?</h2>
+                            <span data-template="app:citation"/>
+                            
+                            <h2>Responsabilités</h2>
+                            <ul class="listResp"><span data-template="app:resp"/></ul>
+                        </div>
+                    </pb-drawer>
+                    
+                    
+                    <main class="content-body">
+                        <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+                            <paper-icon-button class="navigation_chevron" icon="icons:chevron-left"/>
+                        </pb-navigation>
+                        
+                        <!-- Text -->
+                        <pb-panel emit="transcription" id="view1" label="Options de consultation">
+                            <template title="Régularisée">
+                                <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription" append-footnotes="append-footnotes">
+                                    <pb-param name="view" value="intermediary"/>
+                                </pb-view>
+                            </template>
+                            <template title="Originale">
+                                <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                    <pb-param name="view" value="original_crit"/>
+                                </pb-view>
+                            </template>
+                            <template title="Modernisée">
+                                <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                    <pb-param name="view" value="modern"/>
+                                </pb-view>
+                            </template>
+                        </pb-panel>
+                        
+                        <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+                            <paper-icon-button class="navigation_chevron" icon="icons:chevron-right"/>
+                        </pb-navigation>
+                        
+                        <!-- Facsimile -->
+                        <pb-facsimile id="facsimile" default-zoom-level="0" show-navigation-control="" show-home-control="" show-full-page-control="" show-download-control="" show-navigator="" subscribe="transcription"/>
+                        <!--<pb-tify subscribe="transcription" emit="transcription"/>-->
+                    </main>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>
