@@ -1,11 +1,15 @@
 on:
   push:
   workflow_dispatch:
+    inputs:
+      data-ref:
+        description: commit of the SETAF-app-data repository
+        type: string
 jobs:
   build:
     uses: unige-lettres/existdb/.github/workflows/build.yaml@main
     with:
       existdb-version: 6.4.0
       package-sources: >
-        ${{ github.server_url }}/${{ github.repository_owner }}/SETAF-app-data/archive/main.tar.gz
+        ${{ github.server_url }}/${{ github.repository_owner }}/SETAF-app-data/archive/${{ inputs.data-ref || 'main' }}.tar.gz
         ${{ github.server_url }}/${{ github.repository }}/archive/${{ github.sha }}.tar.gz
