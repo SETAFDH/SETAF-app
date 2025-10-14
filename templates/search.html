@@ -51,7 +51,7 @@
                                         <!-- Native webcomponent -->
                                         <!--<pb-custom-form class="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>-->
                                         
-                                        <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="results" emit="search">
+                                        <pb-custom-form data-template="pages:parse-params" class="facets" url="${app}/api/search/facets" event="pb-results-received" subscribe="results" emit="search">
                                             <paper-button slot="resetButton" class="reset-button" onclick="clearFacets()" data-i18n="buttons.clear">Effacer</paper-button>  
                                             <paper-button slot="searchButtonBottom" class="search-button" data-i18n="buttons.submit">Soumettre</paper-button>
                                         </pb-custom-form>
