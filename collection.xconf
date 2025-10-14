@@ -1,5 +1,5 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
-    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dbk="http://docbook.org/ns/docbook">
         <fulltext default="none" attributes="false"/>
         <lucene>
             <module uri="http://teipublisher.com/index" prefix="nav" at="index.xql"/>
@@ -12,7 +12,6 @@
             </text>
             
             <!--<text qname="tei:reg">
-                
                 <facet dimension="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <facet dimension="printer" expression="nav:get-metadata(ancestor::tei:TEI, 'printer')"/>
                 <facet dimension="place" expression="nav:get-metadata(ancestor::tei:TEI, 'place')"/>
@@ -46,13 +45,13 @@
             <text match="//tei:listPerson/tei:person/tei:persName"/>
             <text match="//tei:listOrg/tei:org/tei:orgName"/>
             <text match="//tei:taxonomy/tei:category/tei:catDesc"/>
-            <!--<text qname="body">
+            <text qname="body">
                 <ignore qname="sect"/>
                 <field name="file" expression="util:document-name(.)"/>
-                <field name="title" expression="nav:get-metadata(ancestor::article, 'title')"/>
-                <field name="author" expression="nav:get-metadata(ancestor::article, 'author')"/>
+                <!--<field name="title" expression="nav:get-metadata(ancestor::article, 'title')"/>
+                <field name="author" expression="nav:get-metadata(ancestor::article, 'author')"/>-->
                 <field name="text" expression="."/>
-            </text>-->
+            </text>
         </lucene>
     </index>
 </collection>
