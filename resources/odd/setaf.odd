@@ -254,7 +254,7 @@
             <desc>Hide when downloading PDF</desc>
         </model><model output="web" predicate="$parameters?view='modern'" behaviour="omit">
             <desc>[Critical edition] Hide the original text when the modern view is activated</desc>
-        </model><model output="web" predicate="$parameters?view='intermediary'" behaviour="omit">
+        </model><model output="web" predicate="$parameters?view='regularisee'" behaviour="omit">
             <desc>[Critical edition] Hide the original text when the intermediary view is activated</desc>
         </model><model output="web" predicate="$parameters?view='original_crit'" behaviour="inline">
             <desc>[Critical edition] Display the original text</desc>
@@ -265,14 +265,14 @@
         </model></elementSpec><elementSpec ident="reg" mode="add"><modelSequence output="web" predicate="$parameters?view='modern'">
             <desc>[Critical edition] Parameters for the modern view</desc>
             <model predicate="@type=&#34;contemporary&#34;" behaviour="inline"/>
-            <model predicate="@type=&#34;intermediary&#34;" behaviour="omit"/>
+            <model predicate="@type=&#34;regularisee&#34;" behaviour="omit"/>
         </modelSequence><modelSequence output="web" predicate="$parameters?view='original_crit'">
             <desc>[Critical edition] Hide intermediary and contemporary lines when the original view is activated</desc>
-            <model predicate="@type=&#34;intermediary&#34;" behaviour="omit"/>
+            <model predicate="@type=&#34;regularisee&#34;" behaviour="omit"/>
             <model predicate="@type=&#34;contemporary&#34;" behaviour="omit"/>
-        </modelSequence><modelSequence output="web" predicate="$parameters?view='intermediary'">
+        </modelSequence><modelSequence output="web" predicate="$parameters?view='regularisee'">
             <desc>[Critical edition] Parameters for the intermediary view</desc>
-            <model predicate="@type=&#34;intermediary&#34;" behaviour="inline"/>
+            <model predicate="@type=&#34;regularisee&#34;" behaviour="inline"/>
             <model predicate="@type=&#34;contemporary&#34;" behaviour="omit"/>
         </modelSequence><model output="print" predicate="@type=&#34;advanced&#34; or @type=&#34;contemporary&#34;" behaviour="omit">
             <desc>Hide for print preview</desc>
