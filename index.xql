@@ -3,7 +3,7 @@ xquery version "3.1";
 module namespace idx="http://teipublisher.com/index";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
-declare namespace dbk="http://docbook.org/ns/docbook";
+(:declare namespace dbk="http://docbook.org/ns/docbook";:)
 
 declare variable $idx:app-root :=
     let $rawPath := system:get-module-load-path()
@@ -48,14 +48,20 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
     let $header := $root/tei:teiHeader
     return
         switch ($field)
+            case "title" return (
+                $header//tei:monogr/tei:title[@type="short_title"]
+            )
             case "author" return (
-                idx:parse-author($header//tei:monogr/tei:author/tei:persName)
+                idx:parse-author($header//tei:monogr/tei:author/tei:persName[1])
             )
             case "printer" return (
-                idx:parse-printer($header//tei:monogr/tei:imprint//tei:persName)
+                idx:parse-printer($header//tei:monogr/tei:imprint//tei:persName[1])
             )
             case "place" return (
                 idx:parse-date($header//tei:monogr/tei:imprint/tei:pubPlace[1])
+            )
+            case "false-place" return (
+                $header//tei:monogr//tei:pubPlace[@role="false_address"]
             )
             case "date" return head((
                 idx:parse-date($header//tei:imprint/tei:date)

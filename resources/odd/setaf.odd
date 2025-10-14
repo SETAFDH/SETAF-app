@@ -200,11 +200,18 @@
                 <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.refBiblio">Références bibliographiques</pb-i18n></h1>
 <ul>[[content]]</ul></pb:template>
             </model>
-        </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model predicate="parent::bibl[@type=&#34;canon&#34;]" behaviour="link" cssClass="canon">
+        </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model output="web" predicate="parent::note and @type=&#34;biblio&#34;" behaviour="inline">
+            <desc>[For test only]</desc>
+            <param name="content" value="let $biblio := tokenize(@target, &#34;#&#34;)  for $b in $biblio return $b"/>
+            <pb:template xmlns="" xml:space="preserve">[[[content]]]</pb:template>
+        </model><model predicate="parent::bibl[@type=&#34;canon&#34;]" behaviour="link" cssClass="canon">
             <desc>[Critical edition] Canon references</desc>
             <param name="uri" value="@target"/>
             <param name="target" value="'_blank'"/>
-        </model><model predicate="parent::note[@type=&#34;editor&#34;]" behaviour="omit"/><model output="web" predicate="parent::relatedItem[@type=&#34;original&#34;]" behaviour="link">
+        </model><model predicate="parent::note[@type=&#34;editor&#34;]" behaviour="link" cssClass="canon">
+            <param name="uri" value="@target"/>
+            <param name="target" value="&#34;_blank&#34;"/>
+        </model><model output="web" predicate="parent::relatedItem[@type=&#34;original&#34;]" behaviour="link">
             <param name="uri" value="ancestor::bibl/ref/@target"/>
             <param name="target" value="'_blank'"/>
         </model><model predicate="@target" behaviour="listItem">

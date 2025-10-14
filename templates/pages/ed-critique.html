@@ -83,6 +83,18 @@
                         </div>
                     </pb-drawer>
                     
+                    <pb-drawer toggle="biblioToggle" class="tocDrawer" emit="biblio" suscribe="transcription">
+                        <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
+                        <div class="drawer-content">
+                            <h2><pb-i18n key="pages.bibliography">Bibliographie</pb-i18n></h2>
+                            <p>[LatW1521] Martin Luther et Philippe Melanchton. <i>Passional Christi und Antichristi</i>. Wittenberg : Johann Rhau-Grunenberg, 1521.</p>
+                            <p>[W1521] Martin Luther et Philippe Melanchton. <i>Passional Christi und Antichristi</i>. Wittenberg : Johann Rhau-Grunenberg, 1521.</p>
+                            <p>[P1521] Martin Luther et Philippe Melanchton. <i>Passional Christi und Antichristi</i>. Strasbourg : Johann Prüss, 1521.</p>
+                            <p>[K1521] Martin Luther et Philippe Melanchton. <i>Passional Christi vnd Antichristi</i>. Strassburg : Johann Knobloch, 1521.</p>
+                            <p>[E1521] Martin Luther et Philippe Melanchton. <i>Passional Christi vnd Antichristi</i>. Erfurt : Matthes Maler, 1521.</p>
+                        </div>
+                    </pb-drawer>
+                    
                     <!-- Display the citation -->
                     <pb-drawer toggle="citationToggle" class="tocDrawer" emit="citation" subscribe="transcription">
                         <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>
@@ -94,7 +106,6 @@
                             <ul class="listResp"><span data-template="app:resp"/></ul>
                         </div>
                     </pb-drawer>
-                    
                     
                     <main class="content-body">
                         <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">

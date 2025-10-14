@@ -229,7 +229,8 @@ pb-custom-form > div {
 #citationToggle,
 #metadataToggle,
 #annotationToggle,
-#mirador {
+#mirador,
+#biblioToggle {
     background-color: var(--pb-color-red);
     color: white;
 }
@@ -241,7 +242,8 @@ pb-custom-form > div {
 #citationToggle:hover,
 #metadataToggle:hover,
 #annotationToggle:hover,
-#mirador:hover {
+#mirador:hover,
+#biblioToggle:hover {
     background-color: var(--pb-color-green);
 }
 
