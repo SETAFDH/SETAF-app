@@ -93,11 +93,15 @@
                                             </pb-select>
                                         </pb-custom-form>
                                         
-                                        <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" subforms=".facets,.options" submit-on-load="submit-on-load">
+                                        <!--<pb-search id="search-form" subscribe="search" data-template="pages:parse-params" subforms=".facets,.options" submit-on-load="submit-on-load">
+                                            <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
+                                        </pb-search>-->
+                                        
+                                        <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" subforms=".facets,.options" submit-on-load="submit-on-load">
                                             <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
                                         </pb-search>
                                         
-                                        <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="search" emit="search">
+                                        <pb-custom-form class="facets" url="${app}/api/search/facets" event="pb-results-received" subscribe="search" emit="search">
                                             <paper-button slot="resetButton" class="reset-button" onclick="clearFacets()" data-i18n="buttons.clear">Effacer</paper-button>  
                                             <paper-button slot="searchButtonBottom" class="search-button" data-i18n="buttons.submit">Soumettre</paper-button>
                                         </pb-custom-form>
