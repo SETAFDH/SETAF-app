@@ -265,11 +265,13 @@ app-drawer-layout:not([narrow]) [drawer-toggle] {
     display: block;
 }
 
-.breadcrumb_corpus,
-.corpus-index-body .breadcrumb,
-.page-illustration .breadcrumb {   
+.breadcrumb_corpus {   
     margin-top: 0.3em;
     margin-left: 1.3em;   
+}
+
+.breadcrumb {
+    margin-top: 0.1em;
 }
 
 .reset-button,

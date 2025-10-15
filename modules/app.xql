@@ -83,10 +83,16 @@ declare function app:citation($node as node(), $model as map(*)) {
         then ""
         else
             if ($doc//tei:author/tei:persName[1][@role='presumed_author']) 
-                then '[' || $doc//tei:author/tei:persName[1]/tei:surname || ' ' || 
+                then '[' || $doc//tei:author/tei:persName[1]/tei:surname || ', ' || 
                 $doc//tei:author/tei:persName[1]/tei:forename || ']. ' 
-            else $doc//tei:author/tei:persName[1]/tei:surname || ' ' || 
+            else $doc//tei:author/tei:persName[1]/tei:surname || ', ' || 
                 $doc//tei:author/tei:persName[1]/tei:forename || '. '
+    
+    let $auteur_short :=
+        if ($doc//tei:author/tei:persName[1]/tei:surname = "Anonyme")
+        then ""
+        else
+            $doc//tei:author/tei:persName[1]/tei:surname || ', ' || $doc//tei:author/tei:persName[1]/tei:forename || '. '
         
     let $titre := $doc//tei:title[@type="short_title"]/text()
     
@@ -97,12 +103,19 @@ declare function app:citation($node as node(), $model as map(*)) {
             then ' [' || $doc//tei:imprint/tei:pubPlace[1] || ']'  
         else $doc//tei:imprint/tei:pubPlace[1]
         
+    let $lieu_short :=
+        if ($doc//tei:imprint/tei:pubPlace[@cert="low"]) 
+            then ' ' || $doc//tei:imprint/tei:pubPlace[1] || '? '  
+        else ' ' || $doc//tei:imprint/tei:pubPlace[1]
+        
     let $imprimeur :=
         if ($doc//tei:imprint/tei:respStmt/tei:persName[1][@role='presumed_printer'])
             then '[' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename ||
             ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname || ']' 
         else $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename ||
             ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname
+    
+    let $imprimeur_short := $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename || ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname
     
     let $date :=
         if ($doc//tei:imprint/tei:date[@cert='low']) 
@@ -111,11 +124,23 @@ declare function app:citation($node as node(), $model as map(*)) {
             then '[' || $doc//tei:imprint/tei:date || ']'  
         else $doc//tei:imprint/tei:date
         
+    let $date_short :=
+        if ($doc//tei:imprint/tei:date[@cert='low']) 
+            then '' || $doc//tei:imprint/tei:date || '?' 
+        else $doc//tei:imprint/tei:date
+        
     let $editrice := 
         for $resp in $doc//tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp
             return
                 if($resp[contains(., "Supervision")])
                 then normalize-space($resp/following-sibling::tei:persName)
+                else ''
+    
+    let $editrice_short := 
+        for $resp in $doc//tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp
+            return
+                if($resp[contains(., "Supervision")] and starts-with($resp/following-sibling::tei:persName/tei:forename, "S"))
+                then "S. " || $resp/following-sibling::tei:persName/tei:surname
                 else ''
     
     let $contributeur :=
@@ -133,8 +158,8 @@ declare function app:citation($node as node(), $model as map(*)) {
                 <h3>Citation courte</h3>
                 <pb-clipboard label="">
                     <div>
-                        {$auteur} {$titre} {$lieu} : {$imprimeur}, {$date}. Éd. num. {$editrice} et al.
-                        Projet SETAF, dir. Daniela Solfaroli Camillocci. [URL], consulté le {$currentDate}.
+                        {$auteur_short} {$titre} {$lieu_short} : {$imprimeur_short}, {$date}. Éd. num. par {$editrice_short} et al.
+                        Projet SETAF, dir. D. Solfaroli Camillocci. &lt;https://setaf.unige.ch&gt;, consulté le {$currentDate}.
                     </div>
                 </pb-clipboard>
             </div>
@@ -143,8 +168,8 @@ declare function app:citation($node as node(), $model as map(*)) {
                 <h3>Citation longue</h3>
                 <pb-clipboard label="">
                     <div>
-                        {$auteur} <i>{$titre}</i> {$lieu} : {$imprimeur}, {$date}. Édition numumérique réalisée par {$contributeur} Simon Gabay et Elina Leblanc. 
-                        Projet SETAF, dir. Daniela Solfaroli Camillocci. [URL], consulté le {$currentDate}.
+                        {$auteur} <i>{$titre}</i> {$lieu} : {$imprimeur}, {$date}. Édition numérique réalisée par {$contributeur} Simon Gabay et Elina Leblanc. 
+                        Projet SETAF, dir. Daniela Solfaroli Camillocci. &lt;https://setaf.unige.ch&gt;, consulté le {$currentDate}.
                     </div>
                 </pb-clipboard>
             </div>
@@ -199,98 +224,100 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                     <div class="text">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()}</div>
                 </div>-->
                 
-                <div class="pop-up-content"><div class="text-pop-up">
-                        <div>
-                            <p class="bold">Source</p>
-                            <p>
-                                <a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
-                                {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
-                                {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="bold"><pb-i18n key="metadata.artist">Artiste</pb-i18n></p>
-                            <p>
-                                { if ($image/following-sibling::tei:figDesc/tei:bibl/tei:author/text())
-                                    then $image/following-sibling::tei:figDesc/tei:bibl/tei:author/text()
-                                 else("Inconnu")
-                                }
-                            </p>
-                        </div>
-                        <div>
-                            <p class="bold">Technique</p>
-                            <p>{$image/following-sibling::tei:figDesc/tei:objectType/text()}</p>
-                        </div>
-                        
-                        {
-                            if ($image/following-sibling::tei:figDesc/tei:dim/text())
-                                then <div><p class="bold">Dimensions</p><p>{$image/following-sibling::tei:figDesc/tei:dim/text() || " mm"}</p></div>
-                            else ()
-                        }
-                        
-                        {
-                            if($image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text() and $image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text())
-                                then <div>
-                                        <p class="bold">Inscriptions</p>
-                                        <p>
-                                            Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
-                                            <br/>Manchette : {$image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text()}
-                                        </p>
-                                     </div>
-                            else if ($image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text())
-                                then <div>
-                                        <p class="bold">Inscriptions</p>
-                                        <p>
-                                            Manchette : {$image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text()}
-                                        </p>
-                                     </div>
-                            else if ($image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text())
-                                then <div>
-                                        <p class="bold">Inscriptions</p>
-                                        <p>
-                                            Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
-                                        </p>
-                                     </div>
-                            else()
-                        }
-                        
-                        <div>
-                            <p class="bold"><pb-i18n key="metadata.desc">Description/Commentaire</pb-i18n></p>
-                            <p>{$image/following-sibling::tei:note/text()}</p>
-                        </div>
-                        
-                        {
-                            if($image/following-sibling::tei:figDesc/tei:bibl/tei:idno)
-                                then <div>
-                                        <p class="bold"><pb-i18n key="metadata.ref">Références</pb-i18n></p>
-                                        <ul>
-                                            { for $idno in $image/following-sibling::tei:figDesc/tei:bibl/tei:idno
-                                              return <li><a href="{$idno/@corresp}" target="_blank">{$idno/text()}</a></li>
-                                            }
-                                            </ul>
-                                    </div>
-                            else()
-                        }
-                        
-                        <!--<div>
-                            <p class="bold"><pb-i18n key="metadata.biblio">Bibliographie</pb-i18n></p>
-                            <p>
-                                { if ($image/following-sibling::tei:figDesc/tei:bibl/tei:bibl)
-                                         then $image/following-sibling::tei:figDesc/tei:bibl/tei:bibl
-                                     else(<span></span>)
-                                }
-                            </p>
-                        </div>-->
-                        
-                        <div>
-                            <p class="bold"><pb-i18n key="metadata.credits">Crédits</pb-i18n></p>
-                            <p>{$image/following-sibling::tei:figDesc/tei:bibl/tei:availability/tei:licence/text()}</p>
+                <div class="pop-up-content">
+                    <div>
+                        <!--<div class="image-container">-->
+                        <img class="img-pop-up" src="{$url-large}"/>
+                        <!--</div>-->
+                        <div class="text-pop-up">
+                            <div>
+                                <p class="bold">Source</p>
+                                <p>
+                                    <a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
+                                    {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
+                                    {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="bold"><pb-i18n key="metadata.artist">Artiste</pb-i18n></p>
+                                <p>
+                                    { if ($image/following-sibling::tei:figDesc/tei:bibl/tei:author/text())
+                                        then $image/following-sibling::tei:figDesc/tei:bibl/tei:author/text()
+                                     else("Inconnu")
+                                    }
+                                </p>
+                            </div>
+                            <div>
+                                <p class="bold">Technique</p>
+                                <p>{$image/following-sibling::tei:figDesc/tei:objectType/text()}</p>
+                            </div>
+                            
+                            {
+                                if ($image/following-sibling::tei:figDesc/tei:dim/text())
+                                    then <div><p class="bold">Dimensions</p><p>{$image/following-sibling::tei:figDesc/tei:dim/text() || " mm"}</p></div>
+                                else ()
+                            }
+                            
+                            {
+                                if($image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text() and $image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text())
+                                    then <div>
+                                            <p class="bold">Inscriptions</p>
+                                            <p>
+                                                Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
+                                                <br/>Manchette : {$image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text()}
+                                            </p>
+                                         </div>
+                                else if ($image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text())
+                                    then <div>
+                                            <p class="bold">Inscriptions</p>
+                                            <p>
+                                                Manchette : {$image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text()}
+                                            </p>
+                                         </div>
+                                else if ($image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text())
+                                    then <div>
+                                            <p class="bold">Inscriptions</p>
+                                            <p>
+                                                Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
+                                            </p>
+                                         </div>
+                                else()
+                            }
+                            
+                            <div>
+                                <p class="bold"><pb-i18n key="metadata.desc">Description/Commentaire</pb-i18n></p>
+                                <p>{$image/following-sibling::tei:note/text()}</p>
+                            </div>
+                            
+                            {
+                                if($image/following-sibling::tei:figDesc/tei:bibl/tei:idno)
+                                    then <div>
+                                            <p class="bold"><pb-i18n key="metadata.ref">Références</pb-i18n></p>
+                                            <ul>
+                                                { for $idno in $image/following-sibling::tei:figDesc/tei:bibl/tei:idno
+                                                  return <li><a href="{$idno/@corresp}" target="_blank">{$idno/text()}</a></li>
+                                                }
+                                                </ul>
+                                        </div>
+                                else()
+                            }
+                            
+                            <!--<div>
+                                <p class="bold"><pb-i18n key="metadata.biblio">Bibliographie</pb-i18n></p>
+                                <p>
+                                    { if ($image/following-sibling::tei:figDesc/tei:bibl/tei:bibl)
+                                             then $image/following-sibling::tei:figDesc/tei:bibl/tei:bibl
+                                         else(<span></span>)
+                                    }
+                                </p>
+                            </div>-->
+                            
+                            <div>
+                                <p class="bold"><pb-i18n key="metadata.credits">Crédits</pb-i18n></p>
+                                <p>{$image/following-sibling::tei:figDesc/tei:bibl/tei:availability/tei:licence/text()}</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!--<div class="image-container">-->
-                        <img class="img-pop-up" src="{$url-large}"/>
-                    <!--</div>-->
                     
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
                 </div>

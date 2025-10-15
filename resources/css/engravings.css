@@ -41,6 +41,7 @@
 
 .index-gravures h1 {
     text-align: center;
+    font-family: var(--pb-cursive-font-family);
 }
 
 .index-gravures__column {
@@ -265,7 +266,7 @@
 
 .img-pop-up {
     display: inline-block;
-    max-width: 39%;
+    max-width: 80%;
     height: fit-content;
 }
 

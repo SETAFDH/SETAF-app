@@ -34,7 +34,11 @@
                         <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     
-                    <main class="main-static" style="width:80%; margin: 0 auto;" data-template="pages:parse-params">
+                    <section class="breadcrumb_corpus">
+                        <span class="breadcrumb"><a href="../accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; Plan du site</span>
+                    </section>
+                    
+                    <main class="main-static content-static-view" data-template="pages:parse-params">
                         <h1><pb-i18n key="pages.site-map">Plan du site</pb-i18n></h1>
                         
                         <ul>

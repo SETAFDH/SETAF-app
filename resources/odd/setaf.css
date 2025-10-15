@@ -52,6 +52,11 @@ a[rel="footnote"]:hover,
     font-family: var(--pb-cursive-font-family);
 }
 
+.static-subtitle {
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+}
+
 .left {
     float: left;
 }
