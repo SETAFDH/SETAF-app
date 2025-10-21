@@ -17,7 +17,7 @@
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     </head>
     
-    <body>
+    <body data-template="pages:parse-params">
         <pb-page data-template="pages:pb-page" api-version="1.0" unresolved="unresolved" theme="resources/css/components.css" locales="resources/i18n/{{ns}}/{{lng}}.json">
             <app-drawer-layout force-narrow="force-narrow">
                 
@@ -35,10 +35,10 @@
                     </app-header>
                     
                     <section class="breadcrumb_corpus">
-                        <span class="breadcrumb"><a href="../accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; Plan du site</span>
+                        <span class="breadcrumb"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; Plan du site</span>
                     </section>
                     
-                    <main class="main-static content-static-view" data-template="pages:parse-params">
+                    <main class="main-static content-static-view">
                         <h1><pb-i18n key="pages.site-map">Plan du site</pb-i18n></h1>
                         
                         <ul>
@@ -60,7 +60,7 @@
                             <li> <pb-i18n key="pages.corpus">Corpus Réformé Romand</pb-i18n>
                                 <ul>
                                     <li><a href="${app}/static/about-crr"><pb-i18n key="pages.corpus-about">À propos du Corpus Réformé Romand (CRR)</pb-i18n></a></li>
-                                    <li><a href="${app}/static/criteres-corpus"><pb-i18n key="pages.principles-edition">Critères d'édition</pb-i18n></a></li>
+                                    <li><a href="${app}/static/criteres-corpus"><pb-i18n key="pages.principles-corpus">Critères d'édition du corpus</pb-i18n></a></li>
                                     <li><a href="${app}/index.html?collection=corpus"><pb-i18n key="pages.corpus-access">Accès au corpus</pb-i18n></a></li>
                                     <li><a href="${app}/static/aide"><pb-i18n key="pages.help">Aide à la recherche</pb-i18n></a></li>
                                 </ul>

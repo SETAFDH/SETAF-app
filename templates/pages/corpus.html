@@ -58,7 +58,9 @@
                     </pb-navigation>
                     
                     <!-- Text -->
-                    <pb-panel emit="transcription" id="view1" label="Options de consultation">
+                    <div data-template="app:display-view"/>
+                    
+                    <!--<pb-panel emit="transcription" id="view1" label="Options de consultation">
                         <template title="Normalisée">
                             <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription">
                                 <pb-param name="view" value="normalized"/>
@@ -69,7 +71,7 @@
                                 <pb-param name="view" value="original"/>
                             </pb-view>
                         </template>
-                    </pb-panel>
+                    </pb-panel>-->
                     
                     <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
                         <paper-icon-button class="navigation_chevron" icon="icons:chevron-right"/>

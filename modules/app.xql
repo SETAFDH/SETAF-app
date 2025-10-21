@@ -26,7 +26,7 @@ declare function app:breadcrumb-corpus($node as node(), $model as map(*)) {
     =>substring-before(".")
     
     return
-        <span class="breadcrumb"><a href="../accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus">Corpus</a> > {$ID}</span>
+        <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus" class="link">Corpus</a> > {$ID}</span>
 };
 
 declare function app:breadcrumb-engraving($node as node(), $model as map(*)) {
@@ -35,7 +35,7 @@ declare function app:breadcrumb-engraving($node as node(), $model as map(*)) {
     let $title := $doc//tei:titleStmt/tei:title/text()
     
     return
-        <span class="breadcrumb"><a href="../accueil.html">Accueil</a> > <a href="../index_gravures.html">Index des gravures</a> > {$title}</span>
+        <span class="breadcrumb"><a href="../accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index_gravures.html"><pb-i18n key="pages.engravings">Gravures</pb-i18n></a> > {$title}</span>
 };
 
 declare function app:download-tei($node as node(), $model as map(*)) {
@@ -43,7 +43,7 @@ declare function app:download-tei($node as node(), $model as map(*)) {
     =>substring-after("/")
     
     return 
-        <paper-button style="padding:0; min-width:0;"><span style="color:white;">.</span><a style="margin-top:4px" href="https://github.com/SETAFDH/TEI-SETAF/blob/main/data/{substring-before($ID, ".")}/{$ID}" 
+        <paper-button style="padding:0; min-width:0;"><span style="color:white;">.</span><a style="margin-top:4px" href="https://github.com/SETAFDH/SETAF-app-data/blob/main/data/corpus/{$ID}" 
                target="_blank">
                <svg style="width:40px;" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -57,6 +57,35 @@ declare function app:download-tei($node as node(), $model as map(*)) {
                    </g>
                </svg>
         </a></paper-button>
+};
+
+declare function app:display-view($node as node(), $model as map(*)) {
+    let $ID := $model?doc
+    let $doc := doc($config:data-root || '/' || $ID)
+    let $reg := $doc//tei:profileDesc//tei:term[@type="intermediary_reg_quality"]
+    
+    return
+        if($reg = 'gold')
+            then <pb-panel emit="transcription" id="view1" label="Options de consultation">
+                        <template title="Normalisée">
+                            <pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                <pb-param name="view" value="normalized"/>
+                            </pb-view>
+                        </template>
+                        <template title="Originale">
+                            <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                <pb-param name="view" value="original"/>
+                            </pb-view>
+                        </template>
+                    </pb-panel>
+        else <pb-panel emit="transcription" id="view1" label="Options de consultation">
+                        <template title="Originale">
+                            <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
+                                <pb-param name="view" value="original"/>
+                            </pb-view>
+                        </template>
+                    </pb-panel>
+            
 };
 
 declare function app:annotation-ling($node as node(), $model as map(*)) {
@@ -158,7 +187,7 @@ declare function app:citation($node as node(), $model as map(*)) {
                 <h3>Citation courte</h3>
                 <pb-clipboard label="">
                     <div>
-                        {$auteur_short} {$titre} {$lieu_short} : {$imprimeur_short}, {$date}. Éd. num. par {$editrice_short} et al.
+                        {$auteur_short} {$titre} {$lieu_short} : {$imprimeur_short}, {$date_short}. Éd. num. par {$editrice_short} et al.
                         Projet SETAF, dir. D. Solfaroli Camillocci. &lt;https://setaf.unige.ch&gt;, consulté le {$currentDate}.
                     </div>
                 </pb-clipboard>

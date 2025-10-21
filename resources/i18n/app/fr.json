@@ -10,7 +10,10 @@
 	    "submit": "Soumettre",
 	    "clear": "Effacer",
 	    "metadata": "Métadonnées",
-	    "ling": "Annotations linguistiques"  
+        "ling": "Annotations linguistiques",
+        "read-edition": "Lire l'édition",
+        "see-engraving": "Voir les gravures",
+        "access-corpus": "Accéder au Corpus"
 	},
 	
 	"pages": {
@@ -20,11 +23,13 @@
 	    "principles-edition": "Critères d'édition",
 	    "access-edition": "Accès à l'édition",
 	    "engravings": "Gravures",
+	    "engravings-title": "Gravures des Faits", 
 	    "about-engravings": "À propos des gravures",
 	    "principles-engravings": "Critères de sélection des gravures",
 	    "access-engravings": "Accès aux gravures",
 	    "corpus": "Corpus Réformé Romand",
 	    "corpus-about": "À propos du Corpus Réformé Romand (CRR)",
+	    "principles-corpus": "Critères d'édition du Corpus",
 	    "corpus-access": "Accès au corpus",
 	    "help": "Aide à la recherche",
 	    "project": "Projet",
@@ -49,7 +54,7 @@
         "place": "Lieu",
         "pages": "Pages ou feuillets",
         "theme": "Thème",
-        "desc": "Description/Commentaire",
+        "desc": "Description",
         "credits": "Crédits",
         "copy": "Exemplaire",
         "ocr": "Correction de l'OCR",

@@ -265,14 +265,15 @@ app-drawer-layout:not([narrow]) [drawer-toggle] {
     display: block;
 }
 
-.breadcrumb_corpus {   
+.breadcrumb {   
     margin-top: 0.3em;
     margin-left: 1.3em;   
 }
 
-.breadcrumb {
-    margin-top: 0.1em;
-}
+/*.breadcrumb_corpus {
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+}*/
 
 .reset-button,
 .search-button,

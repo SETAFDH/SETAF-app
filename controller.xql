@@ -68,6 +68,11 @@ else if (matches($exist:path, "^.*/(resources|transform|templates)/.*$")
             </forward>
         </dispatch>
 
+else if ($exist:path eq '/robots.txt') then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <forward url="{$exist:controller}/robots.txt"/>
+    </dispatch>
+
 (: other images are resolved against the data collection and also returned directly :)
 else if (matches($exist:resource, "\.(png|jpg|jpeg|gif|tif|tiff|txt|mei)$", "s")) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
