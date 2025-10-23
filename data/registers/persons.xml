@@ -12,98 +12,44 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy/>
+         </classDecl>
+      </encodingDesc>
    </teiHeader>
    <standOff>
       <listPerson>
-         <person xml:id="Boniface">
-            <!-- deux alternatives au choix: ref ou ptr -->
-            <name>Boniface VIII</name>
-            <persName role="pope">Benedetto Caetani</persName>
-            <birth>ca.1235/1240</birth>
-            <death>1303</death>
-            <note>élu au pontificat en 1294</note>
-            <ptr target="https://isni.org/isni/0000000121242007"/>
-         </person>
-         <person xml:id="Paul">
-            <name>Pietro Barbo</name>
-            <persName role="pope">Paul II</persName>
-            <birth>1417</birth>
-            <death>1471</death>
-            <note>élu au pontificat en 1464</note>
-            <ptr target="https://isni.org/isni/0000000455908112"/>
-         </person>
-         <person xml:id="Gregoire">
-            <name>Hildebrand</name>
-            <persName role="pope">Grégoire VII</persName>
-            <birth>1020 <placeName>Soana</placeName>
-               <country>Italie</country>
+         <person xml:id="gnd-139890289">
+            <persName type="main">Lucia Graves</persName>
+            <persName type="sort">Graves, Lucia</persName>
+            <gender value="F">female</gender>
+            <birth>
+               <date when="1943-07-21"/>
+               <placeName ref="https://www.geonames.org/2651292">Devon, England</placeName>
             </birth>
-            <death>1085</death>
-            <note>élu au ponticat en 1073</note>
-            <ptr target="https://www.universalis.fr/encyclopedie/gregoire-vii-hildebrand/"/>
+            <note type="bio">English translator and writer; grew up in Mallorca,
+               translated from Spanish and Catalan into English; daughter of the writer, Robert Graves</note>
+            <occupation ref="https://d-nb.info/gnd/4372438-3">translator</occupation>
+            <occupation ref="https://d-nb.info/gnd/4053311-6">writer</occupation>
          </person>
-         <person xml:id="Cesar">
-            <name>César Borgia</name>
-            <persName>duc de Valentinois</persName>
-            <note> titre crée par Louis XII en 1498</note>
-            <birth>1475</birth>
-            <death>1507</death>
-            <note>César Borgia, dit « le Valentinois », est le fils aîné naturel de Rodrigo Borgia
-               (pape sous le nom d'Alexandre VI) et de Vannozza Cattanei, patricienne romaine</note>
-         </person>
-         <person xml:id="Jean">
-            <name>Jacques Duèze (ou d'Euse)</name>
-            <persName role="pope">Jean XXII</persName>
-            <birth>1249</birth>
-            <death>1334</death>
-            <note>élu au pontificat en 1316</note>
-            <ptr target="https://isni.org/isni/0000000449165295"/>
-         </person>
-         <person xml:id="Jules">
-            <name>Giuliano Della Rovere</name>
-            <persName role="pope">Jules II</persName>
-            <birth>1443</birth>
-            <death>1513</death>
-            <note>élu au pontificat en 1503</note>
-            <ptr target="https://www.idref.fr/027528081"/>
-            <ptr target="https://isni.org/isni/0000000121326761"/>
-         </person>
-         <person xml:id="Leon">
-            <name>Jean de Médicis</name>
-            <birth>1475</birth>
-            <death>1521</death>
-            <note>élu au pontificat en 1513</note>
-            <note>fils de Laurent de Médicis</note>
-            <ptr target="https://www.idref.fr/070725721"/>
-            <ptr target="https://isni.org/isni/000000012096688X"/>
-         </person>
-         <person xml:id="Clement">
-            <name>Jules de Médicis</name>
-            <persName role="pope">Clément VII</persName>
-            <birth>1478 <placeName>Florence</placeName>
+         <person xml:id="gnd-136602592">
+            <persName type="main">Ambrosius Leibnütz</persName>
+            <persName type="sort">Leibnütz, Ambrosius</persName>
+            <gender value="M">male</gender>
+            <birth>
+               <date when="1569-04-14"/>
+               <placeName ref="https://d-nb.info/gnd/4005647-8">Berggießhübel</placeName>
             </birth>
-            <death>1534</death>
-            <note>élu au pontificat en 1523</note>
-            <note>archevêque de Florence, 1513-1523</note>
-            <ptr target="https://www.idref.fr/072315563"/>
-            <ptr target="https://isni.org/isni/0000000121432441"/>
-         </person>
-         <person xml:id="Valla">
-            <persName>Lorenzo Valla</persName>
-            <birth>1407</birth>
-            <death>1457</death>
-            <occupation>secrétaire pontifical</occupation>
-            <note>philologue, humaniste italien</note>
-            <ptr target="https://isni.org/isni/0000000121258391"/>
-         </person>
-         <person xml:id="Albert">
-            <persName>Albert Ier</persName>
-            <birth>1248</birth>
-            <death>1308</death>
-            <note>roi des Romains et duc d’Autriche, fils aîné de l’empereur Rodolphe de Habsbourg
-               (1255-1308)</note>
-            <ptr target="https://isni.org/isni/0000000024857405"/>
-            <ptr target="https://www.idref.fr/190452730"/>
+            <death>
+               <date when="1617-05-28"/>
+               <placeName ref="https://d-nb.info/gnd/4238828-4">Altenberg (Erzgebirge, Saxony)</placeName>
+            </death>
+            <note type="bio">
+               civil servant in Altenberg, Saxony; grandfather of Gottfried Wilhelm Leibniz
+            </note>
+            <occupation ref="https://d-nb.info/gnd/4182762-4">Stadtschreiber</occupation>
+            <occupation ref="https://d-nb.info/gnd/7762580-8">Bergbeamter</occupation>
          </person>
       </listPerson>
    </standOff>

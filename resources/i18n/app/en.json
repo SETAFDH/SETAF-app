@@ -11,9 +11,9 @@
         "clear": "Clear",
         "metadata": "Metadata",
         "ling": "Linguistic annotations",
-        "read-edition": "Reading the edition",
-        "see-engraving": "Viewing the engravings",
-        "access-corpus": "Accessing the Corpus" 
+        "read-edition": "Read the edition",
+        "see-engraving": "View the prints",
+        "access-corpus": "Access the corpus" 
     },
     
     "pages": {
@@ -29,7 +29,7 @@
         "access-engravings": "Prints access",
         "corpus": "Corpus Réformé Romand",
         "corpus-about": "About the Corpus Réformé Romand (CRR)",
-        "principles-corpus": "Editorial principles of the Corpus",
+        "principles-corpus": "Editorial principles of the corpus",
         "corpus-access": "Corpus access",
         "help": "Help search",
         "project": "Project",

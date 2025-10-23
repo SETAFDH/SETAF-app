@@ -338,7 +338,7 @@ app-drawer-layout:not([narrow]) [drawer-toggle] {
     position: relative;
     padding-bottom: 4px;
     padding-top: 9px;
-    border-top: 1px dotted var(--pb-color-red);
+    /*border-top: 1px dotted var(--pb-color-red);*/
 }
 
 div .panel-facets:first-child {
