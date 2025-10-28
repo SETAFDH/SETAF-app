@@ -1,5 +1,5 @@
 /* Responsive design */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .page-illustration  main section:first-child {
         display: none;
     }
@@ -30,6 +30,17 @@
     .page-illustration__img img {
         width: 300px;
         height: 500px;
+    }
+    
+    .img-pop-up {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .section_faits {
+        width: 66%;
+        margin: 0 auto;
     }
 }
 
@@ -266,7 +277,7 @@
 
 .img-pop-up {
     display: block;
-    max-width: 70%;
+    max-width: 460px;
     height: fit-content;
     margin: 1em auto;
 }
