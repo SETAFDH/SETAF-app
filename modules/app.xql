@@ -233,7 +233,7 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
     
     for $image in $images
         let $url-small := replace($image/@url, "/full/full/", "/full/400,/")
-        let $url-large := replace($image/@url, "/full/full/", "/full/900,/")
+        let $url-large := replace($image/@url, "/full/full/", "/full/800,/")
         return
             if($image/parent::tei:item[@n="faits"])
                 then
@@ -262,9 +262,15 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                             <div>
                                 <p class="bold">Source</p>
                                 <p>
-                                    <a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
-                                    {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
-                                    {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.
+                                   { 
+                                    if ($image/following-sibling::tei:figDesc/tei:objectType = "gravure sur bois")
+                                     then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
+                                    
+                                    else <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date} ({$image/following-sibling::tei:figDesc/tei:locus}).</span>
+                                   }
                                 </p>
                             </div>
                             <div>
@@ -314,7 +320,7 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                             }
                             
                             <div>
-                                <p class="bold"><pb-i18n key="metadata.desc">Description/Commentaire</pb-i18n></p>
+                                <p class="bold"><pb-i18n key="metadata.desc">Description</pb-i18n></p>
                                 <p>{$image/following-sibling::tei:note/text()}</p>
                             </div>
                             

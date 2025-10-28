@@ -36,6 +36,10 @@ a[rel="footnote"]:hover,
     float: right;
 }
 
+.grey {
+    color: #808080;
+}
+
 .title-corpus {
     margin-block-start: 1em;
     margin-block-end: 1em;

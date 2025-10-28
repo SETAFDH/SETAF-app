@@ -37,6 +37,7 @@
             <param name="facs" value="'https://www.e-rara.ch/i3f/v20/165781/manifest'"/>
         </model></elementSpec>
             <elementSpec ident="teiHeader" mode="change"><modelSequence output="print">
+            <desc>[Print] Header for PDF</desc>
             <model output="print" behaviour="block" cssClass="title-print">
                 <param name="content" value=".//titleStmt/title"/>
             </model>
@@ -44,10 +45,15 @@
                 <param name="content" value=".//publicationStmt/publisher || ' - ' || .//publicationStmt/authority"/>
             </model>
             <model output="print" behaviour="block" cssClass="citation-print">
-                <param name="imprint" value=".//titleStmt/title"/>
-                <param name="author" value="if (.//author/persName[1] = &#34;Anonyme&#34;)         then &#34;Anonyme. &#34;         else             if (.//author/persName[1][@role='presumed_author'])                  then '[' || .//author/persName[1]/surname || ' ' ||                  .//author/persName[1]/forename || ']. '              else .//author/persName[1]/surname || ' ' ||                  .//author/persName[1]/forename || '. '"/>
-                <param name="role" value=".//respStmt/persName[@role=&#34;editor&#34;]"/>
-                <pb:template xmlns="" xml:space="preserve"><span><b>Pour citer : </b>[[author]]  [[imprint]] Éd. [[role]] et al. Projet SETAF, dir. Daniela Solfaroli Camillocci.</span></pb:template>
+                <param name="author" value="if (.//author/persName[1]/surname = &#34;Anonyme&#34;)         then &#34;&#34;          else .//author/persName[1]/surname || ', ' ||                  .//author/persName[1]/forename || '. '"/>
+                <param name="title" value=".//title[@type=&#34;short_title&#34;]/text()"/>
+                <param name="place" value="if (.//imprint/pubPlace[@cert=&#34;low&#34;])  then ' ' || .//imprint/pubPlace[1] || '?  '   else ' ' || .//imprint/pubPlace[1] || ' '"/>
+                <param name="printer" value=".//imprint/respStmt/persName[1]/forename || ' ' || .//imprint/respStmt/persName[1]/surname"/>
+                <param name="date" value="if (.//imprint/date[@cert='low'])  then '' || .//imprint/date || '?'  else .//imprint/date"/>
+                <param name="editor" value="for $resp in .//fileDesc/titleStmt/respStmt/resp   return     if($resp[contains(., &#34;Supervision&#34;)] and starts-with($resp/following-sibling::persName/forename, &#34;S&#34;))                 then &#34;S. &#34; || $resp/following-sibling::persName/surname                 else ''"/>
+                <param name="currentDate" value="fn:format-date(fn:current-date(), &#34;[D,2]-[M,2]-[Y,4]&#34;)"/>
+                <param name="url" value="&#34;&lt;https://setaf.unige.ch&gt;&#34;"/>
+                <pb:template xmlns="" xml:space="preserve"><span><b>Pour citer : </b>[[author]] [[title]] [[place]]: [[printer]], [[date]]. Éd. num. par [[editor]] et al. Projet SETAF, dir. D. Solfaroli Camillocci. [[url]]. Consulté le [[currentDate]].</span></pb:template>
             </model>
         </modelSequence><modelSequence output="web" predicate="$parameters?mode='gravure'">
             <desc>[Gravures] Metadata</desc>
@@ -201,6 +207,12 @@
                 <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.refBiblio">Références bibliographiques</pb-i18n></h1>
 <ul>[[content]]</ul></pb:template>
             </model>
+            <model behaviour="block" cssClass="metadata">
+                <desc>Manifest link</desc>
+                <param name="content" value=".//additional/surrogates/bibl/ptr/@target"/>
+                <pb:template xmlns="" xml:space="preserve"><h1>Manifeste IIIF</h1>
+<span>[[content]]</span></pb:template>
+            </model>
         </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model output="web" predicate="ancestor::surrogates" behaviour="inline"/><model output="web" predicate="parent::note and @type=&#34;biblio&#34;" behaviour="inline">
             <desc>[For test only]</desc>
             <param name="content" value="let $biblio := tokenize(@target, &#34;#&#34;)  for $b in $biblio return $b"/>
@@ -245,7 +257,7 @@
             <desc>[Critical edition] Person index</desc>
         </model><model output="print" predicate="@type=&#34;editor&#34;" behaviour="note"/><model output="print" predicate="@type=&#34;MarginTextZone:handwrittenAddition&#34;" behaviour="omit"/><model output="print" predicate="ancestor::p" behaviour="inline" cssClass="notes"/><model output="print" behaviour="block" cssClass="notes"/><model predicate="@type=&#34;TableZone&#34;" behaviour="block"/><model output="web" predicate="parent::figure" behaviour="inline">
             <desc>Model for the description of the illustration</desc>
-        </model><model predicate="@type=&#34;MarginTextZone:handwrittenAddition&#34;" behaviour="omit"/><model behaviour="note">
+        </model><model predicate="@type=&#34;MarginTextZone:handwrittenAddition&#34;" behaviour="omit"/><model behaviour="note" cssClass="grey">
             <param name="place" value="@place"/>
             <param name="label" value="@n"/>
         </model></elementSpec><elementSpec ident="hi" mode="change"><model output="web" predicate="./lb[@type=&#34;HeadingLine&#34;]" behaviour="inline">
@@ -292,7 +304,7 @@
             <desc>Only show the "intermediary" line when the normalised view is activated</desc>
             <model predicate="@type=&#34;intermediary&#34;" behaviour="inline"/>
             <model predicate="@type=&#34;advanced&#34;" behaviour="omit"/>
-        </modelSequence></elementSpec><elementSpec ident="fw" mode="change"><model predicate="@type=&#34;QuireMarksZone&#34;" behaviour="block" cssClass="float"/><model predicate="ancestor::p or ancestor::ab" behaviour="inline"/><model behaviour="block"/></elementSpec><elementSpec ident="sourceDoc" mode="add"><model output="print" behaviour="omit"/><model output="fo" behaviour="omit">
+        </modelSequence></elementSpec><elementSpec ident="fw" mode="change"><model predicate="@type=&#34;QuireMarksZone&#34;" behaviour="block" cssClass="float grey"/><model predicate="ancestor::p or ancestor::ab" behaviour="inline"/><model behaviour="block"/></elementSpec><elementSpec ident="sourceDoc" mode="add"><model output="print" behaviour="omit"/><model output="fo" behaviour="omit">
             <desc>Important for PDF export (prevent PDF download if not omit)</desc>
         </model></elementSpec><elementSpec ident="fileDesc" mode="change"><modelSequence output="web" predicate="$parameters?header='short'">
             <desc>Display the metadata on index.html</desc>

@@ -265,9 +265,10 @@
 }
 
 .img-pop-up {
-    display: inline-block;
-    max-width: 80%;
+    display: block;
+    max-width: 70%;
     height: fit-content;
+    margin: 1em auto;
 }
 
 /* Fade Overlay */
