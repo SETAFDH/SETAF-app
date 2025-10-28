@@ -33,13 +33,13 @@
     }
     
     .img-pop-up {
-        width: 300px;
+        width: 350px;
     }
 }
 
 @media screen and (min-width: 2000px) {
     .section_faits {
-        width: 66%;
+        width: 57%;
         margin: 0 auto;
     }
 }
