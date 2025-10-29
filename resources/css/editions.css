@@ -297,11 +297,11 @@ pb-drawer #infos {
     padding: 0 10px;
 }
 
-/*.content-body pb-tify {
+.content-body pb-tify {
     flex: 1 1;
     --pb-facsimile-height: var(--pb-view-height);
     margin-left: 2%;
-}*/
+}
 
 .content-body pb-facsimile {
     flex: 0.8 1;
@@ -309,6 +309,10 @@ pb-drawer #infos {
     margin-left: 2%;
     padding-left: 2%;
     border-left: 1px solid var(--pb-color-red);
+}
+
+.tei-ab {
+    margin: 0;
 }
 
 .page_corpus .navigation_chevron {

@@ -32,6 +32,12 @@
         </model><model output="web" behaviour="webcomponent" cssClass="facs">
             <param name="name" value="'pb-facs-link'"/>
             <param name="emit" value="'transcription'"/>
+            <param name="order" value="count($get(.)/preceding::pb) + 1"/>
+            <param name="emit-on-load" value="'emit-on-load'"/>
+            <param name="facs" value="'api/iiif/' || substring-after(document-uri(root($parameters?root)), $global:data-root || '/')"/>
+        </model><model output="web" behaviour="webcomponent" cssClass="facs">
+            <param name="name" value="'pb-facs-link'"/>
+            <param name="emit" value="'transcription'"/>
             <param name="order" value="count($get(.)/preceding::pb) + 5"/>
             <param name="emit-on-load" value="'emit-on-load'"/>
             <param name="facs" value="'https://www.e-rara.ch/i3f/v20/165781/manifest'"/>
@@ -304,7 +310,7 @@
             <desc>Only show the "intermediary" line when the normalised view is activated</desc>
             <model predicate="@type=&#34;intermediary&#34;" behaviour="inline"/>
             <model predicate="@type=&#34;advanced&#34;" behaviour="omit"/>
-        </modelSequence></elementSpec><elementSpec ident="fw" mode="change"><model predicate="@type=&#34;QuireMarksZone&#34;" behaviour="block" cssClass="float grey"/><model predicate="ancestor::p or ancestor::ab" behaviour="inline"/><model behaviour="block"/></elementSpec><elementSpec ident="sourceDoc" mode="add"><model output="print" behaviour="omit"/><model output="fo" behaviour="omit">
+        </modelSequence></elementSpec><elementSpec ident="fw" mode="change"><model predicate="@type=&#34;NumberingZone&#34;" behaviour="block" cssClass="grey lineHeight"/><model predicate="@type=&#34;RunningTitleZone&#34;" behaviour="block" cssClass="grey lineHeight"/><model predicate="@type=&#34;QuireMarksZone&#34;" behaviour="block" cssClass="float grey"/><model predicate="ancestor::p or ancestor::ab" behaviour="inline"/><model behaviour="block"/></elementSpec><elementSpec ident="sourceDoc" mode="add"><model output="print" behaviour="omit"/><model output="fo" behaviour="omit">
             <desc>Important for PDF export (prevent PDF download if not omit)</desc>
         </model></elementSpec><elementSpec ident="fileDesc" mode="change"><modelSequence output="web" predicate="$parameters?header='short'">
             <desc>Display the metadata on index.html</desc>
@@ -382,7 +388,7 @@
             <param name="alt" value="following-sibling::figDesc"/>
             <param name="engraving" value="&#34;../gravures/&#34; || @corresp || &#34;.xml&#34;"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[engraving]]" target="_blank"><img src="[[url]]" alt="[[alt]]" width="300"/></a></pb:template>
-        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph"/></elementSpec><elementSpec ident="bibl" mode="change"><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
+        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph" cssClass="para-ed-crit"/></elementSpec><elementSpec ident="bibl" mode="change"><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
             <desc>[Critical edition] Inline biblical references</desc>
             <param name="ref" value="@ana"/>
             <param name="content" value="."/>

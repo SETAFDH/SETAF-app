@@ -40,6 +40,10 @@ a[rel="footnote"]:hover,
     color: #808080;
 }
 
+.lineHeight {
+    line-height: 1;
+}
+
 .title-corpus {
     margin-block-start: 1em;
     margin-block-end: 1em;
