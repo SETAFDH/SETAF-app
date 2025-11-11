@@ -59,7 +59,7 @@
                 <param name="editor" value="for $resp in .//fileDesc/titleStmt/respStmt/resp   return     if($resp[contains(., &#34;Supervision&#34;)] and starts-with($resp/following-sibling::persName/forename, &#34;S&#34;))                 then &#34;S. &#34; || $resp/following-sibling::persName/surname                 else ''"/>
                 <param name="currentDate" value="fn:format-date(fn:current-date(), &#34;[D,2]-[M,2]-[Y,4]&#34;)"/>
                 <param name="url" value="&#34;&lt;https://setaf.unige.ch&gt;&#34;"/>
-                <pb:template xmlns="" xml:space="preserve"><span><b>Pour citer : </b>[[author]] [[title]] [[place]]: [[printer]], [[date]]. Éd. num. par [[editor]] et al. Projet SETAF, dir. D. Solfaroli Camillocci. [[url]]. Consulté le [[currentDate]].</span></pb:template>
+                <pb:template xmlns="" xml:space="preserve"><span><b>Pour citer : </b>[[author]] [[title]] [[place]]: [[printer]], [[date]]. Éd. num. par [[editor]] et al. Projet SETAF, dir. D. Solfaroli Camillocci. [[url]], consulté le [[currentDate]].</span></pb:template>
             </model>
         </modelSequence><modelSequence output="web" predicate="$parameters?mode='gravure'">
             <desc>[Gravures] Metadata</desc>
@@ -216,7 +216,7 @@
             <model behaviour="block" cssClass="metadata">
                 <desc>Manifest link</desc>
                 <param name="content" value=".//additional/surrogates/bibl/ptr/@target"/>
-                <pb:template xmlns="" xml:space="preserve"><h1>Manifeste IIIF</h1>
+                <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.manifest">Manifeste IIIF</pb-i18n></h1>
 <span>[[content]]</span></pb:template>
             </model>
         </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model output="web" predicate="ancestor::surrogates" behaviour="inline"/><model output="web" predicate="parent::note and @type=&#34;biblio&#34;" behaviour="inline">

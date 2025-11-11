@@ -52,7 +52,7 @@
         "author": "Auteur/Autrice",
         "printer": "Imprimeur",
         "place": "Lieu",
-        "pages": "Pages ou feuillets",
+        "pages": "Pages traitées du fac-similé",
         "theme": "Thème",
         "desc": "Description",
         "credits": "Crédits",
@@ -63,7 +63,8 @@
         "biblio": "Bibliographie",
         "ref": "Références",
         "artist": "Artiste",
-        "id": "Identifiant SETAF"
+        "id": "Identifiant SETAF",
+        "manifest": "Manifeste IIIF" 
     },
     
     "engraving": {

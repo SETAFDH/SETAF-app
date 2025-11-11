@@ -51,7 +51,7 @@
         "author": "Author",
         "printer": "Printer",
         "place": "Place",
-        "pages": "Pages or leafs",
+        "pages": "Processed pages",
         "theme": "Theme",
         "desc": "Description",
         "credits": "Credits",
@@ -62,7 +62,8 @@
         "biblio": "Bibliography",
         "ref": "References",
         "artist": "Artist",
-        "id": "SETAF identifier" 
+        "id": "SETAF identifier",
+        "manifest": "IIIF manifest" 
     },
     
     "engraving": {

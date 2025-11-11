@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /index.html
-Disallow: /search.html
-Disallow: /index_gravures.html
-Disallow: /index.html?collection=corpus
