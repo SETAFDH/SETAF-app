@@ -26,7 +26,7 @@ declare function app:breadcrumb-corpus($node as node(), $model as map(*)) {
     =>substring-before(".")
     
     return
-        <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus" class="link">Corpus</a> > {$ID}</span>
+        <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus&amp;sort=title" class="link">Corpus</a> > {$ID}</span>
 };
 
 declare function app:breadcrumb-engraving($node as node(), $model as map(*)) {
@@ -130,7 +130,7 @@ declare function app:citation($node as node(), $model as map(*)) {
             then ' [' || $doc//tei:imprint/tei:pubPlace[1] || '?]'
         else if ($doc//tei:imprint/tei:pubPlace[@cert="medium"]) 
             then ' [' || $doc//tei:imprint/tei:pubPlace[1] || ']'  
-        else $doc//tei:imprint/tei:pubPlace[1]
+        else ' ' || $doc//tei:imprint/tei:pubPlace[1]
         
     let $lieu_short :=
         if ($doc//tei:imprint/tei:pubPlace[@cert="low"]) 
@@ -144,7 +144,10 @@ declare function app:citation($node as node(), $model as map(*)) {
         else $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename ||
             ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname
     
-    let $imprimeur_short := $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename || ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname
+    let $imprimeur_short := 
+        if ($doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname = '[s.n.]')
+        then 's.n.'
+        else $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:forename || ' ' || $doc//tei:imprint/tei:respStmt/tei:persName[1]/tei:surname
     
     let $date :=
         if ($doc//tei:imprint/tei:date[@cert='low']) 
