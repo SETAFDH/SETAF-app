@@ -52,8 +52,8 @@
                                         <!--<pb-custom-form class="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>-->
                                         
                                         <pb-custom-form data-template="pages:parse-params" class="facets" url="api/search/facets" event="pb-results-received" subscribe="results" emit="search">
-                                            <!--<paper-button slot="resetButton" class="reset-button" onclick="clearFacets()" data-i18n="buttons.clear">Effacer</paper-button>  
-                                            <paper-button slot="searchButtonBottom" class="search-button" data-i18n="buttons.submit">Soumettre</paper-button>-->
+                                            <paper-button slot="resetButton" class="reset-button" onclick="clearFacets()" data-i18n="buttons.clear">Effacer</paper-button>  
+                                            <paper-button slot="searchButtonBottom" class="search-button" data-i18n="buttons.submit">Soumettre</paper-button>
                                         </pb-custom-form>
                                     </pb-search>
                                 </div>
@@ -69,7 +69,7 @@
         </pb-page>
         
         <div class="splash"/>
-        <script src="resources/scripts/browse.js"/>
+        <!--<script src="resources/scripts/browse.js"/>-->
         <script>
             function clearFacets() {
                 let urlString = document.URL;

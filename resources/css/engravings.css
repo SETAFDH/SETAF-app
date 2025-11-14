@@ -113,7 +113,7 @@
 
 .page-illustration__content-body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0 2em;
     margin: 0 auto;
 }

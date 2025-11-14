@@ -79,19 +79,16 @@
                 
                 <span class="breadcrumb" data-template="pages:parse-params"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; Corpus</span>
                 
-                <main class="corpus-index">
-                    <!--<section>
-                        <h1 class="tp-title" data-template="config:app-title"/>
-                    </section>-->
-                    <section class="panels">
+                <!--<main class="corpus-index">
+                     <section class="panels">
                         <paper-card class="doclist">
                             <div class="card-content">
                                 <div class="browse">
                                     <aside data-template="browse:form">
-                                        <!--pb-custom-form class="options" auto-submit="[name=sort]" emit="search"-->
+                                        <!-\-pb-custom-form class="options" auto-submit="[name=sort]" emit="search"-\->
                                         <pb-custom-form class="options" auto-submit="[name=sort]" emit="search">
                                             <input type="hidden" name="collection" value="${collection}" data-template="pages:parse-params"/>
-                                            <pb-select label="browse.sort" name="sort" value="${sort}" data-template="pages:parse-params">
+                                            <pb-select label="browse.sort" name="sort" value="title" data-template="pages:parse-params">
                                                 <paper-item value="title"><pb-i18n key="browse.title"/></paper-item>
                                                 <paper-item value="author"><pb-i18n key="browse.author"/></paper-item>
                                             </pb-select>
@@ -110,7 +107,7 @@
                                     <div id="document-list">
                                         <pb-paginate id="paginate" per-page="10" range="5" subscribe="search" emit="search"/>
                                         <pb-load url="api/collection/{collection}" expand="" emit="search"/>
-                                        <!--<pb-browse url="api/collection" emit="search"></pb-browse>-->
+                                        <!-\-<pb-browse url="api/collection" emit="search"></pb-browse>-\->
                                         <pb-paginate slot="footer" id="paginate-bottom" per-page="10" range="5" emit="search" subscribe="search"/>
                                     </div>
                                 </div>
@@ -127,10 +124,10 @@
                             </aside>
                         </pb-restricted>
                     </section>
-                </main>
+                </main>-->
                 
                 
-                <!--<main class="corpus-index" data-template="pages:parse-params">
+                <main class="corpus-index" data-template="pages:parse-params">
                     <section class="panels">
                         <paper-card class="doclist">
                             <div class="card-content">
@@ -138,15 +135,15 @@
                                     <aside data-template="browse:form">
                                         <pb-custom-form class="options" auto-submit="[name=sort]" emit="search">
                                             <input type="hidden" name="collection" value="${collection}"/>
-                                            <pb-select label="browse.sort" name="sort" value="${sort}">
+                                            <pb-select label="browse.sort" name="sort" value="title">
                                                 <paper-item value="title"><pb-i18n key="browse.title"/></paper-item>
                                                 <paper-item value="author"><pb-i18n key="browse.author"/></paper-item>
                                             </pb-select>
                                         </pb-custom-form>
                                         
-                                        <!-\-<pb-search id="search-form" subscribe="search" data-template="pages:parse-params" subforms=".facets,.options" submit-on-load="submit-on-load">
+                                        <!--<pb-search id="search-form" subscribe="search" data-template="pages:parse-params" subforms=".facets,.options" submit-on-load="submit-on-load">
                                             <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
-                                        </pb-search>-\->
+                                        </pb-search>-->
                                         
                                         <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" subforms=".facets,.options" submit-on-load="submit-on-load">
                                             <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
@@ -169,7 +166,7 @@
                             </div>
                         </paper-card>
                     </section>
-                </main>-->
+                </main>
                 <footer data-template="templates:include" data-template-path="templates/footer.html"/>
             </app-header-layout>
         </app-drawer-layout>
@@ -197,7 +194,7 @@
         </paper-dialog>
     </pb-page>
     <div class="splash"/>
-    <script src="resources/scripts/browse.js"/>
+    <!--<script src="resources/scripts/browse.js"/>-->
     <script>
         function clearFacets() {
             let urlString = document.URL;

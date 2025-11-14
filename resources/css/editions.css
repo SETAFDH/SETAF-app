@@ -60,9 +60,9 @@
     padding-top: 20px;
 }
 
-/*.corpus-index pb-search {
+.corpus-index pb-search {
     display: none;
-}*/
+}
 
 .tp-title {
     font-family: var(--pb-heading-font-family);

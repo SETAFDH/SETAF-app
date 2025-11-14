@@ -26,7 +26,7 @@ declare function app:breadcrumb-corpus($node as node(), $model as map(*)) {
     =>substring-before(".")
     
     return
-        <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus&amp;sort=title" class="link">Corpus</a> > {$ID}</span>
+        <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus" class="link">Corpus</a> > {$ID}</span>
 };
 
 declare function app:breadcrumb-engraving($node as node(), $model as map(*)) {
@@ -235,8 +235,15 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
     let $images := $doc//tei:list[@type="exemplaires_similaires"]//tei:graphic
     
     for $image in $images
-        let $url-small := replace($image/@url, "/full/full/", "/full/400,/")
-        let $url-large := replace($image/@url, "/full/full/", "/full/800,/")
+        let $url-small := 
+            if ($image/@url[contains(., "/full/max")])
+            then replace($image/@url, "/full/max/", "/full/400,/")
+            else replace($image/@url, "/full/full/", "/full/400,/")
+        let $url-large := 
+            if ($image/@url[contains(., "/full/max")])
+            then replace($image/@url, "/full/max/", "/full/700,/")
+            else replace($image/@url, "/full/full/", "/full/700,/")
+        
         return
             if($image/parent::tei:item[@n="faits"])
                 then
@@ -270,6 +277,10 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                      then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
+                                    
+                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "gravure sur cuivre")
+                                    then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}.</span>
                                     
                                     else <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date} ({$image/following-sibling::tei:figDesc/tei:locus}).</span>
