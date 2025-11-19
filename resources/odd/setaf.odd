@@ -256,7 +256,7 @@
             </outputRendition>
         </model></elementSpec><elementSpec ident="persName" mode="add"><model output="print" behaviour="inline">
             <desc>[Critical edition] Specific model for print preview</desc>
-        </model><model output="web" predicate="parent::reg[@type=&#34;intermediary&#34;]" behaviour="alternate" cssClass="persName">
+        </model><model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
             <param name="default" value="."/>
             <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;)  let $index := doc(&#34;/db/apps/setaf-data/data/registers/persons.xml&#34;)  let $id := $index//person/@xml:id   return   if($key = $id)    then        let $person := $index//person[@xml:id=$key]       return       &lt;div&gt;           &lt;p&gt;{$person/persName} ({$person/name})&lt;/p&gt;           &lt;p&gt;{$person/birth} - {$person/death}&lt;/p&gt;           &lt;p&gt;{$person/note[1]}&lt;/p&gt;       &lt;/div&gt;   else(&#34;En cours&#34;)"/>
         </model></elementSpec><elementSpec ident="note" mode="change"><model output="web" predicate="parent::person" behaviour="inline">
