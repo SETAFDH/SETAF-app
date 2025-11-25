@@ -23,7 +23,7 @@ function app:foo($node as node(), $model as map(*)) {
 declare function app:breadcrumb-corpus($node as node(), $model as map(*)) {
     let $ID := $model?doc
     =>substring-after("/")
-    =>substring-before(".")
+    =>substring-before("_")
     
     return
         <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus" class="link">Corpus</a> > {$ID}</span>
@@ -78,7 +78,7 @@ declare function app:display-view($node as node(), $model as map(*)) {
                             </pb-view>
                         </template>
                     </pb-panel>
-        else <pb-panel emit="transcription" id="view1" label="Options de consultation">
+            else <pb-panel emit="transcription" id="view1" label="Options de consultation">
                         <template title="Originale">
                             <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
                                 <pb-param name="view" value="original"/>
