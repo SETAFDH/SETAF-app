@@ -81,11 +81,11 @@
 
 .content-static-view h1 {
     font-family: var(--pb-cursive-font-family);
-    margin-top: 0.1em;
+    /*margin-top: 0.1em;*/
 }
 
 .content-static-view {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 }
 

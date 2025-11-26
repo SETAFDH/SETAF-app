@@ -44,7 +44,8 @@
 	    "about-terms": "Mentions légales",
 	    "about-citation": "Comment citer ?",
 	    "site-map": "Plan du site",
-	    "bibliography": "Bibliographie" 
+        "bibliography": "Bibliographie",
+        "environment": "Déclaration environnementale"
 	},
 	
 	"metadata": {
