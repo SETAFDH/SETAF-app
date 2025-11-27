@@ -160,7 +160,7 @@ declare function facets:display($config as map(*), $nodes as element()+) {
     where $table
     return (
         <div class="facet-dimension panel-facets" data-dimension="facet-{$config?dimension}">
-            <input type="checkbox" checked=""></input>
+            <input type="checkbox" checked="" aria-label="facet-{$config?dimension}"></input>
             <i></i>
             <h3 class="panel-title"><pb-i18n key="{$config?heading}">{$config?heading}</pb-i18n>
             {

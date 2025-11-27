@@ -329,7 +329,8 @@
             <model behaviour="link" cssClass="thumbnail">
                 <param name="content" value="substring-after(./parent::teiHeader/following-sibling::sourceDoc/surface[1]/graphic/@url, ':') || '/full/100,/0/default.jpg'"/>
                 <param name="uri" value="$parameters?doc"/>
-                <pb:template xmlns="" xml:space="preserve"><img src="[[content]]"/></pb:template>
+                <param name="alt" value="./sourceDesc//title[@type=&#34;short_title&#34;]/text()"/>
+                <pb:template xmlns="" xml:space="preserve"><img src="[[content]]" alt="[[alt]]"/></pb:template>
             </model>
         </modelSequence><model behaviour="title">
             <param name="content" value="titleStmt"/>
