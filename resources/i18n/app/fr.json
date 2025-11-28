@@ -45,7 +45,10 @@
 	    "about-citation": "Comment citer ?",
 	    "site-map": "Plan du site",
         "bibliography": "Bibliographie",
-        "environment": "Déclaration environnementale"
+        "environment": "Déclaration environnementale",
+        "related": "Projets connexes",
+        "articles": "Articles et chapitres d'ouvrage",
+        "tools": "Outils et guides numériques" 
 	},
 	
 	"metadata": {

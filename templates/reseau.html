@@ -34,10 +34,44 @@
                         <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     
-                    <main style="width:80%; margin: 0 auto;">
-                        <h1>Réseaux</h1>
-                        <p>En construction...</p>
+                    <section class="breadcrumb_corpus">
+                        <span class="breadcrumb"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; <pb-i18n key="pages.project-network">Réseau</pb-i18n></span>
+                    </section>
+                    
+                    <main class="main-static content-static-view">
+                        <h1><pb-i18n key="pages.project-network">Réseau</pb-i18n></h1>
+                        
+                        <div>
+                            <h2>Partenaires institutionnels</h2>
+                            
+                            <p>Partenariat local avec la <a href="https://www.unige.ch/lettres/humanites-numeriques/accueil" rel="noreferrer" target="_blank">chaire des Humanités Numériques (DH-UNIGE)</a> :</p>
+                            <ul>
+                                <li><a href="https://www.unige.ch/lettres/humanites-numeriques/equipe/collaborateurs/prof-beatrice-joyeux-prunel" rel="noreferrer" target="_blank">Béatrice Joyeux-Prunel</a>, professeure ordinaire en Humanités Numériques (DH-UNIGE) ;</li>
+                                <li><a href="https://www.unige.ch/lettres/humanites-numeriques/equipe/collaborateurs/dr-simon-gabay" rel="noreferrer" target="_blank">Simon Gabay</a>, maître-assistant en Humanités Numériques (DH-UNIGE).</li>
+                            </ul>
+                            
+                            <p>Partenariat international avec les <a href="https://www.bvh.univ-tours.fr/" rel="noreferrer" target="_blank">Bibliothèques Virtuelles Humanistes (BVH-CESR)</a> :</p>
+                            <ul>
+                                <li><a href="https://cesr.cnrs.fr/membre/lastraioli-chiara/" rel="noreferrer" target="_blank">Chiara Lastraioli</a>, professeure ordinaire et responsable du programme BVH-CESR à Tours.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h2>Ont contribué aux événements du projet</h2>
+                            <ul>
+                                <li><a href="https://ihrim.ens-lyon.fr/auteur/garnier-isabelle" rel="noreferrer" target="_blank">Isabelle Garnier</a> (Université Jean Moulin - Lyon 3) </li>
+                                <li><a href="http://crehs.univ-artois.fr/equipe/enseignant-e-s-chercheurs-euses-et-doctorant-e-s/thierry-amalou" rel="noreferrer" target="_blank">Thierry Amalou</a> (Université d’Artois)</li>
+                                <li><a href="https://ihrim.ens-lyon.fr/auteur/rajchenbach-elise" rel="noreferrer" target="_blank">Élise Rajchenbach</a> (Université Jean-Monnet de Saint-Étienne)</li>
+                                <li><a href="https://www.univ-orleans.fr/fr/crjp/corinne-leveleux-teixeira" rel="noreferrer" target="_blank">Corinne Leveleux-Teixeira</a> (Université d’Orléans)</li>
+                                <li><a href="https://www.enssib.fr/personne/walsby-malcolm" rel="noreferrer" target="_blank">Malcolm Walsby</a> (Enssib-Lyon)</li>
+                                <li><a href="https://www.unifr.ch/art/fr/departement/equipe/jeremie-koering.html" rel="noreferrer" target="_blank">Jérémie Koering</a> (Université de Fribourg)</li>
+                                <li><a href="https://www.unige.ch/lettres/framo/enseignants/cer/meli" rel="noreferrer" target="_blank">Cinthia Meli</a> (UNIGE)</li>
+                                <li><a href="https://criham.labo.univ-poitiers.fr/membres/estelle-leutrat/" rel="noreferrer" target="_blank">Estelle Leutrat</a> (Université de Poitiers)</li>
+                                <li><a href="https://criham.labo.univ-poitiers.fr/membres/estelle-leutrat/" rel="noreferrer" target="_blank">Marion Deschamp</a> (Université de Lorraine)</li>
+                            </ul>
+                        </div>
                     </main>
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>

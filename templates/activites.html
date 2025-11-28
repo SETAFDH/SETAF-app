@@ -34,10 +34,36 @@
                         <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     
-                    <main style="width:80%; margin: 0 auto;">
-                        <h1>Activités</h1>
-                        <p>En construction...</p>
+                    <section class="breadcrumb_corpus">
+                        <span class="breadcrumb"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; <pb-i18n key="pages.project-events">Activités</pb-i18n></span>
+                    </section>
+                    
+                    <main class="main-static content-static-view">
+                        
+                        <h1><pb-i18n key="pages.project-events">Activités</pb-i18n></h1>
+                                                
+                        <h2 class="subtitle_date">2024/2025</h2>
+                        <ul>
+                            <li><a href="https://www.unige.ch/ihr/fr/accueil/evenements-passes/2023-2024-2/journees-etude-setaf-20250206-07/" rel="noreferrer" target="_blank">Journées d'étude SETAF, 6-7 février 2025</a> : Interroger les <i>Faits de Jésus Christ et du pape</i> : thèmes et représentations</li>
+                            <li><a href="https://bvh.hypotheses.org/11637" rel="noreferrer" target="_blank">Journée d'étude en collaboration avec le CESR de Tours, 15 novembre 2024</a> : Autour des écritures anonymes à caractère biographique </li>
+                        </ul>
+                        
+                        <h2 class="subtitle_date">2023/2024</h2>
+                        <ul>
+                            <li><a href="https://www.unige.ch/ihr/fr/accueil/evenements-passes/2023-2024/seminaire-projet-fns-setaf-09022024/" rel="noreferrer" target="_blank">Séminaire SETAF, 9 février 2024</a> : Océriser un corpus en caractères gothiques : défis, outils et premiers résultats</li>
+                            <li><a href="https://www.unige.ch/ihr/fr/accueil/evenements-passes/2023-2024/cycle-seminaires-projet-setaf/">Cycle de séminaires SETAF, automne 2023</a> : Établir un corpus : définitions, usages et terrains de recherche</li>
+                        </ul>
+                        
+                        <h2 class="subtitle_date">2022/2023</h2>
+                        <ul>
+                            <li><a href="https://www.unige.ch/ihr/fr/accueil/evenements-passes/2022-2023/journees-detude-ihr-3-4-novembre-20221/" rel="noreferrer" target="_blank">Journées d'étude SETAF, 8-9 décembre 2022</a> : Mettre en œuvre : actions et représentations du «  groupe  »  au temps de la Réforme</li>
+                            <li><a href="https://www.unige.ch/ihr/fr/accueil/evenements-passes/2022-2023/journees-detude-ihr-3-4-novembre-2022-2/" rel="noreferrer" target="_blank">Journée d'étude en collaboration avec le CESR de Tours, 16 novembre 2022</a> : Usages de l'anonymat à la Renaissance : controverse &amp; propagande confessionnelles</li>
+                        </ul>
+                        
+                        <img src="resources/images/static/banquet.webp" width="250" class="img_center"/>
                     </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>

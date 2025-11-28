@@ -34,10 +34,46 @@
                         <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     
-                    <main style="width:80%; margin: 0 auto;">
-                        <h1>Publications</h1>
-                        <p>En construction...</p>
+                    <section class="breadcrumb_corpus">
+                        <span class="breadcrumb"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; <pb-i18n key="pages.publications">Publications et communications</pb-i18n></span>
+                    </section>
+                    
+                    <main class="main-static content-static-view">
+                        <h1><pb-i18n key="pages.publications">Publications et communications</pb-i18n></h1>
+                        
+                        <!--<div>
+                            <h2>Communications</h2>
+                            <p>À venir</p>
+                        </div>-->
+                        
+                        <div>
+                            <h2><pb-i18n key="pages.articles">Articles et chapitres d’ouvrage</pb-i18n></h2>
+                            <img src="resources/images/static/femmes.png" width="270" class="img_right"/>
+                            <ul>
+                                <li>Nathalie Szczech. « Violences et mobilisation pour l’Évangile à la genèse de la Réforme (Orbe, Ancienne Confédération suisse, 1531), dans Caroline Callard, Tatiana Debbagi Baranova et Nicolas Le Roux (dir.), Un tragique XVIe siècle. Mélanges offerts à Denis Crouzet, Ceyzérieu, Champ Vallon, 2022, p. 263-270.</li>
+                                <li>Sonia Solfrini, Geneviève Gross, Brigitte Roux, Nathalie Szczech, Pierre-Olivier Beaulnes, Aurélia Marques Oliveira, Daniela Solfaroli Camillocci. « <a href="https://hal.science/hal-04097381/" rel="noreferrer" target="_blank">Étudier le ‘groupe de Neuchâtel’ : de l'édition des Faits à un corpus numérique de la première Réforme romande</a> », Humanistica 2023, Association francophone des humanités numériques, juin 2023, Genève, Suisse. ⟨hal-04097381⟩.</li>
+                                <li>Nathalie Szczech. « <a href="https://books.openedition.org/larhra/9500" rel="noreferrer" target="_blank">Inter fratres. Les congrégations de prédicants à la genèse de la Réforme (Suisse romande, années 1530)</a> », dans Julien Léonard et Noémie Recous (dir.), Un parcours en protestantisme. II. Compagnons de route, numéro spécial de la revue Chrétiens et Sociétés, Documents et Mémoires, no 47, 2023, p. 33-43.</li>
+                                <li>Sonia Solfrini, Simon Gabay, Maxime Humeau, Ariane Pinche, Pierre-Olivier Beaulnes, Aurélia Marques Oliveira, Geneviève Gross, Daniela Solfaroli Camillocci. « <a href="https://hal.science/hal-04555002" rel="noreferrer" target="_blank">Océriser les imprimés du XVIe siècle en langue française : le cas d’un corpus romand en caractères gothiques</a> », Humanistica 2024, Association francophone des humanités numériques, mai 2024, Meknès, Maroc. ⟨hal-04555002⟩.</li>
+                                <li>Daniela Solfaroli Camillocci. « <a href="https://archive-ouverte.unige.ch/unige:176594" rel="noreferrer" target="_blank">Pratiche testuali e oralità : il ‘gruppo di Neuchâtel’ e la diffusione della Riforma nei territori romandi</a> », dans Susanna Peyronel Rambaldi (dir.), Storia dei valdesi 2 : diventare riformati (1532-1689), Torino, Claudiana, 2024, p. 49-60.</li>
+                                <li>Nathalie Szczech. « <a href="https://books.openedition.org/septentrion/170453" rel="noreferrer" target="_blank">Former pour réformer. Recrutement, préparation et encadrement des premiers prédicateurs de la Réforme francophone (Aigle, Suisse romande, 1526-1530)</a> », dans Marion Deschamp, Julien Léonard et Stefano Simiz (dir.), La Fabrique du clerc. Formation, vocation, profession dans les christianismes (XIIIe-XVIIIe s.), Rennes, Presses universitaires de Rennes, 2024, p. 143-162.</li>
+                                <li>Nathalie Szczech. « <a href="https://classiques-garnier.com/albineana-2024-cahiers-d-aubigne-n-36-vocations-d-enfants-et-trajectoires-familiales-1550-1630-famille-symbolique-conversion-et-vocation-reformatrice-dans-l-epitre-a-tous-seigneurs-et-peuples-et-pasteurs-de-guillaume-farel-1548.html" rel="noreferrer" target="_blank">Famille symbolique, conversion et vocation réformatrice dans l’épître ‘A tous seigneurs, peuples et pasteurs’ de Guillaume Farel (1548 ?)</a> », Albineana, no 36, 2024, p. 187-220.</li>
+                                <li>Sonia Solfrini, Mylène Dejouy, Aurélia Marques Oliveira, Pierre-Olivier Beaulnes. « <a href="https://hal.science/hal-05137564" rel="noreferrer" target="_blank">Normaliser le moyen français : du graphématique au semi-diplomatique</a> », actes de CORIA-TALN-RJCRI-RECITAL 2025, juillet 2025, Marseille, France. ⟨hal-05137564⟩.</li>
+                                <li>Nathalie Szczech. « Un face-à-face imprimé : la Bildtnüs eins neuwen Propheten de Calvin (1539) dans le paysage polémique de la fin des années 1530 », numéro spécial de la revue Archives de sciences sociales des religions, à paraître en 2026.</li>
+                                <li>Brigitte Roux. « La double page illustrée, un dispositif de combat ? », numéro spécial de la revue Archives de sciences sociales des religions, à paraître en 2026.</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h2><pb-i18n key="pages.tools">Outils et guides numériques</pb-i18n></h2>
+                            <ul>
+                                <li>Sonia Solfrini, Simon Gabay, Geneviève Gross, Pierre-Olivier Beaulnes, Aurélia Marques Oliveira, Daniela Solfaroli Camillocci. « <a href="https://hal.science/hal-04281804" rel="noreferrer" target="_blank">Guide de transcription pour les imprimés français du XVIe siècle en caractères gothiques</a> », document de travail, version A, novembre 2023. ⟨hal-04281804⟩.</li>
+                                <li>Sonia Solfrini et Simon Gabay. « CATMuS Gothic Print ». Zenodo, 31 janvier 2024. <a href="https://doi.org/10.5281/zenodo.10599911" rel="noreferrer" target="_blank">https://doi.org/10.5281/zenodo.10599911</a>.</li>
+                                <li>Sonia Solfrini et Simon Gabay. « FreEM SemiD norm model ». Zenodo, 30 mai 2025. <a href="https://doi.org/10.5281/zenodo.15551750" rel="noreferrer" target="_blank">https://doi.org/10.5281/zenodo.15551750</a>.</li>
+                            </ul>
+                        </div>
                     </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>

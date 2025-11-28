@@ -1,0 +1,71 @@
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Projets connexes • SETAF</title>
+        <meta name="description" content="Présentation des activités et événements organisés par l'équipe du projet SETAF durant la durée du projet."/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicons/favicon.ico"/>
+        <!-- CSS & scripts -->
+        <link rel="stylesheet" href="resources/css/setaf_theme.css"/>
+        <link rel="stylesheet" href="resources/css/static.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    
+    <body>
+        <pb-page data-template="pages:pb-page" api-version="1.0" unresolved="unresolved" theme="resources/css/components.css" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                
+                <app-drawer slot="drawer" align="right">
+                    <div class="drawer-content">
+                        <pb-media-query query="(max-width: 1023px)">
+                            <div data-template="lib:include" data-template-path="templates/menu-drawer.html"/>
+                        </pb-media-query>
+                    </div>
+                </app-drawer>
+                
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <section class="breadcrumb_corpus">
+                        <span class="breadcrumb"><a href="${app}/accueil.html"><pb-i18n key="pages.home">Accueil</pb-i18n></a> &gt; <pb-i18n key="pages.related">Projets connexes</pb-i18n></span>
+                    </section>
+                    
+                    <main class="main-static content-static-view">
+                        
+                        <h1><pb-i18n key="pages.related">Projets connexes</pb-i18n></h1>
+                        
+                        <ul>
+                            <li><a href="https://www.ville-ge.ch/musinfo/bd/bge/gln/index.php" rel="noreferrer" target="_blank">GLN 15-16</a> : une bibliographie des éditions imprimées à Genève, Lausanne et Neuchâtel aux XVe et XVIe siècles.</li>
+                            <li><a href="https://www.e-rara.ch" rel="noreferrer" target="_blank">e-rara</a> : le portail pour les imprimés numérisés des institutions suisses.</li>
+                            <li><a href="https://www.unige.ch/lettres/humanites-numeriques/recherche/projets/projets-de-la-chaire/fondue" rel="noreferrer" target="_blank">FoNDUE</a> : une infrastructure HTR pour Genève.</li>
+                            <li><a href="https://www.bvh.univ-tours.fr/" rel="noreferrer" target="_blank">BVH</a> : les Bibliothèques Virtuelles Humanistes.</li>
+                            <li><a href="https://meta.dasch.swiss/projects/0119/" rel="noreferrer" target="_blank">Premiers théâtres romands</a> : une base de données créée dans le cadre du projet Médialittérature.</li>
+                            <li><a href="https://wp.unil.ch/theatromand/" rel="noreferrer" target="_blank">ThéâtRomand</a> : un portail de valorisation de la recherche portant sur les arts du spectacle en Suisse romande.</li>
+                            <li><a href="#" rel="noreferrer" target="_blank">R.I.E.C.H.</a> : un répertoire des imprimeurs et éditeurs suisses actifs avant 1800.</li>
+                            <li><a href="https://hls-dhs-dss.ch/fr/about/dictionary" rel="noreferrer" target="_blank">DHS</a> : un Dictionnaire Historique de la Suisse.</li>
+                            <li><a href="http://zeus.atilf.fr/dmf/" rel="noreferrer" target="_blank">DMF 2023</a> : un Dictionnaire du Moyen Français.</li>
+                            <li><a href="https://www.adfontes.uzh.ch/fr/ressourcen/abkuerzungen/cappelli-online" rel="noreferrer" target="_blank">Cappelli online</a> : un dictionnaire d'abréviations latines et italiennes.</li>
+                            <li><a href="https://rbms.info/scf/?scf_entries=lyon-15-16" rel="noreferrer" target="_blank">Lyon 15-16</a> : une base des données sur les débuts de l'imprimerie à Lyon.</li>
+                            <li><a href="https://jonas.irht.cnrs.fr/" rel="noreferrer" target="_blank">Jonas</a> : un répertoire des textes littéraires français et occitans du Moyen Âge et de la première modernité.</li>
+                            <li><a href="http://ricercar-old.cesr.univ-tours.fr/3-programmes/basechanson/index.htm" rel="noreferrer" target="_blank">Ricercar database</a> : un catalogue de la chanson française à la Renaissance.</li>
+                            <li><a href="https://www.ustc.ac.uk/" rel="noreferrer" target="_blank">USTC</a> : Universal Short Title Catalogue, an open access bibliography of early modern print culture.</li>
+                        </ul>
+                        
+                    </main>
+                    
+                    <footer data-template="templates:include" data-template-path="templates/footer.html"/>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+    
+</html>

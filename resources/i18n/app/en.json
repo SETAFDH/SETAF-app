@@ -44,7 +44,10 @@
         "about-citation": "How to cite?",
         "site-map": "Site map",
         "bibliography": "Bibliography",
-        "environment": "Environmental statement"
+        "environment": "Environmental statement",
+        "related": "Related projects",
+        "articles": "Articles et book chapters",
+        "tools": "Tools and guidelines"
     },
 
     "metadata": {

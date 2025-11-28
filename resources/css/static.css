@@ -13,6 +13,14 @@
         text-align: justify;
         margin-bottom: 6%;
     }
+    
+    .img_right {
+        display: none;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
 }
 
 .hero-image {
@@ -84,9 +92,21 @@
     /*margin-top: 0.1em;*/
 }
 
+.content-static-view h2 {
+    margin-bottom: 0.3em;
+}
+
 .content-static-view {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.content-static-view ul {
+    margin-top: 0;
+}
+
+.content-static-view ul li {
+    margin-bottom: 0.5em;
 }
 
 .breadcrumb_corpus {
@@ -96,6 +116,16 @@
 
 #breadcrumb-view1 {
     margin: 0.3em;
+}
+
+.img_center {
+    display: block;
+    margin: 0 auto;
+}
+
+.img_right {
+    float: right;
+    margin-left: 1em;
 }
 
 /* equipe.html */
