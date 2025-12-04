@@ -64,9 +64,9 @@
         </modelSequence><modelSequence output="web" predicate="$parameters?mode='gravure'">
             <desc>[Gravures] Metadata</desc>
             <model behaviour="block" cssClass="metadata">
-                <desc>Title of the engraving</desc>
+                <desc>Theme of the engraving</desc>
                 <param name="content" value=".//p/figure/figDesc/title[@type=&#34;titre_gravure&#34;]/text()"/>
-                <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.title">Titre</pb-i18n></h1>
+                <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.theme">Thème</pb-i18n></h1>
 <span>[[content]]</span></pb:template>
             </model>
             <model behaviour="block" cssClass="metadata">
@@ -97,7 +97,7 @@
                 <param name="manchette" value=".//p/figure/figDesc/title[@type=&#34;manchette&#34;]"/>
                 <pb:template xmlns="" xml:space="preserve"><h1>Inscriptions</h1>
 <span>
-  <pb-i18n key="metadata.title">Titre</pb-i18n> : [[title]] <br/>
+  <pb-i18n key="metadata.running">Titre courant</pb-i18n> : [[title]] <br/>
   Manchette : [[manchette]]
 </span></pb:template>
             </model>
@@ -191,7 +191,7 @@
             </model>
             <model behaviour="block" cssClass="metadata">
                 <desc>Information about licences (text and images)</desc>
-                <param name="content" value=".//additional//availability/p"/>
+                <param name="content" value=".//publicationStmt/availability//p"/>
                 <pb:template xmlns="" xml:space="preserve"><h1>Licences</h1>
 <ul>[[content]]</ul></pb:template>
             </model>
@@ -405,6 +405,10 @@
             <desc>[Critical edition] Infobox about terms</desc>
             <param name="default" value="."/>
             <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;) let $index := doc(&#34;/db/apps/setaf-data/data/registers/glossaire.xml&#34;) let $id := $index//item/@xml:id return   if($key = $id)   then $index//item[@xml:id=$key]   else(&#34;En cours&#34;)"/>
-        </model></elementSpec><elementSpec ident="item" mode="change"><model output="web" predicate="parent::list[@type=&#34;index&#34;]" behaviour="block"/><model behaviour="listItem"/></elementSpec></schemaSpec>
+        </model></elementSpec><elementSpec ident="item" mode="change"><model output="web" predicate="parent::list[@type=&#34;index&#34;]" behaviour="block"/><model behaviour="listItem"/></elementSpec><elementSpec ident="sic" mode="change"><model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/><model behaviour="inline">
+            <outputRendition xml:space="preserve" scope="after">
+            content: ' [sic]';
+            </outputRendition>
+        </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>

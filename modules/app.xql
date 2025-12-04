@@ -312,7 +312,7 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                     then <div>
                                             <p class="bold">Inscriptions</p>
                                             <p>
-                                                Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
+                                                <pb-i18n key="metadata.running">Titre courant</pb-i18n> : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
                                                 <br/>Manchette : {$image/following-sibling::tei:figDesc/tei:title[@type="manchette"]/text()}
                                             </p>
                                          </div>
@@ -327,7 +327,7 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                     then <div>
                                             <p class="bold">Inscriptions</p>
                                             <p>
-                                                Titre : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
+                                                <pb-i18n key="metadata.running">Titre courant</pb-i18n> : {$image/following-sibling::tei:figDesc/tei:title[@type="titre_courant"]/text()}
                                             </p>
                                          </div>
                                 else()

@@ -67,7 +67,8 @@
         "ref": "References",
         "artist": "Artist",
         "id": "SETAF identifier",
-        "manifest": "IIIF manifest" 
+        "manifest": "IIIF manifest",
+        "running": "Running title"
     },
     
     "engraving": {

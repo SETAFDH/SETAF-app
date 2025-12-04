@@ -68,7 +68,8 @@
         "ref": "Références",
         "artist": "Artiste",
         "id": "Identifiant SETAF",
-        "manifest": "Manifeste IIIF" 
+        "manifest": "Manifeste IIIF",
+        "running": "Titre courant"
     },
     
     "engraving": {
