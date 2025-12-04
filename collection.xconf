@@ -8,6 +8,7 @@
                 <facet dimension="printer" expression="nav:get-metadata(ancestor::tei:TEI, 'printer')"/>
                 <facet dimension="place" expression="nav:get-metadata(ancestor::tei:TEI, 'place')"/>
                 <facet dimension="false-place" expression="nav:get-metadata(ancestor::tei:TEI, 'false-place')"/>
+                <facet dimension="institution" expression="nav:get-metadata(ancestor::tei:TEI, 'institution')"/>
                 <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
             </text>
             
@@ -31,6 +32,7 @@
                 <facet dimension="printer" expression="nav:get-metadata(ancestor::tei:TEI, 'printer')"/>
                 <facet dimension="place" expression="nav:get-metadata(ancestor::tei:TEI, 'place')"/>
                 <facet dimension="false-place" expression="nav:get-metadata(ancestor::tei:TEI, 'false-place')"/>
+                <facet dimension="institution" expression="nav:get-metadata(ancestor::tei:TEI, 'institution')"/>
                 <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
             </text>
             

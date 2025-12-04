@@ -86,7 +86,7 @@
 
 .panels .doclist .browse {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 25% 1fr;
     column-gap: 16px;
     padding: 0;
 }

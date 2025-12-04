@@ -156,6 +156,12 @@
 <span>[[content]]</span></pb:template>
             </model>
             <model behaviour="block" cssClass="metadata">
+                <desc>Information about the false address</desc>
+                <param name="content" value="if(.//pubPlace[@role=&#34;false_address&#34;]) then .//pubPlace[@role=&#34;false_address&#34;] else (&#34;--&#34;)"/>
+                <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.other-place">Fausse adresse</pb-i18n></h1>
+<span>[[content]]</span></pb:template>
+            </model>
+            <model behaviour="block" cssClass="metadata">
                 <desc>Information about the date of publication</desc>
                 <param name="content" value="if (.//imprint/date[@cert='low']) then '[' || .//imprint/date || '?]'    else if (.//imprint/date[@cert='medium']) then '[' || .//imprint/date || ']'    else .//imprint/date"/>
                 <pb:template xmlns="" xml:space="preserve"><h1>Date</h1>

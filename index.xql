@@ -63,6 +63,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "false-place" return (
                 $header//tei:monogr//tei:pubPlace[@role="false_address"]
             )
+            case "institution" return (
+                $header//tei:msIdentifier/tei:institution
+            )
             case "date" return head((
                 idx:parse-date($header//tei:imprint/tei:date)
             ))
