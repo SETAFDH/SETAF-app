@@ -153,7 +153,7 @@ declare variable $config:facets := [
     },
     map {
         "dimension": "institution",
-        "heading": "Institutions",
+        "heading": "facets.institution",
         "max": (),
         "hierarchical": false()
     }

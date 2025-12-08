@@ -3,7 +3,8 @@
         "author": "Authors",
         "printer": "Printers",
         "places": "Places",
-        "other-places": "False places"
+        "other-places": "False places",
+        "institution": "Holding institutions"
     },
     
     "buttons": {

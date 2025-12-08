@@ -3,7 +3,8 @@
 	    "author": "Auteurs/Autrices",
 	    "printer": "Imprimeurs",
 	    "places": "Lieux de publication",
-	    "other-places": "Fausses adresses"  
+	    "other-places": "Fausses adresses",
+	    "institution": "Lieux de conservation" 
 	},
 	
 	"buttons": {
