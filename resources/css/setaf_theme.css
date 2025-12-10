@@ -27,7 +27,7 @@ body {
     --pb-splash-background-color: var(--pb-color-inverse);
     --pb-logo-image-width: 140px;
     --pb-logo-image-height: 60px;
-    --pb-base-font-family: 'Helvetica', 'Noto', sans-serif; /* Used : General font-family of the website */
+    --pb-base-font-family: 'Arial', 'Noto', sans-serif; /* Used : General font-family of the website */
     --pb-base-font-size: 16px;
     --pb-base-line-height: 1.5;
     --pb-base-font-weight: 300;

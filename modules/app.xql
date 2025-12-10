@@ -273,12 +273,12 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                 <p class="bold">Source</p>
                                 <p>
                                    { 
-                                    if ($image/following-sibling::tei:figDesc/tei:objectType = "gravure sur bois")
+                                    if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur bois")
                                      then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
                                     
-                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "gravure sur cuivre")
+                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur cuivre")
                                     then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}.</span>
                                     
@@ -335,7 +335,8 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                             
                             <div>
                                 <p class="bold"><pb-i18n key="metadata.desc">Description</pb-i18n></p>
-                                <p>{$image/following-sibling::tei:note/text()}</p>
+                                <p>{$image/following-sibling::tei:note[@type="commentaire"]/text()}</p>
+                                <p style="margin-top:0;">{$image/following-sibling::tei:note/following-sibling::tei:note[@type="biblio"]/text()}</p>
                             </div>
                             
                             {
