@@ -253,8 +253,19 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
             
             else
             <div class="one-img">
-                <img src="{$url-small}" height="200px" loading="lazy" onclick="openPopUp(this)" 
-                alt="{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()} - {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}"/>
+                {
+                    if($image[@type="large"])
+                    then <img src="{$url-small}" height="110px" loading="lazy" onclick="openPopUp(this)" 
+                              alt="{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()} - {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}"/>
+                    
+                    else
+                    <img src="{$url-small}" height="200px" loading="lazy" onclick="openPopUp(this)" 
+                         alt="{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()} - {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}"/>
+                }
+            
+                <!--<img src="{$url-small}" height="200px" loading="lazy" onclick="openPopUp(this)" 
+                alt="{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()} - {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}"/>-->
+                
                 <!--<div class="overlay" onclick="this.nextElementSibling.style.display='block'">
                     <div class="text">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()}</div>
                 </div>-->
@@ -274,6 +285,11 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                 <p>
                                    { 
                                     if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur bois")
+                                     then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
+                                    
+                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur métal")
                                      then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
@@ -333,10 +349,10 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                 else()
                             }
                             
-                            <div>
+                            <div class="description_engraving">
                                 <p class="bold"><pb-i18n key="metadata.desc">Description</pb-i18n></p>
-                                <p>{$image/following-sibling::tei:note[@type="commentaire"]/text()}</p>
-                                <p style="margin-top:0;">{$image/following-sibling::tei:note/following-sibling::tei:note[@type="biblio"]/text()}</p>
+                                <p>{$image/following-sibling::tei:note[@type="commentaire"]}</p>
+                                <p style="margin-top:0;">{$image/following-sibling::tei:note/following-sibling::tei:note[@type="biblio"]}</p>
                             </div>
                             
                             {

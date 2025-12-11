@@ -148,6 +148,11 @@
     cursor: help;
 }
 
+.description_engraving title {
+    display: inline;
+    font-style: italic;
+}
+
 /* Loupe */
 .magnifier-glass {
     position: absolute;
