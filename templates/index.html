@@ -139,14 +139,17 @@
                                                 <paper-item value="title"><pb-i18n key="browse.title"/></paper-item>
                                                 <paper-item value="author"><pb-i18n key="browse.author"/></paper-item>
                                             </pb-select>
+                                            <pb-select style="display:none;" label="search.scope" name="field" value="title" data-template="pages:parse-params">
+                                                <paper-item value="title"><pb-i18n key="search.title"/></paper-item>
+                                            </pb-select>
                                         </pb-custom-form>
                                         
                                         <!--<pb-search id="search-form" subscribe="search" data-template="pages:parse-params" subforms=".facets,.options" submit-on-load="submit-on-load">
                                             <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
                                         </pb-search>-->
                                         
-                                        <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" subforms=".facets,.options" submit-on-load="submit-on-load">
-                                            <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
+                                        <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" subforms=".facets,.options" submit-on-load="submit-on-load" disable-autocomplete="disable-autocomplete" place-holder="search.title">
+                                            <!--<paper-button class="search-button" slot="searchButton" data-i18n="search.search">Rechercher</paper-button>-->
                                         </pb-search>
                                         
                                         <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="search" emit="search">

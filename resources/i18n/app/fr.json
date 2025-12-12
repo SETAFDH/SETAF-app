@@ -7,6 +7,11 @@
 	    "institution": "Lieux de conservation" 
 	},
 	
+	"search": {
+        "title": "Rechercher par titre",
+        "text": "Rechercher dans le texte"
+    },
+	
 	"buttons": {
 	    "submit": "Soumettre",
 	    "clear": "Effacer",

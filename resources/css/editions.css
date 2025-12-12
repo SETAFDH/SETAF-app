@@ -60,9 +60,9 @@
     padding-top: 20px;
 }
 
-.corpus-index pb-search {
+/*.corpus-index pb-search {
     display: none;
-}
+}*/
 
 .tp-title {
     font-family: var(--pb-heading-font-family);
@@ -109,6 +109,10 @@ aside .upload {
 .browse aside {
     padding: 0 10px;
     font-family: var(--pb-base-font-family) !important;
+}
+
+.card-content aside pb-search {
+    --pb-search-label-color: black;
 }
 
 pb-select {

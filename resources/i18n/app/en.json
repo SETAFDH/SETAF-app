@@ -7,6 +7,11 @@
         "institution": "Holding institutions"
     },
     
+    "search": {
+        "title": "Search by title",
+        "text": "Search in text"
+    }, 
+    
     "buttons": {
         "submit": "Submit",
         "clear": "Clear",

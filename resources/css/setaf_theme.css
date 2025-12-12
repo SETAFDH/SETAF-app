@@ -404,6 +404,7 @@ div .panel-facets:first-child {
 .facets {
     flex: 0;
     min-width: 220px;
+    margin-top: 2em;
 }
 
 .facets h3 {
