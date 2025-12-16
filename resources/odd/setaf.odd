@@ -112,7 +112,7 @@
                 <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.ref">Références</pb-i18n></h1>
 <ul>
   <li><a href="https://www.ustc.ac.uk/editions/9746" target="_blank">USTC n° 9746</a></li>
-  <li><a href="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406" target="_blank">GLN-1406</a></li>
+  <li><a href="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406" target="_blank">GLN 15-16 n° 1406</a></li>
 </ul></pb:template>
             </model>
             <model behaviour="block" cssClass="metadata">

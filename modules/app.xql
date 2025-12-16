@@ -294,9 +294,10 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
                                     
-                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur cuivre")
-                                    then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
-                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}.</span>
+                                    else if ($image/following-sibling::tei:figDesc/tei:objectType = "Gravure sur cuivre ")
+                                    then <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>.
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:pubPlace} : {$image/following-sibling::tei:figDesc/tei:bibl/tei:publisher}, 
+                                          {$image/following-sibling::tei:figDesc/tei:bibl/tei:date}, {$image/following-sibling::tei:figDesc/tei:locus}.</span>
                                     
                                     else <span><a href="{$image/following-sibling::tei:figDesc/tei:bibl/@source}" target="blank_">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title[@type="titre_ouvrage"]/text()}</a>,
                                           {$image/following-sibling::tei:figDesc/tei:bibl/tei:date} ({$image/following-sibling::tei:figDesc/tei:locus}).</span>
