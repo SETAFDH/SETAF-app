@@ -7,7 +7,7 @@
 }
 
 .splash {
-    background-image: url("../images/tei-publisher-logo-color.svg");
+    background-image: url("../images/static/Logo_V3_Noir.png");
 }
 
 .menubar {
@@ -23,7 +23,7 @@ app-header {
 }
 
 body {
-    --pb-splash-image-size: 360px auto;
+    --pb-splash-image-size: 200px auto;
     --pb-splash-background-color: var(--pb-color-inverse);
     --pb-logo-image-width: 140px;
     --pb-logo-image-height: 60px;

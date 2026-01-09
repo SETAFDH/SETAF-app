@@ -72,14 +72,14 @@ declare function app:display-view($node as node(), $model as map(*)) {
                                 <pb-param name="view" value="normalized"/>
                             </pb-view>
                         </template>
-                        <template title="Originale">
+                        <template title="Graphématique">
                             <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
                                 <pb-param name="view" value="original"/>
                             </pb-view>
                         </template>
                     </pb-panel>
             else <pb-panel emit="transcription" id="view1" label="Options de consultation">
-                        <template title="Originale">
+                        <template title="Graphématique">
                             <pb-view id="view1" src="document1" class=".transcription" subscribe="transcription" emit="transcription">
                                 <pb-param name="view" value="original"/>
                             </pb-view>

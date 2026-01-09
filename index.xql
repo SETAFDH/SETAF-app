@@ -20,7 +20,9 @@ declare variable $idx:app-root :=
 
 (: 2025-05-07 (EL) : Personalisation of the facets according to the degree of certainty of the data :)
 declare function idx:parse-author($author) {
-    if ($author[@role='presumed_author'])
+    if ($author[@cert='low']) 
+    then '[' || normalize-space($author/tei:forename || ' ' || $author/tei:surname) || ' ?]'
+    else if ($author[@role='presumed_author'])
     then '[' || normalize-space($author/tei:forename || ' ' || $author/tei:surname) || ']'
     else normalize-space($author/tei:forename || ' ' || $author/tei:surname)
 };
