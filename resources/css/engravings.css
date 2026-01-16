@@ -102,6 +102,11 @@
     width: 95%;
 }
 
+.antitheseList {
+    margin-left: 7.5%;
+    margin-bottom: 1.5em;
+}
+
 /* Page gravures.html */
 .page-illustration {
     --pb-view-height: calc(100vh - 212px);
@@ -288,7 +293,7 @@
 }
 
 /* Fade Overlay */
-/*.overlay-gravure {
+.overlay-gravure {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -308,7 +313,7 @@
 
 .text {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -316,5 +321,5 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
-}*/
+    width: 90%;
+}

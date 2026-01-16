@@ -270,9 +270,9 @@ declare function app:image-gallery($node as node(), $model as map(*)) {
                     <div class="text">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()}</div>
                 </div>-->
                 
-                <!--<div class="overlay-gravure" onclick="openPopUp(this)">
-                    <div class="text">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()}</div>
-                </div>-->
+                <div class="overlay-gravure" onclick="openPopUp(this)">
+                    <div class="text">{$image/following-sibling::tei:figDesc/tei:bibl/tei:title/text()} <br/>{$image/following-sibling::tei:figDesc/tei:bibl/tei:date}</div>
+                </div>
                 
                 <div class="pop-up-content">
                     <div>
