@@ -295,7 +295,7 @@ pb-drawer #infos {
 }
 
 .page_corpus .content-body {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     justify-content: center;
     padding: 0 10px;
@@ -305,6 +305,8 @@ pb-drawer #infos {
     flex: 1 1;
     --pb-facsimile-height: var(--pb-view-height);
     margin-left: 2%;
+    padding-left: 2%;
+    border-left: 1px solid var(--pb-color-red);
 }
 
 .content-body pb-facsimile {

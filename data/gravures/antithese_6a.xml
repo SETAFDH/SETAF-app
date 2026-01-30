@@ -1,0 +1,498 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="antithese_6a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Antithèse 6a</title>
+        <respStmt>
+          <name xml:id="BR">Brigitte Roux</name>
+          <resp>Sélection et description des gravures. Supervision des recherches et de la mise en ligne.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="LP">Ludivine Pernollet</name>
+          <resp>Enrichissement et correction des données. Recherches sur les droits de diffusion.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Encodage TEI et mise en ligne des données.</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Institut d'Histoire de la Réformation (IHR)</authority>
+        <availability status="restricted">
+          <licence n="cc by" target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          <figure>
+            <graphic url="https://www.e-rara.ch/i3f/v20/4518859/full/full/0/default.jpg"/>
+            <figDesc>
+              <title type="titre_gravure">Le portement de croix</title>
+              <title type="titre_courant">Jesus porte sa croix / en grand douleur.</title>
+              <title type="manchette">Baiulat ille crucem.</title>
+              <dim unit="mm">116 x 96</dim>
+              <locus type="page">sign. D2v</locus>
+              <objectType>Gravure sur bois</objectType>
+              
+              <bibl source="http://dx.doi.org/10.3931/e-rara-12688">
+                <title type="titre_ouvrage">Faitz</title>
+                <publisher>[Jean Michel]</publisher>
+                <pubPlace>[Genève]</pubPlace>
+                <date cert="medium">[1539-1540]</date>
+                <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9746">USTC n° 9746</idno>
+                <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406">GLN 15-16 n° 1406</idno>
+                <availability>
+                  <licence>Source e-rara.ch / Genève, Musée historique de la Réformation, MHR K LUT 8 - Public Domain</licence>
+                </availability>
+              </bibl>
+              
+              <list type="exemplaires_similaires">
+                <item n="1">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/hussitencodex_f17v.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">305 x 210</dim>
+                      <locus type="page">Göttingen, Niedersächsische Staats- und Universitätsbibliothek, 2° Cod. Ms. theol. 182 Cim., f. 17v</locus>
+                      <objectType>Enluminure</objectType>
+                      <bibl source="numérisation achetée à la bibl.">
+                        <title type="titre_ouvrage">Hussitencodex</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>vers 1465</date>
+                        <availability>
+                          <licence>SUB Göttingen, 2° Cod. Ms. theol. 182 Cim - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Sur le feuillet en partie déchiré est représenté le Christ portant la croix. La rubrique indique qu'en tant qu'exemple d'humilité, il porte sa croix lui-même, excluant de ce fait Simon de Cyrène. Cette version privilégiée par Luther n'est ni suivie dans le <title>Passional</title>, ni dans les <title>Faits</title>. La paire que cette enluminure forme avec l'image du pape porté en procession est en revanche imitée dans les <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="2">
+                  <figure>
+                    <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k87084962/f11/full/full/0/native.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://gallica.bnf.fr/ark:/12148/bpt6k87084962">
+                        <title type="titre_ouvrage">Thomas a Kempis, La ymitacion Ihesu Christ</title>
+                        <author role="artiste"/>
+                        <publisher>Heinrich Mayer</publisher>
+                        <pubPlace>Toulouse</pubPlace>
+                        <date>1488</date>
+                        <availability>
+                          <licence>Source gallica.bnf.fr / Bibliothèque nationale de France, Département Réserve des livres rares, D-5391- Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">L'image en tête de l'<title>Imitatio Christi</title>, traduit en français, représente le Christ portant la croix, suivi par un dévot agenouillé et avec les mains jointes. Les phylactères soulignent l'invitation directe adressée aux lectrices et lecteurs à imiter l'exemple du Christ. Cet aspect dévotionnel est absent de la gravure des <title>Faits</title>, dépourvue d'inscriptions, mais surtout intégrée dans une suite d'images de la vie du Christ.</note>
+                  </figure>
+                </item>
+                
+                <item n="3">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/ienacodex_f12v.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">313 x 213</dim>
+                      <locus type="page">Praha, Národní muzeum, IV B 24, f. 12v</locus>
+                      <objectType>Enluminure</objectType>
+                      <bibl source="https://www.esbirky.cz/predmet/180453">
+                        <title type="titre_ouvrage">Jena Codex</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>1490-1510</date>
+                        <availability>
+                          <licence>Source eSbirky.cz / Praha, Národní muzeum - CC-BY-NC-ND 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le Christ couronné d'épines porte sa croix, aidé par un homme barbu, Simon de Cyrène (contrairement au manuscrit hussite dont il dérive). Il est accompagné d'une foule de gens sortis de la ville représentée à l'arrière-plan. Sur le feuillet adjacent, le pape est porté en procession, comme dans le <title>Passional</title> et les <title>Faits</title>.</note>
+                    <note type="biblio">Bibliographie: Kamil Boldan (ed.), <title>The Jena Codex</title>, Prague, 2009, p. 108.</note>
+                  </figure>
+                </item>
+                
+                <item n="4">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/portementCroix.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">248 x 168</dim>
+                      <locus type="page">Washington, National Gallery, 1949.14.7</locus>
+                      <objectType>Gravure sur bois </objectType>
+                      <bibl source="https://www.nga.gov/collection/art-object-page.37025.html">
+                        <title type="titre_ouvrage">Portement de croix (issu du  cycle de la Passion)</title>
+                        <author role="artiste">Lucas Cranach</author>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>1509</date>
+                        <availability>
+                          <licence>Rosenwald Collection, Courtesy National Gallery of Art, Washington - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Cranach réalise une série de 14 gravures pour illustrer la Passion, dont l'une représentant le portement de croix. Au premier plan, le Christ est tombé à terre sous le poids de la croix. Il est pressé par des personnages menaçants et armés pour la plupart,  groupés autour de lui. Pilate et le grand prêtre chevauchent à l'arrière-plan, tandis que la Vierge, des femmes et saint Jean se tiennent encore plus loin sous une porche.</note>
+                  </figure>
+                </item>
+                
+                <item n="5">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027007_00012/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. B2v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00086460">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste">Lucas Cranach</author>
+                        <publisher>[Johann Rhau-Grunenberg]</publisher>
+                        <pubPlace>[Wittenberg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5584">VD16 n° L 5584</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683162">USTC n° 683162</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek,  Res/4 H.eccl. 870,11, urn:nbn:de:bvb:12-bsb00086460-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Aidé par Simon de Cyrène, le Christ tombe à terre sous le poids de a croix qu'il porte au calvaire, sous le regard d'un groupe de personnages armés.</note>
+                  </figure>
+                </item>
+                
+                <item n="6">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00088259_00014/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Offt Christum das Creütz zur erden truckt.</title>
+                      <title type="manchette">Baiulat ille crucem.</title>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. B2v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00088259">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Knobloch]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5582">VD16 n° L 5582</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683166">USTC n° 683166</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 H.eccl. 870,9, urn:nbn:de:bvb:12-bsb00088259-3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Inversion et forte schématisation de la gravure du <title>Passional</title> de Wittenberg. Elle sert de modèle direct à la gravure des <title>Faits</title>, qui en simplifie les traits et omet quelques détails, par exemple les nuages et les hachures horizontales dans le ciel.</note>
+                  </figure>
+                </item>
+                
+                <item n="7">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/987270/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">60 x 70</dim>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-3468">
+                        <title type="titre_ouvrage">Ulrich Zwingli, Ein Antwort Valentino Compar alten Landschreibern zu Ure gegeben</title>
+                        <author role="artiste"/>
+                        <publisher>Hans Hager</publisher>
+                        <pubPlace>Zurich</pubPlace>
+                        <date>1525</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+Z+799">VD16 n° Z 799</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/648676">USTC n° 648676</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Zentralbibliothek Zürich, 18.421,3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le Christ tient une croix dans la main, et tous ceux qui l'entourent l'imitent. Ils représentent différentes classes sociales, divers âges, des hommes et des femmes. Cette gravure entre en écho avec la citation biblique (Mt 11,28) - qui se retrouvera dans tous les écrits de Zwingli jusqu'en 1529 -, qui est une invitation à suivre l'exemple du Christ. Le <title>Passional</title> et les <title>Faits</title> s'inscrivent dans cette même ligne où l'exemple du Christ est à suivre, et celui du pape à refuser.</note>
+                    <note type="biblio">Bibliographie: <title>Iconoclasme. Vie et mort de l'image médiévale</title>, cat. expo., Paris, Somogy, 2001, n° 142.</note>
+                  </figure>
+                </item>
+                
+                <item n="8">
+                  <figure>
+                    <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/bd6t53789915t/f20/full/full/0/native.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Jesus porte sa croix en grand douleur.</title>
+                      <title type="manchette">Baiulat ille crucem.</title>
+                      <dim unit="mm">116 x 96</dim>
+                      <locus type="page">sign. B4v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://gallica.bnf.fr/ark:/12148/bd6t53789915t/f20">
+                        <title type="titre_ouvrage">Faictz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Pierre de Vingle]</publisher>
+                        <pubPlace>[Neuchâtel]</pubPlace>
+                        <date>[1534]</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9471">USTC n° 9471</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-4486">GLN 15-16 n° 4486</idno>
+                        <availability>
+                          <licence>Source gallica.bnf.fr / Bibliothèque de l'histoire du protestantisme français - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Première édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="faits">
+                  <graphic url="https://www.e-rara.ch/i3f/v20/4518859/full/full/0/default.jpg"/>
+                </item>
+                
+                <item n="9">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11282379/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Poenas mille dedit, crucemque tollit / Pro nobis miseris pius Redemptor.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 61</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.e-rara.ch/gep_g/doi/10.3931/e-rara-6098">
+                        <title type="titre_ouvrage">Rosarius, Antithesis de praeclaris Christi et indignis Papae facinoribus</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>Zacharie Durant</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1557</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/450469">USTC n° 450469</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2028">GLN 15-16 n° 2028</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Bibliothèque de Genève, BGE Cth 2566 BGE Bc 3499 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le portement de croix se déroule dans un paysage de murailles et de collines. Le Christ porte tout seul sa croix, et il est frappé vigoureusement par deux hommes armés de bâtons. Les rééditions latines successives - Genève, Zacharie Durant, 1558 [https://onb.digital/result/1093E2E7] et Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-1147] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="10">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11943237/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Iesus en douleur sa croix porte:/ La porter aussi nous exhorte.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 61</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-33085 ">
+                        <title type="titre_ouvrage">Antithese des faicts de Jesus Christ et du pape</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>[Zacharie Durant]</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1560</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/41782">USTC n° 41782</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2150">GLN 15-16 n° 2150</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / BPU Neuchâtel, Bibliothèque des Pasteurs, PA P.100.3.18 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557). Les rééditions françaises successives - [Genève, Zacharie Durant], 1561 [unique exemplaire connu à Harvard, Houghton Library, *FC5 R7127 Eh561a], Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-6371], 1584 [https://doi.org/10.3931/e-rara-6515], 1600 [https://doi.org/10.3931/e-rara-6911] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="11">
+                  <figure>
+                    <graphic url="https://digi.ub.uni-heidelberg.de/diglitData/image/rosarius1560/4/00_121.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Christus fuͤr unser missethat / Das Creutz mit schmertz getragen hat.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 121</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.11588/diglit.26480#0001">
+                        <title type="titre_ouvrage">Antithesis. Von des Herrn Christi herrlichen thaten, vnd des schentlichen Pabsts vnd Antichrists schedlichen schanden vnd lastern (en vers)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>[Hans Kohl]</publisher>
+                        <pubPlace>[Heidelberg]</pubPlace>
+                        <date>[1558 ou 1560?]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3100">VD16 n° R 3100</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611941">USTC n° 611941</idno>
+                        <availability>
+                          <licence>Universitätsbibliothek Heidelberg - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie fidèle de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), avec quelques modifications dans la représentation du paysage (disparition du calvaire dans l'arrière-plan) et la réalisation des physionomies.</note>
+                  </figure>
+                </item>
+                
+                <item n="12">
+                  <figure>
+                    <graphic url="https://luna.manchester.ac.uk/luna/servlet/iiif/Manchester~91~1~425957~192597page31/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Iesus porte sa croix / en grand douleur.</title>
+                      <title type="manchette">Baiulat ille crucem.</title>
+                      <dim unit="mm">116 x 96</dim>
+                      <locus type="page">sign. D2v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source=" https://luna.manchester.ac.uk/luna/servlet/s/4h4t5v">
+                        <title type="titre_ouvrage">Faitz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Jean Saugrain?]</publisher>
+                        <pubPlace>[Lyon]</pubPlace>
+                        <date>1562</date>
+                        <availability>
+                          <licence>The University of Manchester, John Rylands Research Institute and Library - CC BY-NC-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Troisième édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="13">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00034957_00108/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Christus, fuͤr unser missethat / Das Creutz schmertzlich getragen hat.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 91</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00034957">
+                        <title type="titre_ouvrage">Antithesis d.i. kurtze Beschreibung (en prose)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johannes Mayer</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1563</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3101">VD16 n° R 3101</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611940">USTC n° 611940</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Polem. 95, urn:nbn:de:bvb:12-bsb00034957-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis</title> allemande en vers. La réédition postérieure sous le titre <title>Abdanck des neulich in Teutschland ... angestellten Jubel- oder Gnadenjars</title>, [Johann Mayer], [Heidelberg], 1576 [https://mdz-nbn-resolving.de/details:bsb10192945], réutilise le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="14">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/teghenstellinghe_E1v.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Sijn cruys draeght Jesus met verseeeren / Op dat wyt hem oock naedoen leeren.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">68 x 45 </dim>
+                      <locus type="page">sign. Ev</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://opac.kbr.be/LIBRARY/doc/SYRACUSE/11842130">
+                        <title type="titre_ouvrage">Teghenstellinghe oft Verghelyckinghe der Wercken Jesu Christi ende des paus</title>
+                        <author role="artiste"/>
+                        <publisher>[Gillis van den Rade]</publisher>
+                        <pubPlace>[Anvers]</pubPlace>
+                        <date>1583</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/414609">USTC n° 414609</idno>
+                        <availability>
+                          <licence>Bruxelles, KBR, Réserve précieuse, II 28.595 A - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Au lieu d'adapter la gravure de l'<title>Antithesis</title> (1557) comme dans la majeure partie des cas de la traduction de ce texte en flamand, remploi d'une gravure publiée  dans Guillelmus van Branteghem, <title>Vie de nostre Seigneur Jesus Christ par figures</title>, Anvers, Jean Richard, 1544 (p. cli). La gravure propose la représentation simultanée de deux épisodes de la Passion: le portement de croix au premier plan et la Crucifixion à l'arrière-plan.</note>
+                  </figure>
+                </item>
+                
+                <item n="15">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10150230_00762/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Poenas mille dedit, crucemque tollit / Pro nobis miseris pius Redemptor.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">109 x 69</dim>
+                      <locus type="page">t. II, p. 710</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10150230">
+                        <title type="titre_ouvrage">Rosarius, Antitheses de praeclaris Christi et indignis antichristi, in Johannes Wolf, Lectionum memorabilium et reconditarum centenarii</title>
+                        <author role="artiste"/>
+                        <publisher>Leonhard Reinmichel</publisher>
+                        <pubPlace>Lauingen</pubPlace>
+                        <date>1600</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+W+4211">VD16 n° W 4211</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/667979">USTC n° 667979</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, 2 Var. 57-2, urn:nbn:de:bvb:12-bsb10150230-5 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Adaptation de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), avec une inversion du sens de l'image et une modification du format.</note>
+                  </figure>
+                </item>
+                
+                <item n="16">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11118482_00172/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Tausendfach straff der HErr, mit gdult/ Außsteht, traͤgrs creutz vor unser schuld.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 150</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11118482">
+                        <title type="titre_ouvrage">Simon Rosarius, Antithesis und Gegensatz Christi und des Antichrists (en vers), in Johann von Münster, Parallela christiana et antichristiana</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johann Lancelot</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1619</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2109152">USTC n° 2109152</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/Theol.syst.694, urn:nbn:de:bvb:12-bsb11118482-7 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie fidèle de la gravure de l'<title>Antithesis</title> allemande en vers, avec des changements dans la représentation du paysage, une schématisation des figures, notamment par l'utilisation d'épais contours noirs.</note>
+                  </figure>
+                </item>
+                
+                <item n="17">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11059700_00662/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">f. 604v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11059700">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi, in Martin Luther, Der 1. Teil aller Deutschen Bücher und Schrifften</title>
+                        <author role="artiste">Monogrammiste GK</author>
+                        <publisher>Johann Michael</publisher>
+                        <pubPlace>Altenburg</pubPlace>
+                        <date>1661</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2562861">USTC n° 2562861</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/2Theol.syst.138(1, urn:nbn:de:bvb:12-bsb11059700-7 - No Copyright - Non commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Inversion de la gravure du <title>Passional Christi und Antichristi</title> de Wittenberg (1521), reprise dans l'édition de Eisleben (1564) [http://dx.doi.org/10.25673/opendata2-4005], et ajout d’un épais cadre ornemental.</note>
+                  </figure>
+                </item>
+              </list>
+            </figDesc>
+            
+            <note>Aidé par Simon de Cyrène, le Christ tombe à terre sous le poids de la croix qu'il porte au calvaire. Il est entouré d'une foule de personnages, armés pour la plupart.</note>
+          </figure>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,527 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="antithese_8b">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Antithèse 8b</title>
+        <respStmt>
+          <name xml:id="BR">Brigitte Roux</name>
+          <resp>Sélection et description des gravures. Supervision des recherches et de la mise en ligne.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="LP">Ludivine Pernollet</name>
+          <resp>Enrichissement et correction des données. Recherches sur les droits de diffusion.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Encodage TEI et mise en ligne des données.</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Institut d'Histoire de la Réformation (IHR)</authority>
+        <availability status="restricted">
+          <licence n="cc by" target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          <figure>
+            <graphic url="https://www.e-rara.ch/i3f/v20/4518869/full/full/0/default.jpg"/>
+            <figDesc>
+              <title type="titre_gravure">Le pape, chef de guerre</title>
+              <title type="titre_courant">Lorgueilleux Pape / a guerre est addonne.</title>
+              <title type="manchette">Strepitu venit ille minaci.</title>
+              <dim unit="mm">116 x 96</dim>
+              <locus type="page">sign. E3v</locus>
+              <objectType>Gravure sur bois</objectType>
+              
+              <bibl source="http://dx.doi.org/10.3931/e-rara-12688">
+                <title type="titre_ouvrage">Faitz</title>
+                <publisher>[Jean Michel]</publisher>
+                <pubPlace>[Genève]</pubPlace>
+                <date cert="medium">[1539-1540]</date>
+                <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9746">USTC n° 9746</idno>
+                <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406">GLN 15-16 n° 1406</idno>
+                <availability>
+                  <licence>Source e-rara.ch / Genève, Musée historique de la Réformation, MHR K LUT 8 - Public Domain</licence>
+                </availability>
+              </bibl>
+              
+              <list type="exemplaires_similaires">
+                <item n="1">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/hussitencodex_f12r.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">305 x 210</dim>
+                      <locus type="page">Göttingen, Niedersächsische Staats- und Universitätsbibliothek, 2° Cod. Ms. theol. 182 Cim., f. 12</locus>
+                      <objectType>Enluminure</objectType>
+                      <bibl source="#">
+                        <title type="titre_ouvrage">Hussitencodex</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>vers 1465</date>
+                        <availability>
+                          <licence>SUB Göttingen, 2° Cod. Ms. theol. 182 Cim - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Faisant face à la représentation de la pauvreté du Christ (et de ses saints) au folio adjacent, un cortège composé d'un cardinal, d'un évêque et d'un suffragant chevauche. Une bannière couverte d'inscriptions relatives à la richesse de l'Eglise, tirées du droit canon, flotte au-dessus d'eux. L'opposition porte sur la pauvreté et la richesse, tandis que dans les <title>Faits</title>, elle concerne plus précisément le pauvreté et la paix face à la guerre.</note>
+                  </figure>
+                </item>
+                
+                <item n="2">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/ienacodex_f29r.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">313 x 213</dim>
+                      <locus type="page">Praha, Národní muzeum, IV B 24, f. 29</locus>
+                      <objectType>Enluminure</objectType>
+                      <bibl source="https://www.esbirky.cz/predmet/180453">
+                        <title type="titre_ouvrage">Jena Codex</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>1490-1510</date>
+                        <availability>
+                          <licence>Source eSbirky.cz / Praha, Národní muzeum - CC-BY-NC-ND 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Faisant face à la représentation de la pauvreté du Christ sur le folio adjacent, un cortège composé d'un cardinal, d'évêques et d'autres clercs chevauche dans un paysage. Il est emmené par un clerc portant une haute croix. Le texte surmontant l'enluminure se rapporte à la question de la richesse des prélats, et cite le droit canon. L'opposition porte sur la pauvreté et la richesse, tandis que dans les Faits, elle concerne plus précisément le pauvreté et la paix face à la guerre.</note>
+                    <note type="biblio">Bibliographie: Kamil Boldan (ed.), <title>The Jena Codex</title>, Prague, 2009, p. 127-128.</note>
+                  </figure>
+                </item>
+                
+                <item n="3">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00086460_00019/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. C</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00086460">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste">Lucas Cranach</author>
+                        <publisher>[Johann Rhau-Grunenberg]</publisher>
+                        <pubPlace>[Wittenberg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5584">VD16 n° L 5584</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683162">USTC n° 683162</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek,  Res/4 H.eccl. 870,11, urn:nbn:de:bvb:12-bsb00086460-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Au premier plan, le pape, vêtu d'une armure et couronné d'une tiare, se tient devant un groupe de soldats et de chevaliers armés de lances et de hallebardes. À l’arrière-plan est représentée une ville non identifiée. Étant donné sa physionomie, le pape pourrait être identifié à Jules II (1503-1513), nommé dans le texte de cette antithèse. Cette gravure sert de modèle direct à celle des <title>Faits</title> qui la reproduit avec quelques changements mineurs (par exemple la représentation du sol).</note>
+                  </figure>
+                </item>
+                
+                <item n="4">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00088259_00019/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Zů krieg ein hoffart der Babst erkoren.</title>
+                      <title type="manchette">Strepitu venit ille minaci.</title>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. C</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00088259">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Knobloch]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5582">VD16 n° L 5582</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683166">USTC n° 683166</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 H.eccl. 870, 9, urn:nbn:de:bvb:12-bsb00088259-3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">La gravure s'inspire directement du <title>Passional</title> de Wittenberg, sans procéder à une inversion du sens de l'image. En outre, la ligne d'horizon est baissée si bien que la colline de l'arrière-plan a disparu.</note>
+                  </figure>
+                </item>
+                
+                <item n="5">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10902273_00006/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">p. 3</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10902273">
+                        <title type="titre_ouvrage">Von den Gewalt und Haupt der Kirchen (Erasme?, tr. all. Hutten?)</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Eckhart]</publisher>
+                        <pubPlace>[Speyer]</pubPlace>
+                        <date>ca. 1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+1523">VD16 n° L 1523</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/702794">USTC n° 702794</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 J.can.p. 1002,3, urn:nbn:de:bvb:12-bsb10902273-5 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Ce frontispice de la traduction, due probablement  à l’humaniste réformé Ulrich von Hutten, du texte attribué à Érasme, Iulius exclusus (1517), représente Jules II devant les portes du paradis. Coiffé de sa tiare et vêtu d'une armure - timbrée "PM"  pour Pestis maxima (et non pas Pontifex maximus), il s'approche du paradis avec sa troupe de soldats, rappel des guerres incessantes qu'il a menées. Gardé par saint Pierre, l'accès du paradis lui est refusé. Ni la clé géante, ni les indulgences ne lui permettent d'y pénétrer.</note>
+                    <note type="biblio">Bibliographie: Iulius exclusus, ed. S. Seidel Menchi, dans <title>Opera omnia Desiderii Erasmi Roterodami</title>, 2013.</note>
+                  </figure>
+                </item>
+                
+                <item n="6">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11175213_00007/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11175213">
+                        <title type="titre_ouvrage">[Christoph Schappeler], An die versamlung gemayner pawerschafft</title>
+                        <author role="artiste"/>
+                        <publisher>[Hieronymus Höltzel]</publisher>
+                        <pubPlace>[Nürnberg]</pubPlace>
+                        <date>[1525]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+A+2438">VD16 n° A 2438</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/637361">USTC n° 637361</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 Eur. 332,44, urn:nbn:de:bvb:12-bsb11175213-0 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Cette gravure met en scène deux groupes d'opposants, des paysans armés à gauche - "les bons chrétiens" - face à l'armée de chevaliers du pape - "les romains et les sophistes". Le pape en armure, soutenu par un cardinal et un évêque, s'agrippe à la roue de fortune placée entre les deux groupes de belligérants.</note>
+                  </figure>
+                </item>
+                
+                <item n="7">
+                  <figure>
+                    <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/bd6t53789915t/f25/full/full/0/native.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Lorgueilleux pape a guerre est addonne.</title>
+                      <title type="manchette">Strepitu venit ille minaci.</title>
+                      <dim unit="mm">116 x 96</dim>
+                      <locus type="page">sign. C3</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://gallica.bnf.fr/ark:/12148/bd6t53789915t/f25">
+                        <title type="titre_ouvrage">Faictz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Pierre de Vingle]</publisher>
+                        <pubPlace>[Neuchâtel]</pubPlace>
+                        <date>[1534]</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9471">USTC n° 9471</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-4486">GLN 15-16 n° 4486</idno>
+                        <availability>
+                          <licence>Source gallica.bnf.fr / Bibliothèque de l'histoire du protestantisme français - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Première édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="8">
+                  <figure>
+                    <graphic url="https://content.staatsbibliothek-berlin.de/dc/769386180-0003/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">80 x 75</dim>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="http://resolver.staatsbibliothek-berlin.de/SBB0000F96C00000000 ">
+                        <title type="titre_ouvrage">Bekentnus Georg Wullenwebers</title>
+                        <author role="artiste"/>
+                        <publisher>[Matthes Maler]</publisher>
+                        <pubPlace>[Erfurt]</pubPlace>
+                        <date>1536</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+ZV+29085">VD16 n° ZV 29085</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2213167">USTC n° 2213167</idno>
+                        <availability>
+                          <licence>Staatsbibliothek zu Berlin, Preußischer Kulturbesitz - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">En page de titre de ce court pamphlet relatant la confession de Georg Wullenweber, marchand et maire de Lübeck favorable aux luthériens, se trouve une représentation d'une bataille vive devant une ville.</note>
+                  </figure>
+                </item>
+                
+                <item n="faits">
+                  <graphic url="https://www.e-rara.ch/i3f/v20/4518869/full/full/0/default.jpg"/>
+                </item>
+                
+                <item n="9">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11282320/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Quumprimum scelerosus est creatus / Sanctisbella gerit cruenta Papa.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.e-rara.ch/gep_g/doi/10.3931/e-rara-6098">
+                        <title type="titre_ouvrage">Rosarius, Antithesis de praeclaris Christi et indignis Papae facinoribus</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>Zacharie Durant</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1557</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/450469">USTC n° 450469</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2028">GLN 15-16 n° 2028</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Bibliothèque de Genève, BGE Cth 2566 BGE Bc 3499 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Reprise de la même iconographie que dans les <title>Faits</title>, mais dans une composition se développant en largeur plutôt qu'en hauteur. Devant un paysage de collines non construit, le pape, entouré de soldats portant de hautes lances, s'adresse à des chevaliers armés. Les rééditions latines successives - Genève, Zacharie Durant, 1558 [https://onb.digital/result/1093E2E7] et Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-1147] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="10">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11943178/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Dés que le Pape est ordonné,/ A guerroyer est adonné.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-33085 ">
+                        <title type="titre_ouvrage">Antithese des faicts de Jesus Christ et du pape</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>[Zacharie Durant]</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1560</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/41782">USTC n° 41782</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2150">GLN 15-16 n° 2150</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / BPU Neuchâtel, Bibliothèque des Pasteurs, PA P.100.3.18 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557). Les rééditions françaises successives - [Genève, Zacharie Durant], 1561 [unique exemplaire connu à Harvard, Houghton Library, *FC5 R7127 Eh561a], Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-6371], 1584 [https://doi.org/10.3931/e-rara-6515], 1600 [https://doi.org/10.3931/e-rara-6911] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="11">
+                  <figure>
+                    <graphic url="https://digi.ub.uni-heidelberg.de/diglitData/image/rosarius1560/4/00_002.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Als bald der pabst geboren wart / Verfolgt er mit krieg gotts volck hart.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60 </dim>
+                      <locus type="page">p. 2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.11588/diglit.26480#0001">
+                        <title type="titre_ouvrage">Antithesis. Von des Herrn Christi herrlichen thaten, vnd des schentlichen Pabsts vnd Antichrists schedlichen schanden vnd lastern (en vers)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>[Hans Kohl]</publisher>
+                        <pubPlace>[Heidelberg]</pubPlace>
+                        <date>[1558 ou 1560?]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3100">VD16 n° R 3100</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611941">USTC n° 611941</idno>
+                        <availability>
+                          <licence>Universitätsbibliothek Heidelberg - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie très fidèle de la gravure d'Eskrich dans l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), avec une schématisation et un léger rétrécissement de la composition.</note>
+                  </figure>
+                </item>
+                
+                <item n="12">
+                  <figure>
+                    <graphic url="https://luna.manchester.ac.uk/luna/servlet/iiif/Manchester~91~1~425957~192597page41/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">L'orgueilleux Pape / à guerre est addonné.</title>
+                      <title type="manchette">Strepitu venit ille minaci.</title>
+                      <dim unit="mm">116 x 96</dim>
+                      <locus type="page">sign. E3v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source=" https://luna.manchester.ac.uk/luna/servlet/s/4h4t5v ">
+                        <title type="titre_ouvrage">Faitz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Jean Saugrain?]</publisher>
+                        <pubPlace>[Lyon]</pubPlace>
+                        <date>1562</date>
+                        <availability>
+                          <licence>The University of Manchester, John Rylands Research Institute and Library - CC BY-NC-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Troisième édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="13">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/4454480/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 534</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-5995 ">
+                        <title type="titre_ouvrage">Jean de Hainaut, L'Estat de l'Eglise</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>[Jean Crespin]</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1562</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/566">USTC n° 566</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1685">GLN 15-16 n° 1685</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Bibliothèque de Genève, BGE Cta 8758 BGE Ba 3058 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557). Cette gravure est utilisée deux fois dans cet ouvrage (p. 306 et 534): pour illustrer une guerre menée par le pape Alexandre III (1159-1181) et une autre par Jules II (1503-1513).</note>
+                  </figure>
+                </item>
+                
+                <item n="14">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00034957_00019/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">So bald ein Pabst erwelet ist / Stifft er krieg an zu aller frist.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00034957">
+                        <title type="titre_ouvrage">Antithesis d.i. kurtze Beschreibung  (en prose)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johannes Mayer</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1563</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3101">VD16 n° R 3101</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611940">USTC n° 611940</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Polem. 95, urn:nbn:de:bvb:12-bsb00034957-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis</title> allemande en vers. La réédition postérieure sous le titre <title>Abdanck des neulich in Teutschland ... angestellten Jubel- oder Gnadenjars</title>, [Johann Mayer], [Heidelberg], 1576 [https://mdz-nbn-resolving.de/details:bsb10192945], réutilise le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="15">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/teghenstellinghe_A4r.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">De paus en is noch naeuw gemaeckt / Als hem sijn hert tot oorlogh snaeckt.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">40 x 60</dim>
+                      <locus type="page">sign. A4</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://opac.kbr.be/LIBRARY/doc/SYRACUSE/11842130">
+                        <title type="titre_ouvrage">Teghenstellinghe oft Verghelyckinghe der Wercken Jesu Christi ende des paus</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>[Gillis van den Rade]</publisher>
+                        <pubPlace>[Anvers]</pubPlace>
+                        <date>1583</date>
+                        <availability>
+                          <licence>Bruxelles, KBR, Réserve précieuse, II 28.595 A - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie quasi conforme de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557).</note>
+                  </figure>
+                </item>
+                
+                <item n="16">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10150230_00733/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Cum primum scelerosus est creatus / Sanctis bella gerit cruenta, Pluto.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">109 x 69</dim>
+                      <locus type="page">t. II, p. 713</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10150230">
+                        <title type="titre_ouvrage">Rosarius, Antitheses de praeclaris Christi et indignis antichristi, in Johannes Wolf, Lectionum memorabilium et reconditarum centenariif</title>
+                        <author role="artiste"/>
+                        <publisher>Leonhard Reinmichel</publisher>
+                        <pubPlace>Lauingen</pubPlace>
+                        <date>1600</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+W+4211">VD16 n° W 4211</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/667979">USTC n° 667979</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, 2 Var. 57-2, urn:nbn:de:bvb:12-bsb10150230-5 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Reprise de l'iconographie de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), avec une inversion du sens de l'image et une modification du format qui entraîne le rapprochement des différents acteurs de cette scène.</note>
+                  </figure>
+                </item>
+                
+                <item n="17">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11118482_00083/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">So bald der stoltze Pabst zur welt / Geborn wurd, hat er nachgestelt / Den Heiligen (so lieb han Gott) / Und sie gebracht in grosse noht.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 61</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11118482">
+                        <title type="titre_ouvrage">Simon Rosarius, Antithesis und Gegensatz Christi und des Antichrists (en vers), in Johann von Münster, Parallela christiana et antichristiana</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johann Lancelot</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1619</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2109152">USTC n° 2109152</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/Theol.syst.694, urn:nbn:de:bvb:12-bsb11118482-7 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie fidèle de la gravure de l'<title>Antithesis</title> allemande en vers, avec des modifications mineures (crinière du cheval, tiare papale, stries dans le paysage).</note>
+                  </figure>
+                </item>
+                
+                <item n="18">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11059700_00667/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">f. 607</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11059700">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi, in Martin Luther, Der 1. Teil aller Deutschen Bücher und Schrifften</title>
+                        <author role="artiste">Monogrammiste GK</author>
+                        <publisher>Johann Michael</publisher>
+                        <pubPlace>Altenburg</pubPlace>
+                        <date>1661</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2562861">USTC n° 2562861</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/2Theol.syst.138(1, urn:nbn:de:bvb:12-bsb11059700-7 - No Copyright - Non commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Inversion de la gravure du <title>Passional Christi und Antichristi</title> de Wittenberg (1521), reprise dans l'édition de Eisleben (1564) [http://dx.doi.org/10.25673/opendata2-4005], et ajout d’un épais cadre ornemental.</note>
+                  </figure>
+                </item>
+              </list>
+            </figDesc>
+            
+            <note>Au premier plan, le pape, vêtu d'une armure et couronné d'une tiare, se tient devant un groupe de soldats et de chevaliers armés de lances et de hallebardes. À l’arrière-plan est représentée une ville non identifiée. Étant donné sa physionomie, le pape pourrait être identifié à Jules II (1503-1513), qui se trouve nommé dans le texte de cette antithèse. </note>
+          </figure>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

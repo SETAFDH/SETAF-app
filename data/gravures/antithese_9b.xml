@@ -1,0 +1,755 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="antithese_9b">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Antithèse 9b</title>
+        <respStmt>
+          <name xml:id="BR">Brigitte Roux</name>
+          <resp>Sélection et description des gravures. Supervision des recherches et de la mise en ligne.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="LP">Ludivine Pernollet</name>
+          <resp>Enrichissement et correction des données. Recherches sur les droits de diffusion.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Encodage TEI et mise en ligne des données.</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Institut d'Histoire de la Réformation (IHR)</authority>
+        <availability status="restricted">
+          <licence n="cc by" target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          <figure>
+            <graphic url="https://www.e-rara.ch/i3f/v20/4518873/full/full/0/default.jpg"/>
+            <figDesc>
+              <title type="titre_gravure">La chevauchée du pape vers l'enfer</title>
+              <title type="titre_courant">Le Pape aux champs / sur gros roncin.</title>
+              <title type="manchette">Venit ille superbus.</title>
+              <dim unit="mm">116  x 96</dim>
+              <locus type="page">sign. Fv</locus>
+              <objectType>Gravure sur bois</objectType>
+              
+              <bibl source="http://dx.doi.org/10.3931/e-rara-12688">
+                <title type="titre_ouvrage">Faitz</title>
+                <publisher>[Jean Michel]</publisher>
+                <pubPlace>[Genève]</pubPlace>
+                <date cert="medium">[1539-1540]</date>
+                <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9746">USTC n° 9746</idno>
+                <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406">GLN 15-16 n° 1406</idno>
+                <availability>
+                  <licence>Source e-rara.ch / Genève, Musée historique de la Réformation, MHR K LUT 8 - Public Domain</licence>
+                </availability>
+              </bibl>
+              
+              <list type="exemplaires_similaires">
+                <item n="1">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00009040_00066/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">150 x 96</dim>
+                      <locus type="page">f. 31v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00009040">
+                        <title type="titre_ouvrage">Johannes von Leonrod, Hymelwag auff dem, wer wol lebt vn[d] wol sterbt fert in das reich der himel. Hellwag auff dem, wer übel lebt vn[d] übel stirbt fert in die ewigen verdamnuß</title>
+                        <author role="artiste">Hans Schäufelein</author>
+                        <publisher>Sylvano Otmar</publisher>
+                        <pubPlace>Augsburg</pubPlace>
+                        <date>1517</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+1238">VD16 n° L 1238</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/664453">USTC n° 664453</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Rar. 411, urn:nbn:de:bvb:12-bsb00009040-8 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Pour illustrer le chemin vers le paradis et celui vers l'enfer, Hans Schäufelein réalise deux gravures indépendantes (f. 31v et 85) figurant une iconographie antagoniste. La première représente un chariot tiré par un attelage de chevaux qui s'élève dans un paysage, guidé par un chevalier dépoloyant un drapeau décoré des scènes du Décalogue.</note>
+                  </figure>
+                </item>
+                
+                <item n="2">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00009040_00173/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">150 x 96</dim>
+                      <locus type="page">f. 85</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00009040">
+                        <title type="titre_ouvrage">Johannes von Leonrod, Hymelwag auff dem, wer wol lebt vn[d] wol sterbt fert in das reich der himel. Hellwag auff dem, wer übel lebt vn[d] übel stirbt fert in die ewigen verdamnuß</title>
+                        <author role="artiste">Hans Schäufelein</author>
+                        <publisher>Sylvano Otmar</publisher>
+                        <pubPlace>Augsburg</pubPlace>
+                        <date>1517</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+1238">VD16 n° L 1238</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/664453">USTC n° 664453</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Rar. 411, urn:nbn:de:bvb:12-bsb00009040-8 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Pour illustrer le chemin vers le paradis et celui vers l'enfer, Hans Schäufelein réalise deux gravures indépendantes (f. 31v et 85) figurant une iconographie antagoniste. La deuxième figure le chemin descendant d'un chariot mené par un attelage de chevaux, guidé par une figure diabolique, portant un drapeau avec des représentations des vices.</note>
+                  </figure>
+                </item>
+                
+                <item n="3">
+                  <figure>
+                    <graphic type="large" url="https://iiif.hedera.unige.ch/iiif/3/setaf/himmelswagenHollenwagen.png/100,0,2100,1324/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">300 x 407</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur bois </objectType>
+                      <bibl source="http://diglib.hab.de/drucke/ed000747/start.htm?image=00001">
+                        <title type="titre_ouvrage">Himmelswagen und Höllenwagen</title>
+                        <author role="artiste">Lucas Cranach</author>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>1519</date>
+                        <availability>
+                          <licence>Zentralbibliothek der Ev. Kirche Berlin-Brandenburg-schlesiche Oberlausitz - CC BY-NC-ND 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Divisée en deux registres superposés, la gravure montre dans la partie supérieure un char emmené en direction de la croix, dans la partie inférieure le char avance dans le sens inverse en direction de la gueule de l'enfer.</note>
+                    <note type="biblio">Bibliographie: Lyndal Roper et Jennifer Spinks, <title>Karlstadt’s Wagen: The First Visual Propaganda for the Reformation</title>, Art History, 2017, p. 256-285.</note>
+                  </figure>
+                </item>
+                
+                <item n="4">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00086460_00021/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. C2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00086460">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste">Lucas Cranach</author>
+                        <publisher>[Johann Rhau-Grunenberg]</publisher>
+                        <pubPlace>[Wittenberg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5584">VD16 n° L 5584</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683162">USTC n° 683162</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek,  Res/4 H.eccl. 870,11, urn:nbn:de:bvb:12-bsb00086460-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le pape chevauche un coursier à la tête d'un groupe d'évêques et de cardinaux, emmené par deux soldats portant des hallebardes. Caché par une colline, l'enfer où brûlent des damnés les attend à l'arrière-plan. Cette gravure sert de modèle direct à celle des <title>Faits</title>, avec des différences mineures.</note>
+                  </figure>
+                </item>
+                
+                <item n="5">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00088259_00021/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Der Bapst in hoffart vnnd stoltzem sytten.</title>
+                      <title type="manchette">Venit ille superbus.</title>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. C2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00088259">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Knobloch]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5582">VD16 n° L 5582</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683166">USTC n° 683166</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 H.eccl. 870, 9, urn:nbn:de:bvb:12-bsb00088259-3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Inversion de la gravure du <title>Passional</title> de Wittenberg (1521).</note>
+                  </figure>
+                </item>
+                
+                <item n="6">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10862278_00006/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">sign. Av</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10862278">
+                        <title type="titre_ouvrage">Eyn clag und bitt der deutschen nation</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Rhau-Grunenberg]</publisher>
+                        <pubPlace>[Wittenberg]</pubPlace>
+                        <date>[1521]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+K+1209">VD16 n° K 1209</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/655920">USTC n° 655920</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Rar. 4463, urn:nbn:de:bvb:12-bsb10862278-6 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure du <title>Passional</title> de Wittenberg (1521).</note>
+                  </figure>
+                </item>
+                
+                <item n="7">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10690704_00003/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10690704">
+                        <title type="titre_ouvrage">Verhor und Acta vor dem Bischoff von Meissen</title>
+                        <author role="artiste"/>
+                        <publisher>[Nickel Schirlentz]</publisher>
+                        <pubPlace>[Wittenberg]</pubPlace>
+                        <date>1522</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+V+782">VD16 n° V 782</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/700695">USTC n° 700695</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 Polem. 3362,33, urn:nbn:de:bvb:12-bsb10690704-8, No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Sur la marge supérieure de la page de titre, représentation d'un tournoi opposant le Christ monté sur un âne et muni d'une croix au  pape en armure sur un cheval. Conseillé par un diable, il perd sa lance de la main qui tenait une bulle papale, ce qui signifie que le Christ vainc les condamnations papales. À ce tournoi fait écho la scène de la marge inférieure, qui représente un jeu, le "Strebkatz" où deux adversaires s'affrontent en tirant des cordes entre leurs dents. De fait, ces deux combats redoublent celui que rapporte le texte au sujet d'une dispute entre l'évêque de Meissen et le pasteur du château de Lochau. Celui-ci, ayant administré la communion sous les deux espèces et marié un moine, devait en répondre devant l'évêque.</note>
+                    <note type="biblio">Bibliographie: Thomas Thibault Döring/Thomas Fuchs, <title>Bildwechsel. Buchillustration in der Reformationszeit</title>, Wien, 2017, p. 45 ; R.W. Scribner, <title>For the sake of the simple folk. Popular propaganda for the German Reformation</title>, Cambridge University Press, 1981, p. 61-62.</note>
+                  </figure>
+                </item>
+                
+                <item n="8">
+                  <figure>
+                    <graphic type="large" url="https://objektkatalog.gnm.de/sites/default/files/wisski_original/d3ed8136ee955ec1452c4426cc53a6b6.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">374 x 474</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="http://objektkatalog.gnm.de/objekt/HB26537">
+                        <title type="titre_ouvrage">Die Höllenfahrt des Papstes</title>
+                        <author role="artiste">Hans Sebald Beham</author>
+                        <publisher>[s.n.]</publisher>
+                        <pubPlace>Nürnberg</pubPlace>
+                        <date>1524</date>
+                        <availability>
+                          <licence>Nürnberg, Germanisches Nationalmuseum - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le pape à cheval tire derrière lui un chariot rempli de religieux. Il se dirige vers des maisons bondées d'ecclésiastiques (dont un 2e pape - sic), lesquelles brûlent des feux de l'enfer. Le thème de la gravure dérive des tableaux de carnaval créés à Nuremberg, au cours de ces mêmes années. Traditionnellement identifiée comme le voyage du pape vers l'enfer, la gravure a été ré-interprétée plus récemment, sur la base de la lecture du texte du pamphlet et de son lien avec l'image, comme la représentation du règne de l'Antéchrist (2011).</note>
+                    <note type="biblio">Bibliographie: <title>Die gottlosen Maler von Nürnberg Konvention und Subersion in der Druckgrafik der Beham-Brüder</title>, Emsdetten, Edition Imorde, 2011, n° 35 ; R.W. Scribner, <title>For the sake of the simple folk. Popular propaganda for the German Reformation</title>, Cambridge University Press, 1981, p. 71.</note>
+                  </figure>
+                </item>
+                
+                <item n="9">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00026199_00139/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">sign. D3</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00026199">
+                        <title type="titre_ouvrage">Jan Huss, De anatomia Antichristi</title>
+                        <author role="artiste"/>
+                        <publisher>[Johannes Schott]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>[1524]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+H+6162">VD16 n° H 6162</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/667424">USTC n° 667424</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, ESlg/4 P.lat. 631 m-1/3, urn:nbn:de:bvb:12-bsb00026199-5 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Cette petite gravure représente le pape en habit d'apparat, montant un cheval richement harnaché, et accompagné par un lansquenet, pour traduire la légende qui la surmonte: "Papa coronatus, in equo albo &amp; coccino indutus". Elle s'oppose à l'image située à la page suivante représentant l'entrée du Christ à Jérusalem (sign. D3v, reproduite en 9a). Cette paire antithétique reproduit celle du <title>Passional</title>, reprise plus tard dans les <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="10">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00088257_00029/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">sign. D2</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00088257">
+                        <title type="titre_ouvrage">Geistlicher bluthandel Johannis Hussz zu Costentz</title>
+                        <author role="artiste"/>
+                        <publisher>[Johannes Schott]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>[1525]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+G+983">VD16 n° G 983</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/658987">USTC n° 658987</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 H.eccl. 870,1, urn:nbn:de:bvb:12-bsb00088257-8 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">La gravure représente le pape en habit d'apparat, montant un cheval richement harnaché, et accompagné par un lansquenet. Elle illustre la légende : "Hye reitet der Bapst uff ein schoͤnen weissen hengst, bekleydt mit rosyn farb scharlach, und dem bessten lynwodt". Cette image contraste avec la représentation du Christ monté sur un âne, situé à la page suivante (sign. D2v, reproduite en 9a). Le texte, qui est une traduction en allemand du <title>De anatomia Christi</title> paru l'année précédente à Strasbourg chez Schott, et l'image reproduisent la même opposition que celle du <title>Passional</title> (1521), reprise dans les <title>Faits</title>. Dans ce cas, contrairement à l'image du Christ, il s'agit d'un remploi de l'édition de 1524.</note>
+                  </figure>
+                </item>
+                
+                <item n="11">
+                  <figure>
+                    <graphic type="large" url="https://iiif.hedera.unige.ch/iiif/3/setaf/christusWahreLicht.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">84 x 275</dim>
+                      <locus type="page">London, British Museum, inv. 1895,0122.839</locus>
+                      <objectType>Gravure sur bois </objectType>
+                      <bibl source="https://www.britishmuseum.org/collection/object/P_1895-0122-839">
+                        <title type="titre_ouvrage">Christus das wahre Licht / das Licht des Evangeliums</title>
+                        <author role="artiste">Hans Holbein</author>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>1526 /éd. 1527</date>
+                        <availability>
+                          <licence>London, The Trustees of the British Museum - CC BY-NC-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le Christ montre à un groupe de laïcs la lumière de son évangile (Mt 4,15; Lc 11,33), tandis que les ecclésiastiques (dont le pape) et les philosophes antiques (Aristote et Platon), tous aveugles, se détournent et tombent dans un sombre puits. La gravure se développe comme une frise, la composition étant articulée autour du cierge central porté par un pied sculpté des symboles des évangélistes. Elle a servi à illustrer l'<title>Evangelischer Kalender</title> de Johannes Copp auquel le franciscain Thomas Murner répondit, en s'y opposant, avec son <title>Almanach des hérétiques</title> (voir sous antithèse 13).</note>
+                    <note type="biblio">Bibliographie: <title>Luther und die Folgen für die Kunst</title>, cat. exp., München, Prestel, 1983, n° 58.</note>
+                  </figure>
+                </item>
+                
+                <item n="12">
+                  <figure>
+                    <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/bd6t53789915t/f27/full/full/0/native.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Le pape aux champs sur gros roncin.</title>
+                      <title type="manchette">Venit ille superbus.</title>
+                      <dim unit="mm">116  x 96</dim>
+                      <locus type="page">sign. C4</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://gallica.bnf.fr/ark:/12148/bd6t53789915t/f27">
+                        <title type="titre_ouvrage">Faictz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Pierre de Vingle]</publisher>
+                        <pubPlace>[Neuchâtel]</pubPlace>
+                        <date>[1534]</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9471">USTC n° 9471</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-4486">GLN 15-16 n° 4486</idno>
+                        <availability>
+                          <licence>Source gallica.bnf.fr / Bibliothèque de l'histoire du protestantisme français - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Première édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="13">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/derBreiteWegZurHolle.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">287 x 195</dim>
+                      <locus type="page">Berlin, Kupferstichkabinett, KdZ 5639</locus>
+                      <objectType>Dessin</objectType>
+                      <bibl source="https://id.smb.museum/object/1855547/der-breite-weg-zur-h%C3%B6lle ">
+                        <title type="titre_ouvrage">Jan Swart van Groningen, Voie large et voie étroite</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>vers 1530-35</date>
+                        <availability>
+                          <licence>Staatliche Museen zu Berlin, Kupferstichkabinett / Volker-H. Schneider - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Probablement destiné à l'usage de peintres verriers, le dessin de Jan Swart met en scène la parabole de la voie étroite et large, tirée du sermon sur la montagne (Mt 7,13-14). Pour la voie large, une procession composée d'ecclésiastiques en tête desquels se trouve le pape est emmenée par deux musiciens. Ils se dirigent vers l'enfer, surveillés dans les airs par des diables volants. La deuxième partie, avec la voie étroite, présente une procession de laïcs se dirigeant vers le haut d'une montagne où luit le tétragramme de Dieu.</note>
+                    <note type="biblio">Bibliographie: Gaylen Vankan, « Large est le chemin qui conduit le pape et les fidèles à la perdition ». Une image diffamante du pontife dans l’œuvre de Jan Swart van Groningen, dans C. d'Alberto (dir.), <title>Imago Papae. Le pape en image du Moyen Âge à l’époque contemporaine</title>, Roma, 2020, p. 305-311.</note>
+                  </figure>
+                </item>
+                
+                <item n="faits">
+                  <graphic url="https://www.e-rara.ch/i3f/v20/4518847/full/full/0/default.jpg"/>
+                </item>
+                
+                <item n="14">
+                  <figure>
+                    <graphic type="large" url="https://iiif.hedera.unige.ch/iiif/3/setaf/derTeutschEselFlugblatt.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">305 x 370</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur bois </objectType>
+                      <bibl source="https://commons.wikimedia.org/wiki/File:Der_teutsch_Esel_Flugblatt_16Jh.jpg ">
+                        <title type="titre_ouvrage">Der teutsch Esel bin ich genant</title>
+                        <author role="artiste">[Barthel Beham ?]</author>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>?</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/752508">USTC n° 752508</idno>
+                        <availability>
+                          <licence>Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le pape en habit de cérémonie a changé de monture. Au lieu d'un cheval, il chevauche un âne harnaché (une bulle est suspendue à ses rênes). Des hommes représentants de diverses nations se tiennent auprès de lui: un Espagnol tire la queue de l'âne, un Français tient les rênes, un Hongrois et un lansquenet (pour un Allemand) participent à la scène. Quant au pape, il représente un Italien.</note>
+                  </figure>
+                </item>
+                
+                <item n="15">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11282356/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Fastosus venit insidens feroci / Spumantique ferox equo tyrannus.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 38</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.e-rara.ch/gep_g/doi/10.3931/e-rara-6098">
+                        <title type="titre_ouvrage">Rosarius, Antithesis de praeclaris Christi et indignis Papae facinoribus</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>Zacharie Durant</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1557</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/450469">USTC n° 450469</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2028">GLN 15-16 n° 2028</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Bibliothèque de Genève, BGE Cth 2566 BGE Bc 3499 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">La gravure s'inspire de celles des <title>Faits</title> et du <title>Passional</title>, mais en inverse le sens, et omet certains éléments tels que les arbres, réduit la présence de l'architecture. Les rééditions latines successives - Genève, Zacharie Durant, 1558 [https://onb.digital/result/1093E2E7] et Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-1147] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="16">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/11943214/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Le Pape allant en mont et val,/ Est monté sur brave cheval.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 38</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-33085 ">
+                        <title type="titre_ouvrage">Antithèse des faicts de Jesus Christ et du pape</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>[Zacharie Durant]</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1560</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/41782">USTC n° 41782</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-2150">GLN 15-16 n° 2150</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / BPU Neuchâtel, Bibliothèque des Pasteurs, PA P.100.3.18 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557). Les rééditions françaises successives - [Genève, Zacharie Durant], 1561 [unique exemplaire connu à Harvard, Houghton Library, *FC5 R7127 Eh561a], Genève, Eustache Vignon, 1578 [https://doi.org/10.3931/e-rara-6371], 1584 [https://doi.org/10.3931/e-rara-6515], 1600 [https://doi.org/10.3931/e-rara-6911] - réutilisent le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="17">
+                  <figure>
+                    <graphic url="https://digi.ub.uni-heidelberg.de/diglitData/image/rosarius1560/4/00_074.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Auff einem hengst mit grossem pracht / Der Pabst einreit demut veracht.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 74</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.11588/diglit.26480#0001">
+                        <title type="titre_ouvrage">Antithesis. Von des Herrn Christi herrlichen thaten, vnd des schentlichen Pabsts vnd Antichrists schedlichen schanden vnd lastern (en vers)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>[Hans Kohl]</publisher>
+                        <pubPlace>[Heidelberg]</pubPlace>
+                        <date>[1558 ou 1560?]</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3100">VD16 n° R 3100</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611941">USTC n° 611941</idno>
+                        <availability>
+                          <licence>Universitätsbibliothek Heidelberg - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Adaptation de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557) avec des changements mineurs (cadrage légèrement plus serré).</note>
+                  </figure>
+                </item>
+                
+                <item n="18">
+                  <figure>
+                    <graphic url="https://luna.manchester.ac.uk/luna/servlet/iiif/Manchester~91~1~425957~192597page45/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Le Pape aux champs / sur gros roucin.</title>
+                      <title type="manchette">Venit ille superbus. </title>
+                      <dim unit="mm">116 x 96</dim>
+                      <locus type="page">sign. Fv</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source=" https://luna.manchester.ac.uk/luna/servlet/s/4h4t5v">
+                        <title type="titre_ouvrage">Faitz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Jean Saugrain?]</publisher>
+                        <pubPlace>[Lyon]</pubPlace>
+                        <date>1562</date>
+                        <availability>
+                          <licence>The University of Manchester, John Rylands Research Institute and Library - CC BY-NC-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Troisième édition des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="19">
+                  <figure>
+                    <graphic url="https://www.e-rara.ch/i3f/v20/4454273/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 327</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.3931/e-rara-5995 ">
+                        <title type="titre_ouvrage">Jean de Hainaut, L'Estat de l'Eglise</title>
+                        <author role="artiste">Pierre Eskrich</author>
+                        <publisher>[Jean Crespin]</publisher>
+                        <pubPlace>[Genève]</pubPlace>
+                        <date>1562</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/566">USTC n° 566</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1685">GLN 15-16 n° 1685</idno>
+                        <availability>
+                          <licence>Source e-rara.ch / Bibliothèque de Genève, BGE Cta 8758 BGE Ba 3058 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), hors du contexte d'une antithèse. La gravure illustre et dénonce les agissements du pape Pascal II (1099-1118), qualifié dans le texte de "souverain vicaire de Satan".</note>
+                  </figure>
+                </item>
+                
+                <item n="20">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00034957_00073/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Auf einem hengst mit grossem pracht / Der Pabst einreit, demut veracht.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 56</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00034957">
+                        <title type="titre_ouvrage">Antithesis d.i. kurtze Beschreibung (en prose)</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johannes Mayer</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1563</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+R+3101">VD16 n° R 3101</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611940">USTC n° 611940</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Polem. 95, urn:nbn:de:bvb:12-bsb00034957-6 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis</title> allemande en vers. La réédition postérieure sous le titre <title>Abdanck des neulich in Teutschland ... angestellten Jubel- oder Gnadenjars</title>, [Johann Mayer], [Heidelberg], 1576 [https://mdz-nbn-resolving.de/details:bsb10192945], réutilise le même bois.</note>
+                  </figure>
+                </item>
+                
+                <item n="21">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/teghenstellinghe_C6r.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Als hem de Paus wat gaet vermeyen / Op rijdt op enext oft hacqueneyen.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">40 x 60</dim>
+                      <locus type="page">sign. C6</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://opac.kbr.be/LIBRARY/doc/SYRACUSE/11842130">
+                        <title type="titre_ouvrage">Teghenstellinghe oft Verghelyckinghe der Wercken Jesu Christi ende des paus</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>[Gillis van den Rade]</publisher>
+                        <pubPlace>[Anvers]</pubPlace>
+                        <date>1583</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/414609">USTC n° 414609</idno>
+                        <availability>
+                          <licence>Bruxelles, KBR, Réserve précieuse, II 28.595 A - Reproduction published with permission</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Copie quasi conforme de la gravure de l'<title>Antithesis</title> (1557).</note>
+                  </figure>
+                </item>
+                
+                <item n="22">
+                  <figure>
+                    <graphic url="https://iiif.hedera.unige.ch/iiif/3/setaf/ChristAnePapeCheval_inv288-10.jpg/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">350 × 255</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur bois </objectType>
+                      <bibl source="https://id.smb.museum/object/1051041">
+                        <title type="titre_ouvrage">Le Christ sur âne, le pape à cheval</title>
+                        <author role="artiste">Bernhard Jobin</author>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>2e mi 16e</date>
+                        <availability>
+                          <licence>Staatliche Museen zu Berlin, Kupferstichkabinett / Volker-H. Schneider - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Sur cette feuille volante, la gravure oppose le Christ monté sur un âne, accompagné de son petit, face au pape, juché sur un cheval richement harnaché. La mise en regard dans le même espace de représentation, et non en deux gravures indépendantes, reproduit l'antithèse des Faits entre l'Entrée à Jérusalem et la chevauchée du pape vers l'enfer. Le texte au-dessous développe l'opposition entre les deux personnages, et recourt à un certain nombre de citations bibliques, dont celle de Mt 21 déjà citée dans les <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="23">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb10150230_00751/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Fastosus venit insidens feroci / Spumantique ferox equo tyrannus.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">109 x 69</dim>
+                      <locus type="page">t. II, p. 731</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb10150230">
+                        <title type="titre_ouvrage">Rosarius, Antitheses de praeclaris Christi et indignis antichristi, in Johannes Wolf, Lectionum memorabilium et reconditarum centenarii</title>
+                        <author role="artiste"/>
+                        <publisher>Leonhard Reinmichel</publisher>
+                        <pubPlace>Lauingen</pubPlace>
+                        <date>1600</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+W+4211">VD16 n° W 4211</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/667979">USTC n° 667979</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, 2 Var. 57-2, urn:nbn:de:bvb:12-bsb10150230-5 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Reprise de l'iconographie de l'<title>Antithesis de praeclaris Christi et indignis Papae facinoribus</title> (1557), avec une inversion du sens de l'image et une modification du format qui entraîne le rapprochement des différents acteurs de cette scène.</note>
+                  </figure>
+                </item>
+                
+                <item n="24">
+                  <figure>
+                    <graphic type="large" url="https://st.museum-digital.de/apis/iiif-image/161010/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">210 x 283</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur cuivre</objectType>
+                      <bibl source="https://st.museum-digital.de/singleimage?&amp;imagenr=161010">
+                        <title type="titre_ouvrage">Le Christ sur un âne, le pape à cheval</title>
+                        <author role="artiste"/>
+                        <publisher/>
+                        <pubPlace/>
+                        <date>vers 1600</date>
+                        <availability>
+                          <licence>Kulturstiftung Sachsen-Anhalt, Kunstmuseum Moritzburg Halle (Saale) - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Cette feuille volante oppose le Christ, couronné d'épines et humblement vêtu, qui chevauche un âne face au pape, coiffé de la tiare et fastueusement habillé, qui monte un cheval richement harnaché. Cette mise en regard dans le même espace de représentation, et non en deux gravures indépendantes, reproduit l'antithèse des <title>Faits</title> entre l'entrée à Jérusalem et la chevauchée du pape vers l'enfer. Dans les angles, quatre médaillons forment deux paires d'opposition: le couronnement d'épines face au couronnement du pape; le portement de croix face au pape porté en procession sur un trône à baldaquin. Ce sont des antithèses des <title>Faits</title> (2a/2b et 6a/6b) et du <title>Passional</title>. L'inscription au-dessus de la scène principale: "Diese Figur anzeigen thut:/Christi des Herren Wandel gut./ Daneben auch Wie sich Verhaltt:/ des selberwölten knechts gestaltt." Les deux colonnes de texte au-dessous opposent d'un côté le Christ (pauvreté, humilité), de l'autre le pape (splendeur, cupidité, fausse doctrine).</note>
+                    <note>Bibliographie: N.-M. Klug, <title>Das Konfessionnelle Flugblatt 1563-1580. Eine Studie zur historischen Semiotik und Textanalyse</title>, Gruyter, Berlin/Boston, 2012, L 22 ; <title>Deutsche illustrierte Flugblätter des 16. und 17. Jahrhunderts</title>, hg. W. Harms u. M. Schilling, Bd. IX, De Gruyter, 2018, p. 246.</note>
+                  </figure>
+                </item>
+                
+                <item n="25">
+                  <figure>
+                    <graphic type="large" url="https://iiif.hedera.unige.ch/iiif/3/setaf/ChristAnePapeCheval_invRP-P-OB-78.845.png/full/max/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">258 x 311</dim>
+                      <locus type="page">Amsterdam, Rijksmuseum, inv. RP-P-OB-78.845</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://id.rijksmuseum.nl/200481852">
+                        <title type="titre_ouvrage">Le Christ sur un âne, le pape à cheval</title>
+                        <author role="artiste"/>
+                        <publisher>Jan Amelisz</publisher>
+                        <pubPlace>Utrecht</pubPlace>
+                        <date>1600-1624</date>
+                        <availability>
+                          <licence>Rijksmuseum Amsterdam - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Cette feuille volante en néerlandais reproduit la feuille volante en allemand (vers 1600), en y ajoutant deux hermès, respectivement à côté du Christ (avec les instruments de la Passion) et à côté du pape (indulgences, reliquaires, etc). Les quatre angles sont ornés des mêmes médaillons antithétiques, se rapportant aux antithèses 2a/2b et 6a/6b des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="26">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11118482_00137/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant">Der stolz und auffgeblaßne Pfaff / Auff seim Caball hier umb sich gafft.</title>
+                      <title type="manchette"/>
+                      <dim unit="mm">46 x 60</dim>
+                      <locus type="page">p. 115</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11118482">
+                        <title type="titre_ouvrage">Simon Rosarius, Antithesis und Gegensatz Christi und des Antichrists (en vers), in Johann von Münster, Parallela christiana et antichristiana</title>
+                        <author role="artiste">[d'ap. Pierre Eskrich]</author>
+                        <publisher>Johann Lancelot</publisher>
+                        <pubPlace>Heidelberg</pubPlace>
+                        <date>1619</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2109152">USTC n° 2109152</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/Theol.syst.694, urn:nbn:de:bvb:12-bsb11118482-7 - No Copyright - Non-commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Remploi de la gravure de l'<title>Antithesis</title> allemande en vers.</note>
+                  </figure>
+                </item>
+                
+                <item n="27">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb11059700_00669/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 96</dim>
+                      <locus type="page">f. 603 (devrait être f. 608)</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb11059700">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi, in Martin Luther, Der 1. Teil aller Deutschen Bücher und Schrifften</title>
+                        <author role="artiste">Monogrammiste GK</author>
+                        <publisher>Johann Michael</publisher>
+                        <pubPlace>Altenburg</pubPlace>
+                        <date>1661</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/2562861">USTC n° 2562861</idno>
+                        <availability>
+                          <licence>Regensburg, Staatliche Bibliothek, 999/2Theol.syst.138(1, urn:nbn:de:bvb:12-bsb11059700-7 - No Copyright - Non commercial Use Only</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Inversion de la gravure du <title>Passional Christi und Antichristi</title> de Wittenberg (1521), reprise dans l'édition de Eisleben (1564) [http://dx.doi.org/10.25673/opendata2-4005], et ajout d’un épais cadre ornemental.</note>
+                  </figure>
+                </item>
+              </list>
+            </figDesc>
+            
+            <note>Avec un groupe d'évêques et de cardinaux à cheval, le pape sort d'une ville monté sur son coursier. Ils sont guidés par deux soldats portant des hallebardes. Caché par une colline, l'enfer où brûlent des damnés les attend à l'arrière-plan. </note>
+          </figure>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,271 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="titre">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Page de titre et prologue</title>
+        <respStmt>
+          <name xml:id="BR">Brigitte Roux</name>
+          <resp>Sélection et description des gravures. Supervision des recherches et de la mise en ligne.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="LP">Ludivine Pernollet</name>
+          <resp>Enrichissement et correction des données. Recherches sur les droits de diffusion.</resp>
+        </respStmt>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Encodage TEI et mise en ligne des données.</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Institut d'Histoire de la Réformation (IHR)</authority>
+        <availability status="restricted">
+          <licence n="cc by" target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          <figure>
+            <graphic url="https://www.e-rara.ch/i3f/v20/4518832/full/full/0/default.jpg"/>
+            <figDesc>
+              <title type="titre_gravure">Le Christ à la colonne entre Pierre et le pape</title>
+              <title type="titre_courant"/>
+              <title type="manchette"/>
+              <dim unit="mm">112 x 91</dim>
+              <locus type="page">page de titre et sign. A3v</locus>
+              <objectType>Gravure sur bois</objectType>
+              
+              <bibl source="http://dx.doi.org/10.3931/e-rara-12688">
+                <title type="titre_ouvrage">Faitz</title>
+                <publisher>[Jean Michel]</publisher>
+                <pubPlace>[Genève]</pubPlace>
+                <date cert="medium">[1539-1540]</date>
+                <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9746">USTC n° 9746</idno>
+                <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406">GLN 15-16 n° 1406</idno>
+                <availability>
+                  <licence>Source e-rara.ch / Genève, Musée historique de la Réformation, MHR K LUT 8 - Public Domain</licence>
+                </availability>
+              </bibl>
+              
+              <list type="exemplaires_similaires">
+                <item n="1">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00011596_00008/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">150 x 113 </dim>
+                      <locus type="page">f. Iv</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00011596">
+                        <title type="titre_ouvrage">Ulrich Pinder, Speculum Passionis</title>
+                        <author role="artiste">Hans Baldung Grien</author>
+                        <publisher>[Ulrich Pinder]</publisher>
+                        <pubPlace>Nuremberg</pubPlace>
+                        <date>1507</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+P+807">VD16 n° P2807</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/694281">USTC n° 694281</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Rar. 871, urn:nbn:de:bvb:12-bsb00011596-5 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Le motif central de la page de titre des <title>Faits</title> dérive des images de dévotion telle qu'on en trouve un exemple dans le <title>Speculum passionis</title>, dans un passage portant sur la méditation de la Passion. Placé contre la croix de la Crucifixion, le Christ ressuscité montre sa plaie du côté, entouré de deux anges portant respectivement l'éponge vinaigrée et la lance, tandis que le fouet et les verges pendent du cadre même de la gravure.</note>
+                  </figure>
+                </item>
+                
+                <item n="2">
+                  <figure>
+                    <graphic url="https://heidicon.ub.uni-heidelberg.de/iiif/2/1595139%3A829511/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">118 x 76</dim>
+                      <locus type="page">n.p</locus>
+                      <objectType>Gravure sur cuivre </objectType>
+                      <bibl source="https://nbn-resolving.org/urn:nbn:de:bvb:22-dtl-0000027728">
+                        <title type="titre_ouvrage">Christ à la colonne (tiré de la passion sur cuivre)</title>
+                        <author role="artiste">Albrecht Dürer</author>
+                        <publisher>[s.n.]</publisher>
+                        <pubPlace>Nuremberg</pubPlace>
+                        <date>1509</date>
+                        <availability>
+                          <licence>Staatsbibliothek Bamberg, Graphiksammlung Joseph Hellers, I Bb 3ba - CC BY-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">La composition de Dürer a servi de modèle au motif central de la gravure de titre du <title>Passional</title> de Strasbourg et celle des <title>Faits</title>. La position du Christ ressuscité, placé légèrement devant la colonne, les bras croisés et repliés sur la poitrine, avec le fouet et les verges en main, est reproduite dans les trois pages de titre différentes des <title>Faits</title>.</note>
+                  </figure>
+                </item>
+                
+                <item n="3">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00088259_00003/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">150 x 112</dim>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://www.digitale-sammlungen.de/en/details/bsb00088259">
+                        <title type="titre_ouvrage">Passional Christi und Antichristi</title>
+                        <author role="artiste"/>
+                        <publisher>[Johann Knobloch]</publisher>
+                        <pubPlace>[Strasbourg]</pubPlace>
+                        <date>1521</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+L+5582">VD16 n° L 5582</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/683166">USTC n° 683166</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/4 H.eccl. 870, 9,  urn:nbn:de:bvb:12-bsb00088259-3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">La gravure de la page de titre représente le Christ à la colonne, entouré à gauche de saint Pierre nimbé (avec une clé surdimensionnée en main) et à droite d'un groupe de quatre ecclésiastiques (le pape, deux évêques, et un cardinal). Le Christ ressuscité et auréolé porte la couronne d'épines et tient un fouet et des verges. Placé au centre de l'image, il détermine deux espaces distincts, un extérieur d'un côté, l'intérieur d'un bâtiment de l'autre. Ces lieux permettent d'accuser le contraste entre un saint du premier temps du christianisme, vêtu de manière modeste et atemporelle et des ecclésiastiques du temps présent, richement vêtus. Le Christ se détourne de ces derniers pour échanger un regard avec l'apôtre. Un cadre composé de deux colonnes et d'un fronton monumentalise cette page de titre. Cette gravure sert de modèle direct à la première édition des <title>Faits</title> (1534).</note>
+                  </figure>
+                </item>
+                
+                <item n="4">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00027716_00001/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm"/>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00027716">
+                        <title type="titre_ouvrage">Hieronymus Emser, Annotationes…über Luthers new Testament</title>
+                        <author role="artiste"/>
+                        <publisher>Peter Quentel</publisher>
+                        <pubPlace>Köln</pubPlace>
+                        <date>1528</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+E+1091">VD16 n° E 1091</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/611770">USTC n° 611770</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Res/H.ref. 746 q#Beibd.2, urn:nbn:de:bvb:12-bsb00027716-3 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">En tête d'un ouvrage portant sur les erreurs de Luther, se retrouve le motif dérivant de la gravure de Dürer, utilisé dans le <title>Passional</title>, puis dans les <title>Faits</title>. Le Christ à la colonne est adoré par le théologien Hieronymus Emser agenouillé à ses pieds, comme le sont la Vierge et saint Jean chez Dürer. Une inscription constituée de deux extraits des psaumes les sépare: "Iniquos odio habui et legem tuam dilexi "(ps. 119) et  "cum impiis non sedebo (ps. 25).</note>
+                  </figure>
+                </item>
+                
+                <item n="5">
+                  <figure>
+                    <graphic url="https://gallica.bnf.fr/iiif/ark:/12148/bd6t53789915t/f5/full/full/0/native.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">155 x 120</dim>
+                      <locus type="page">page de titre + sign. A3</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://gallica.bnf.fr/ark:/12148/bd6t53789915t/f5">
+                        <title type="titre_ouvrage">Faictz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Pierre de Vingle]</publisher>
+                        <pubPlace>[Neuchâtel]</pubPlace>
+                        <date>[1534]</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/9471">USTC n° 9471</idno>
+                        <idno type="GLN" corresp="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-4486">GLN 15-16 n° 4486</idno>
+                        <availability>
+                          <licence>Source gallica.bnf.fr / Bibliothèque de l'histoire du protestantisme français - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Première édition des <title>Faits</title>. Copie très fidèle de la page de titre du <title>Passional</title> de Strasbourg, avec des différences mineures dans la représentation des visages, des drapés, des tissus (le pape a ici une robe dépourvue de motifs), et un raidissement du système de hachures. La gravure est employée deux fois dans cette édition, en page de titre, et en tête du dialogue précédant les antithèses proprement dites (sign. A3).</note>
+                  </figure>
+                </item>
+                
+                <item n="faits">
+                  <graphic url="https://www.e-rara.ch/i3f/v20/4518832/full/full/0/default.jpg"/>
+                </item>
+                
+                <item n="6">
+                  <figure>
+                    <graphic url="https://luna.manchester.ac.uk/luna/servlet/iiif/Manchester~91~1~425957~192597page4/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">61 x 82</dim>
+                      <locus type="page">page de titre + sign A3v</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source=" https://luna.manchester.ac.uk/luna/servlet/s/4h4t5v">
+                        <title type="titre_ouvrage">Faitz de Jesus Christ et du pape</title>
+                        <author role="artiste"/>
+                        <publisher>[Jean Saugrain?]</publisher>
+                        <pubPlace>[Lyon?]</pubPlace>
+                        <date>1562</date>
+                        <availability>
+                          <licence>The University of Manchester, John Rylands Research Institute and Library - CC BY-NC-SA 4.0</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Troisième édition des <title>Faits</title>. La composition de la gravure de la page de titre dérive de la deuxième édition des <title>Faits</title> (et pas de la première si l'on observe en particulier le groupe des ecclésiastiques très semblable dans les deux cas). Elle déploie horizontalement la représentation articulée autour de l'axe central formé par le Christ à la colonne, lointainement issu du modèle dürerien.</note>
+                  </figure>
+                </item>
+                
+                <item n="7">
+                  <figure>
+                    <graphic url="https://api.digitale-sammlungen.de/iiif/image/v2/bsb00084767_00007/full/full/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">154 x 22</dim>
+                      <locus type="page">page de titre</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://mdz-nbn-resolving.de/details:bsb00084767">
+                        <title type="titre_ouvrage">Martin Schrot, von der Erschrocklichen Zurstorung des Bapstums</title>
+                        <author role="artiste"/>
+                        <publisher>[David de Negker]</publisher>
+                        <pubPlace>Augsburg</pubPlace>
+                        <date>1558</date>
+                        <idno type="VD16" corresp="https://gateway-bayern.de/VD16+S+4306">VD16 n° S 4306</idno>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/703441">USTC n° 703441</idno>
+                        <availability>
+                          <licence>München, Bayerische Staatsbibliothek, Rar. 349, urn:nbn:de:bvb:12-bsb00084767-8 - Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Dans les montants verticaux de l'encadrement de la page de titre se retrouvent le Christ dérivé du modèle dürerien (à gauche) face au pape (à droite). Ce dernier porte la férule et les clés du pontificat. Les bandes horizontales opposent la communion du Christ bon pasteur à la vente des indulgences à l'empereur pour la partie supérieure, et dans la partie inférieure, les élus à gauche, les damnés - dont un pape - à droite.</note>
+                  </figure>
+                </item>
+                
+                <item n="8">
+                  <figure>
+                    <graphic url="https://www.e-manuscripta.ch/i3f/v21/2724366/0,0,7300,10148/700,/0/default.jpg"/>
+                    <figDesc>
+                      <title type="titre_courant"/>
+                      <title type="manchette"/>
+                      <dim unit="mm">157 x 127</dim>
+                      <locus type="page">feuille volante</locus>
+                      <objectType>Gravure sur bois</objectType>
+                      <bibl source="https://doi.org/10.7891/e-manuscripta-91998">
+                        <title type="titre_ouvrage">Johann Fischart, Malchopapo</title>
+                        <author role="artiste">Tobias Stimmer</author>
+                        <publisher>[Bernhard Jobin]</publisher>
+                        <pubPlace>Strasbourg</pubPlace>
+                        <date>1577</date>
+                        <idno type="USTC" corresp="https://www.ustc.ac.uk/editions/750279">USTC n° 750279</idno>
+                        <availability>
+                          <licence>Public Domain</licence>
+                        </availability>
+                      </bibl>
+                    </figDesc>
+                    <note type="commentaire">Pamphlet opposant, dans la gravure et le texte, le pape et Pierre. Le premier inspiré par un petit diable tente de s'emparer de la clé que le second défend avec un geste évoquant le titre du pamphlet, celui de qu'il effectue contre Malchus au moment de l'arrestation du Christ.</note>
+                    <note type="biblio">Bibliographie: <title>Enfer ou paradis. Aux sources de la caricature XVIe-XVIIIe siècles</title>, cat. expo., Gollion, Infolio, 2013, n° 16.</note>
+                  </figure>
+                </item>
+              </list>
+            </figDesc>
+            
+            <note>La gravure de la page de titre est réutilisée deux fois dans l'édition genevoise de Jean Michel (en page de titre et sign. A3v). Elle représente le Christ en homme de douleurs devant une colonne, entouré à gauche de saint Pierre et à droite d'un groupe de trois ecclésiastiques (le pape, un évêque, et un autre religieux) - au lieu des quatre religieux de la première édition des Faits. Le Christ ressuscité et auréolé porte la couronne d'épines et tient un fouet et des verges. Placé au centre de l'image, il détermine deux espaces distincts, un paysage d'un côté, l'intérieur d'un bâtiment de l'autre. Ces lieux permettent d'accuser le contraste entre un saint du premier temps du christianisme, vêtu de manière modeste et atemporelle, et des ecclésiastiques du temps présent, richement vêtus. Le Christ se détourne de ces derniers pour échanger un regard avec l'apôtre à ses côtés. Par rapport à la première édition des Faits, la gravure est sans cadre. </note>
+          </figure>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

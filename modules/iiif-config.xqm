@@ -31,7 +31,10 @@ declare function iiifc:milestones($doc as node()) {
  : Extract the image path from the milestone element. If you need to strip
  : out or add something, this is the place. By default strips any prefix before a colon.
  :)
- (: (EL) 05/05/2025 : Adaptation of the default code to get images' URLs in sourceDoc :)
+(:declare function iiifc:milestone-id($milestone as element()) {
+    replace($milestone/@facs, "^[^:]+:(.*)", "$1")
+};:)
+
 declare function iiifc:milestone-id($milestone as element()) {
     let $corresp := $milestone/@corresp
        => substring-after('#')
@@ -44,12 +47,6 @@ declare function iiifc:milestone-id($milestone as element()) {
                 replace($graphic, "^[^:]+:(.*)", "$1")
             else()
 };
-
-
-(: Native function of TEI-Publisher :)
-(:declare function iiifc:milestone-id($milestone as element()) {
-    replace($milestone/@facs, "^[^:]+:(.*)", "$1")
-};:)
 
 (:~
  : Provide general metadata fields for the object. The result will be merged into the

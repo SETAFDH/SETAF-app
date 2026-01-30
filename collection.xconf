@@ -13,7 +13,6 @@
             </text>
             
             <!--<text qname="tei:reg">
-                
                 <facet dimension="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <facet dimension="printer" expression="nav:get-metadata(ancestor::tei:TEI, 'printer')"/>
                 <facet dimension="place" expression="nav:get-metadata(ancestor::tei:TEI, 'place')"/>
@@ -48,13 +47,13 @@
             <text match="//tei:listPerson/tei:person/tei:persName"/>
             <text match="//tei:listOrg/tei:org/tei:orgName"/>
             <text match="//tei:taxonomy/tei:category/tei:catDesc"/>
-            <!--<text qname="body">
+            <text qname="body">
                 <ignore qname="sect"/>
                 <field name="file" expression="util:document-name(.)"/>
-                <field name="title" expression="nav:get-metadata(ancestor::article, 'title')"/>
-                <field name="author" expression="nav:get-metadata(ancestor::article, 'author')"/>
+                <!--<field name="title" expression="nav:get-metadata(ancestor::article, 'title')"/>
+                <field name="author" expression="nav:get-metadata(ancestor::article, 'author')"/>-->
                 <field name="text" expression="."/>
-            </text>-->
+            </text>
         </lucene>
     </index>
 </collection>
