@@ -25,16 +25,16 @@
         </revisionDesc></teiHeader><text>
         <body>
             <schemaSpec start="TEI teiCorpus" ident="setaf" source="teipublisher.odd">
-                <elementSpec ident="pb" mode="change"><model output="print" behaviour="block" cssClass="print-page"/><model output="web" behaviour="webcomponent" cssClass="facs">
+                <elementSpec ident="pb" mode="change"><model output="print" behaviour="block" cssClass="print-page"/><model predicate="@corresp" behaviour="webcomponent">
+            <param name="name" value="'pb-facs-link'"/>
+            <param name="facs" value="let $corresp := substring-after(@corresp, &#34;#&#34;) let $root := root($parameters?root) let $surface := $root//sourceDoc/surface  for $s in $surface  let $graphic := $s/graphic/@url  return     if($corresp = $s/@xml:id)      then replace($graphic, &#34;^[^:]+:(.*)&#34;, &#34;$1&#34;)     else()"/>
+            <param name="emit" value="'transcription'"/>
+        </model><model output="web" behaviour="webcomponent" cssClass="facs">
             <param name="name" value="'pb-facs-link'"/>
             <param name="emit" value="'transcription'"/>
             <param name="order" value="count($get(.)/preceding::pb) + 1"/>
             <param name="emit-on-load" value="'emit-on-load'"/>
             <param name="facs" value="'api/iiif/' || substring-after(document-uri(root($parameters?root)), $global:data-root || '/')"/>
-        </model><model predicate="@corresp" behaviour="webcomponent">
-            <param name="name" value="'pb-facs-link'"/>
-            <param name="facs" value="let $corresp := substring-after(@corresp, &#34;#&#34;) let $root := root($parameters?root) let $surface := $root//sourceDoc/surface  for $s in $surface  let $graphic := $s/graphic/@url  return     if($corresp = $s/@xml:id)      then replace($graphic, &#34;^[^:]+:(.*)&#34;, &#34;$1&#34;)     else()"/>
-            <param name="emit" value="'transcription'"/>
         </model><model output="web" behaviour="webcomponent" cssClass="facs">
             <param name="name" value="'pb-facs-link'"/>
             <param name="emit" value="'transcription'"/>
