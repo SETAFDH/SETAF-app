@@ -63,6 +63,7 @@
 .homepage .column-text {
     margin-right: 4%;
     text-align: justify;
+    flex: 1 1;
 }
 
 .homepage .column-text:last-child {
@@ -97,7 +98,7 @@
 }
 
 .content-static-view {
-    width: 70%;
+    width: 72%;
     margin: 0 auto;
 }
 
@@ -126,6 +127,13 @@
 .img_right {
     float: right;
     margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.img_left {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
 }
 
 /* equipe.html */

@@ -31,7 +31,7 @@ line-height: inherit;
 }
 
 .title-print::before {
-    content: " " url("../images/logos/Logo_V1_Noir_Print.png");
+    content: " " url("../images/logos/Logo_V1_NoirPrint.webp");
     display: block;
 }
 
