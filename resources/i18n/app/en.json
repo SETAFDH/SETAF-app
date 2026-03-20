@@ -4,7 +4,10 @@
         "printer": "Printers",
         "places": "Places",
         "other-places": "False places",
-        "institution": "Holding institutions"
+        "institution": "Holding institutions",
+        "normalisation": "Text normalisation",
+        "yes": "Yes",
+        "no": "No"
     },
     
     "search": {

@@ -9,6 +9,7 @@
                 <facet dimension="place" expression="nav:get-metadata(ancestor::tei:TEI, 'place')"/>
                 <facet dimension="false-place" expression="nav:get-metadata(ancestor::tei:TEI, 'false-place')"/>
                 <facet dimension="institution" expression="nav:get-metadata(ancestor::tei:TEI, 'institution')"/>
+                <facet dimension="normalisation" expression="nav:get-metadata(ancestor::tei:TEI, 'normalisation')"/>
                 <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
             </text>
             

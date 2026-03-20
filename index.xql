@@ -68,6 +68,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "institution" return (
                 $header//tei:msIdentifier/tei:institution
             )
+            case "normalisation" return (
+                $header//tei:textClass/tei:keywords/tei:term[@type="intermediary_reg_quality"]
+            )
             case "date" return head((
                 idx:parse-date($header//tei:imprint/tei:date)
             ))

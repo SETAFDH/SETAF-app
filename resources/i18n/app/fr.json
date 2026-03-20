@@ -4,7 +4,10 @@
 	    "printer": "Imprimeurs",
 	    "places": "Lieux de publication",
 	    "other-places": "Fausses adresses",
-	    "institution": "Lieux de conservation" 
+	    "institution": "Lieux de conservation",
+        "normalisation": "Normalisation du texte",
+	    "yes": "Oui",
+	    "no": "Non" 
 	},
 	
 	"search": {

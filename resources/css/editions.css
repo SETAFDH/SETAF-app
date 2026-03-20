@@ -265,6 +265,21 @@ pb-drawer #infos {
     font-size: var(--pb-base-font-size);
 }
 
+.pages-list {
+    position:absolute;
+    left: 84%;
+    display: inline-block;
+    top: 45%;
+}
+
+.pages-list a {
+    color: var(--pb-color-green);
+}
+
+.pages-list a:hover {
+    color: var(--pb-color-red);
+}
+
 /* Page ed-critique.html */
 .metadata-edcrit h1 {
     font-size: 1em;

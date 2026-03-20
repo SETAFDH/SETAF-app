@@ -29,6 +29,46 @@ declare function app:breadcrumb-corpus($node as node(), $model as map(*)) {
         <span><a href="../accueil.html" class="link"><pb-i18n key="pages.home">Accueil</pb-i18n></a> > <a href="../index.html?collection=corpus" class="link">Corpus</a> > {$ID}</span>
 };
 
+declare function functx:node-kind
+  ( $nodes as node()* )  as xs:string* {
+
+ for $node in $nodes
+ return
+ if ($node instance of element()) then 'element'
+ else if ($node instance of attribute()) then 'attribute'
+ else if ($node instance of text()) then 'text'
+ else if ($node instance of document-node()) then 'document-node'
+ else if ($node instance of comment()) then 'comment'
+ else if ($node instance of processing-instruction())
+         then 'processing-instruction'
+ else 'unknown'
+ } ;
+
+declare function app:get-nodeId($node as node(), $model as map(*)) {
+    let $ID := $model?doc
+    let $doc := doc($config:data-root || '/' || $ID)
+    
+    let $body:= $doc//tei:body/tei:pb
+    
+    return 
+        <div class="pages-list">
+            <!--<span>Sélectionner une page : </span>-->
+            <paper-dropdown-menu id="menu" label="Sélectionner une page">
+                <paper-listbox slot="dropdown-content" class="dropdown-content" role="listbox">
+                    {
+                        for $p in $body
+                            return 
+                            <paper-item role="option">
+                                <pb-link emit="transcription" subscribe="transcription" node-id="{util:node-id($p)}">Page {substring-after(data($p/@corresp), "#f")}</pb-link>
+                            </paper-item>
+                    }
+                </paper-listbox>
+            </paper-dropdown-menu>
+        </div>
+        (:<pb-link emit="transcription" subscribe="transcription" node-id="{util:node-id($body)}">Page {$body/@corresp}</pb-link>:)
+        
+};
+
 declare function app:breadcrumb-engraving($node as node(), $model as map(*)) {
     let $ID := $model?doc
     let $doc := doc($config:data-root || '/' || $ID)

@@ -156,6 +156,18 @@ declare variable $config:facets := [
         "heading": "facets.institution",
         "max": (),
         "hierarchical": false()
+    },
+    map {
+        "dimension": "normalisation",
+        "heading": "facets.normalisation",
+        "max": (),
+        "hierarchical": false(),
+        "output": function($label) {
+            switch($label)
+                case "gold" return "facets.yes"
+                case "not applicable" return "facets.no"
+                default return $label
+        }
     }
 ];
 
