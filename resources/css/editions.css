@@ -234,7 +234,8 @@ pb-custom-form > div {
 #metadataToggle,
 #annotationToggle,
 #mirador,
-#biblioToggle {
+#biblioToggle,
+#tocToggle {
     background-color: var(--pb-color-red);
     color: white;
 }
@@ -247,7 +248,8 @@ pb-custom-form > div {
 #metadataToggle:hover,
 #annotationToggle:hover,
 #mirador:hover,
-#biblioToggle:hover {
+#biblioToggle:hover,
+#tocToggle:hover {
     background-color: var(--pb-color-green);
 }
 
@@ -295,6 +297,16 @@ pb-drawer #infos {
 #footnotes {
     margin-top: 5em;
     font-size: small;
+}
+
+.listContents {
+    list-style-type: none;
+    margin-block-start: 0;
+    padding-inline-start: 8px;
+}
+
+.listContents li {
+    padding-bottom: 5px;
 }
 
 /* Page Corpus.html */

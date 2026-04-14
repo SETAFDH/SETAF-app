@@ -53,7 +53,7 @@ a[rel="footnote"]:hover,
     background: none !important;
     margin-right: 0 !important;
     width: 62px !important;
-    line-height: 2.1 !important;
+    line-height: 2 !important;
 }
 
 .static-title {
@@ -133,7 +133,7 @@ a[rel="footnote"]:hover {
 
 .engraving-faits img {
     display: block;
-    margin: 1em 8em;
+    margin: 1em auto;
 }
 
 .terme-glossaire,

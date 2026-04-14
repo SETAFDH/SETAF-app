@@ -135,7 +135,8 @@ pb-page[unresolved] ~ .splash {
 .documents a,
 .link,
 p iron-icon,
-.menu-antitheses a {
+.menu-antitheses a,
+.listContents a {
     color: var(--pb-color-green);
 }
 
@@ -148,7 +149,8 @@ p iron-icon,
 .link:hover,
 #results breadcrumb,
 .matches .hi:hover,
-.menu-antitheses a:hover {
+.menu-antitheses a:hover,
+.listContents a:hover {
     color: var(--pb-color-red);
     text-decoration: none;
 }

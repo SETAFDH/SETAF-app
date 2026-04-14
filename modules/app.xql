@@ -48,12 +48,12 @@ declare function app:get-nodeId($node as node(), $model as map(*)) {
     let $ID := $model?doc
     let $doc := doc($config:data-root || '/' || $ID)
     
-    let $body:= $doc//tei:body/tei:pb
+    let $body:= $doc//tei:body//tei:pb
     
     return 
         <div class="pages-list">
             <!--<span>Sélectionner une page : </span>-->
-            <paper-dropdown-menu id="menu" label="Sélectionner une page">
+            <paper-dropdown-menu id="menu" label="Sélectionner une page du fac-similé">
                 <paper-listbox slot="dropdown-content" class="dropdown-content" role="listbox">
                     {
                         for $p in $body

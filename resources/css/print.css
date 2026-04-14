@@ -5,11 +5,14 @@
 }
 
 @page{
+    margin-top: 15mm;
+    margin-top: 0.5in;
     @footnote {
         float: bottom;
         margin-top: 3em;
         /*border-top: 1px solid grey;*/
         text-align-last: left;
+        font-size: 9pt;
     }
 }
 
@@ -81,4 +84,8 @@ line-height: inherit;
 
 [data-align-last-split-element='justify'] {
     text-align: left !important;
+}
+
+.title-faits {
+    break-before: page;
 }
