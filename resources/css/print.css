@@ -86,6 +86,14 @@ line-height: inherit;
     text-align: left !important;
 }
 
-.title-faits {
+.title-faits, .tei-list1 {
     break-before: page;
+}
+
+.tei-item1 {
+    margin-bottom: 1em;
+}
+
+.tei-list1 .tei-term1 {
+    font-weight: bold;
 }

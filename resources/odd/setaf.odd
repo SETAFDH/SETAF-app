@@ -387,10 +387,8 @@
             <outputRendition xml:space="preserve">
             font-style: italic;
             </outputRendition>
-        </model><model predicate="parent::list" behaviour="block">
-            <outputRendition xml:space="preserve">
-            font-weight: bold;
-            </outputRendition>
+        </model><model output="print" predicate="parent::list" behaviour="heading">
+            <param name="level" value="2"/>
         </model><model predicate="parent::div" behaviour="heading">
             <param name="level" value="count(ancestor::div)"/>
         </model><model behaviour="block"/></elementSpec><elementSpec ident="graphic" mode="change"><model output="print" behaviour="block" cssClass="engraving-faits">
@@ -424,10 +422,16 @@
             <desc>[Critical edition] Infobox about terms</desc>
             <param name="default" value="."/>
             <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;) let $index := doc(&#34;/db/apps/setaf-data/data/registers/glossaire.xml&#34;) let $id := $index//item/@xml:id return   if($key = $id)   then $index//item[@xml:id=$key]   else(&#34;En cours&#34;)"/>
-        </model></elementSpec><elementSpec ident="item" mode="change"><model output="web" predicate="parent::list[@type=&#34;index&#34;]" behaviour="block"/><model behaviour="listItem"/></elementSpec><elementSpec ident="sic" mode="change"><model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/><model behaviour="inline">
+        </model></elementSpec><elementSpec ident="item" mode="change"><model output="print" predicate="parent::list[@type=&#34;index&#34;]" behaviour="block">
+            <param name="page" value="let $id := ./@xml:id let $term := parent::list[@type=&#34;index&#34;]/parent::standOff/preceding-sibling::text//term  for $t in $term   let $pb := $t/ancestor::div[@type=&#34;MainZone&#34;]/preceding-sibling::pb[1]/@n   let $key := substring-after($t/@key, '#')   return     if ($key = $id)     then $pb || ' '     else ''"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><div><span>[[content]]</span><span class="term_page">[[page]]</span></div></pb:template>
+        </model><model output="web" predicate="parent::list[@type=&#34;index&#34;]" behaviour="block"/><model behaviour="listItem"/></elementSpec><elementSpec ident="sic" mode="change"><model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/><model behaviour="inline">
             <outputRendition xml:space="preserve" scope="after">
             content: ' [sic]';
             </outputRendition>
+        </model></elementSpec><elementSpec ident="list" mode="change"><model output="print" predicate="parent::standOff" behaviour="block"/><model behaviour="list" useSourceRendition="true">
+            <param name="content" value="item"/>
         </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>
