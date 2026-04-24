@@ -59,7 +59,9 @@
                     </pb-navigation>
                     
                     <!-- Text -->
+                    <!--<div data-template="app:get-nodeId"/>-->
                     <div data-template="app:display-view"/>
+                    
                     
                     <!--<pb-panel emit="transcription" id="view1" label="Options de consultation">
                         <template title="Normalisée">
@@ -86,6 +88,50 @@
         </app-drawer-layout>
     </pb-page>
     <div class="splash"/>
+    <script>
+        let lastRoot = null;
+        
+        function run() {
+            const rootValue = new URL(window.location.href).searchParams.get("root");
+          
+            if (!rootValue || rootValue === lastRoot) return;
+            lastRoot = rootValue;
+          
+            const match = [...document.querySelectorAll("pb-link")]
+              .find(el =&gt; el.getAttribute("node-id") === rootValue);
+          
+            const text = match?.textContent.trim();
+          
+            var cP = document.getElementById("currentPage");
+            cP.innerHTML = "Page du fac-similé affichée : " + text
+        }
+        
+        const originalPushState = history.pushState;
+            history.pushState = function () {
+              originalPushState.apply(this, arguments);
+              run();
+        };
+        
+        const originalReplaceState = history.replaceState;
+            history.replaceState = function () {
+              originalReplaceState.apply(this, arguments);
+              run();
+        };
+        
+        window.addEventListener("popstate", run);
+        run();
+    </script>
+    <!--<script>
+        const url = document.URL
+        const rootValue = new URL(url).searchParams.get("root");
+
+        const text = [...document.querySelectorAll("pb-link")]
+          .find(el => el.getAttribute("node-id") === rootValue)
+          ?.textContent.trim();
+
+        var cP = document.getElementById("currentPage");
+        cP.innerHTML = text
+    </script>-->
 </body>
 
 </html>

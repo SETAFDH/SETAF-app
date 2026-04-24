@@ -30,13 +30,6 @@
             <param name="name" value="'pb-facs-link'"/>
             <param name="facs" value="let $corresp := substring-after(@corresp, &#34;#&#34;) let $root := root($parameters?root) let $surface := $root//sourceDoc/surface  for $s in $surface  let $graphic := $s/graphic/@url  return     if($corresp = $s/@xml:id)      then replace($graphic, &#34;^[^:]+:(.*)&#34;, &#34;$1&#34;)     else()"/>
             <param name="emit" value="'transcription'"/>
-            <param name="content" value="&#34;Image : &#34; || substring-after(@corresp, &#34;#f&#34;)"/>
-            <outputRendition xml:space="preserve">
-            color: grey;
-position: absolute;
-top: 0%;
-left: 85%;
-            </outputRendition>
         </model><model behaviour="webcomponent" cssClass="facs">
             <desc>pb-tify</desc>
             <param name="name" value="'pb-facs-link'"/>

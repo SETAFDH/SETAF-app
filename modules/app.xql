@@ -49,11 +49,10 @@ declare function app:get-nodeId($node as node(), $model as map(*)) {
     let $doc := doc($config:data-root || '/' || $ID)
     
     let $body:= $doc//tei:body//tei:pb
-    (:let $currentPage := "blabla" || util:node-xpath($node/ancestor::app-toolbar) || util:node-id($node):)
     
     return 
         <div class="pages-list">
-            <!--<span>Sélectionner une page : {$currentPage}</span>-->
+            <span id="currentPage">Page du fac-similé affichée : Page 1</span>
             <paper-dropdown-menu id="menu" label="Sélectionner une page du fac-similé">
                 <paper-listbox slot="dropdown-content" class="dropdown-content" role="listbox">
                     {

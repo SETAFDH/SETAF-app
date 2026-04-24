@@ -269,9 +269,18 @@ pb-drawer #infos {
 
 .pages-list {
     position:absolute;
-    left: 84%;
+    left: 60%;
     display: inline-block;
     top: 45%;
+    width: 100%;
+}
+
+.pages-list > #currentPage {
+    margin-right: 2%;
+}
+
+.pages-list iron-input {
+  --paper-input-container-input-color: white !important;
 }
 
 .pages-list a {
