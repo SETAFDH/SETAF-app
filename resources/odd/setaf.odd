@@ -114,8 +114,8 @@
                 <desc>References to GLN and USTC</desc>
                 <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.ref">Références</pb-i18n></h1>
 <ul>
-  <li><a href="https://www.ustc.ac.uk/editions/9746" target="_blank">USTC n° 9746</a></li>
   <li><a href="https://www.ville-ge.ch/musinfo/bd/bge/gln/notice/?no=GLN-1406" target="_blank">GLN 15-16 n° 1406</a></li>
+  <li><a href="https://www.ustc.ac.uk/editions/9746" target="_blank">USTC n° 9746</a></li>
 </ul></pb:template>
             </model>
             <model behaviour="block" cssClass="metadata">
@@ -228,7 +228,9 @@
                 <pb:template xmlns="" xml:space="preserve"><h1><pb-i18n key="metadata.manifest">Manifeste IIIF</pb-i18n></h1>
 <span>[[content]]</span></pb:template>
             </model>
-        </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model output="print" behaviour="omit">
+        </modelSequence><model output="latex" behaviour="metadata"/><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model output="web" behaviour="metadata"/></elementSpec><elementSpec ident="ref" mode="change"><model output="web" predicate="@type=&#34;witness&#34;" behaviour="inline" cssClass="witness">
+            <param name="content" value="let $target := substring-after(@target, &#34;#&#34;) let $wit := doc(&#34;/db/apps/setaf-data/data/registers/witness.xml&#34;) let $id := $wit//witness/@xml:id  return if($target = $id) then    let $w := $wit//witness[@xml:id=$target]   return     &lt;span&gt;&lt;a href=&#34;{$w//ptr[@type=&#34;facsimile&#34;][1]/@target}&#34; target=&#34;_blank&#34;&gt;{$w//titlePart}&lt;/a&gt; ({$w//docDate})&lt;/span&gt; else &#34;En cours&#34;"/>
+        </model><model output="print" behaviour="omit">
             <desc>No link for canon ref</desc>
         </model><model output="web" predicate="ancestor::surrogates" behaviour="inline"/><model output="web" predicate="parent::note and @type=&#34;biblio&#34;" behaviour="inline">
             <desc>[For test only]</desc>
@@ -348,7 +350,12 @@
             </model>
         </modelSequence><model behaviour="title">
             <param name="content" value="titleStmt"/>
-        </model></elementSpec><elementSpec ident="title" mode="change"><model predicate="$parameters?header='short'" behaviour="link">
+        </model></elementSpec><elementSpec ident="title" mode="change"><model output="web" predicate="ancestor::figure" behaviour="inline">
+            <desc>For titles in engravings descriptions</desc>
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="$parameters?header='short'" behaviour="link">
             <param name="uri" value="$parameters?doc"/>
         </model><model predicate="not(@level) and parent::bibl" behaviour="inline"/><model behaviour="inline"/></elementSpec><elementSpec ident="titleStmt" mode="change"><model output="fo" behaviour="heading"/><model predicate="$parameters?mode='title'" behaviour="heading" cssClass="title-corpus">
             <desc>Title displayed on the editions' pages</desc>
@@ -406,7 +413,7 @@
             <param name="alt" value="following-sibling::figDesc"/>
             <param name="engraving" value="&#34;../gravures/&#34; || @corresp || &#34;.xml&#34;"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[engraving]]" target="_blank"><img src="[[url]]" alt="[[alt]]" width="300"/></a></pb:template>
-        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph" cssClass="para-ed-crit"/></elementSpec><elementSpec ident="bibl" mode="change"><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
+        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph" cssClass="para-ed-crit"/></elementSpec><elementSpec ident="bibl" mode="change"><model output="web" predicate="child::ref[@type=&#34;witness&#34;]" behaviour="inline" cssClass="witness_list"/><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
             <desc>[Critical edition] Inline biblical references</desc>
             <param name="ref" value="@ana"/>
             <param name="content" value="."/>
