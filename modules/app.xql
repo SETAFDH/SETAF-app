@@ -213,6 +213,8 @@ declare function app:citation($node as node(), $model as map(*)) {
             return
                 if($resp[contains(., "Supervision")] and starts-with($resp/following-sibling::tei:persName/tei:forename, "S"))
                 then "S. " || $resp/following-sibling::tei:persName/tei:surname
+                else if($resp[contains(., "Supervision")] and starts-with($resp/following-sibling::tei:persName/tei:forename, "G"))
+                then "G. " || $resp/following-sibling::tei:persName/tei:surname
                 else ''
     
     let $contributeur :=
