@@ -105,6 +105,8 @@ h3 {
 #footnotes {
     margin-top: 6em;
     font-size: small;
+    text-align: justify;
+    width: 95%;
 }
 
 .fn-content {
@@ -159,4 +161,12 @@ a[rel="footnote"]:hover {
 
 .persName {
     text-decoration-style: dashed;
+}
+
+.info_persname p {
+    margin: 0;
+}
+
+.info_persname p:first-child {
+    font-weight: bold;
 }

@@ -271,7 +271,7 @@
             <desc>[Critical edition] Specific model for print preview</desc>
         </model><model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
             <param name="default" value="."/>
-            <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;)  let $index := doc(&#34;/db/apps/setaf-data/data/registers/persons.xml&#34;)  let $id := $index//person/@xml:id   return   if($key = $id)    then        let $person := $index//person[@xml:id=$key]       return       &lt;div&gt;           &lt;p&gt;{$person/persName} ({$person/name})&lt;/p&gt;           &lt;p&gt;{$person/birth} - {$person/death}&lt;/p&gt;           &lt;p&gt;{$person/note[1]}&lt;/p&gt;       &lt;/div&gt;   else(&#34;En cours&#34;)"/>
+            <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;)  let $index := doc(&#34;/db/apps/setaf-data/data/registers/persons.xml&#34;)  let $id := $index//person/@xml:id   return   if($key = $id)    then        let $person := $index//person[@xml:id=$key]       return       &lt;div class=&#34;info_persname&#34;&gt;           &lt;p&gt;{$person/persName} ({$person/name})&lt;/p&gt;           &lt;p&gt;{$person/birth} - {$person/death}&lt;/p&gt;           &lt;p&gt;{$person/note[1]}&lt;/p&gt;       &lt;/div&gt;   else(&#34;En cours&#34;)"/>
         </model></elementSpec><elementSpec ident="note" mode="change"><model output="web" predicate="parent::reg[@type=&#34;contemporary&#34;] and @type=&#34;biblio&#34;" behaviour="note">
             <param name="content" value="let $pages := .  return if(@source=&#34;#Friedberg1959pars2&#34;) then &#34;CorpusIC 2&#34; || &#34;, &#34; || $pages else &#34;CorpusIC 1&#34; || &#34;, &#34; || $pages"/>
             <pb:template xmlns="" xml:space="preserve">[[content]]</pb:template>
@@ -282,7 +282,11 @@
         </model><model predicate="@type=&#34;MarginTextZone:handwrittenAddition&#34;" behaviour="omit"/><model behaviour="note" cssClass="grey">
             <param name="place" value="@place"/>
             <param name="label" value="@n"/>
-        </model></elementSpec><elementSpec ident="hi" mode="change"><model predicate="@rend=&#34;small-caps&#34;" behaviour="inline" cssClass="small-caps"/><model output="web" predicate="./lb[@type=&#34;HeadingLine&#34;]" behaviour="inline">
+        </model></elementSpec><elementSpec ident="hi" mode="change"><model predicate="@rend=&#34;bold&#34;" behaviour="inline">
+            <outputRendition xml:space="preserve">
+            font-weight: bold;
+            </outputRendition>
+        </model><model predicate="@rend=&#34;small-caps&#34;" behaviour="inline" cssClass="small-caps"/><model output="web" predicate="./lb[@type=&#34;HeadingLine&#34;]" behaviour="inline">
             <outputRendition xml:space="preserve">
             font-style: italic;
             </outputRendition>
@@ -413,7 +417,11 @@
             <param name="alt" value="following-sibling::figDesc"/>
             <param name="engraving" value="&#34;../gravures/&#34; || @corresp || &#34;.xml&#34;"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[engraving]]" target="_blank"><img src="[[url]]" alt="[[alt]]" width="300"/></a></pb:template>
-        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph" cssClass="para-ed-crit"/></elementSpec><elementSpec ident="bibl" mode="change"><model output="web" predicate="child::ref[@type=&#34;witness&#34;]" behaviour="inline" cssClass="witness_list"/><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
+        </model></elementSpec><elementSpec ident="ab" mode="change"><model output="print" behaviour="block" cssClass="ab-print"/><model behaviour="paragraph" cssClass="para-ed-crit"/></elementSpec><elementSpec ident="bibl" mode="change"><model output="web" predicate="child::ref[@type=&#34;witness&#34;]" behaviour="inline" cssClass="witness_list"/><model predicate="@ana and @type=&#34;canon&#34;" behaviour="inline" cssClass="biblical-ref">
+            <param name="ref" value="substring-before(@ana, &#34;;&#34;)"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><span>[[content]]</span> <span class="ref"> [[ref]]</span></pb:template>
+        </model><model predicate="@ana" behaviour="inline" cssClass="biblical-ref">
             <desc>[Critical edition] Inline biblical references</desc>
             <param name="ref" value="@ana"/>
             <param name="content" value="."/>
