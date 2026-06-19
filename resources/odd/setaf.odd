@@ -443,6 +443,11 @@
             </outputRendition>
         </model></elementSpec><elementSpec ident="list" mode="change"><model output="print" predicate="parent::standOff" behaviour="block"/><model behaviour="list" useSourceRendition="true">
             <param name="content" value="item"/>
-        </model></elementSpec><elementSpec ident="standOff" mode="add"><model output="print" behaviour="omit"/></elementSpec></schemaSpec>
+        </model></elementSpec><elementSpec ident="standOff" mode="add"><model output="print" behaviour="omit"/></elementSpec><elementSpec ident="placeName" mode="add">
+        <model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
+            <param name="default" value="."/>
+            <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;)  let $index := doc(&#34;/db/apps/setaf-data/data/registers/places.xml&#34;)  let $id := $index//place/@xml:id   return   if($key = $id)    then        let $place := $index//place[@xml:id=$key]       return       &lt;div class=&#34;info_persname&#34;&gt;{$place/placeName}&lt;/div&gt;   else(&#34;En cours&#34;)"/>
+        </model>
+    </elementSpec></schemaSpec>
         </body>
     </text></TEI>
