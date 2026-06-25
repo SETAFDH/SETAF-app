@@ -443,10 +443,13 @@
             </outputRendition>
         </model></elementSpec><elementSpec ident="list" mode="change"><model output="print" predicate="parent::standOff" behaviour="block"/><model behaviour="list" useSourceRendition="true">
             <param name="content" value="item"/>
-        </model></elementSpec><elementSpec ident="standOff" mode="add"><model output="print" behaviour="omit"/></elementSpec><elementSpec ident="placeName" mode="add">
-        <model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
+        </model></elementSpec><elementSpec ident="standOff" mode="add"><model output="print" behaviour="omit"/></elementSpec><elementSpec ident="placeName" mode="add"><model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
             <param name="default" value="."/>
             <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;)  let $index := doc(&#34;/db/apps/setaf-data/data/registers/places.xml&#34;)  let $id := $index//place/@xml:id   return   if($key = $id)    then        let $place := $index//place[@xml:id=$key]       return       &lt;div class=&#34;info_persname&#34;&gt;{$place/placeName}&lt;/div&gt;   else(&#34;En cours&#34;)"/>
+        </model></elementSpec><elementSpec ident="eventName" mode="add">
+        <model output="web" predicate="parent::reg[@type=&#34;regularisee&#34;]" behaviour="alternate" cssClass="persName">
+            <param name="default" value="."/>
+            <param name="alternate" value="let $key := substring-after(@key, &#34;#&#34;) let $index := doc(&#34;/db/apps/setaf-data/data/registers/events.xml&#34;) let $id := $index//event/@xml:id return   if($key = $id) then let $event := $index//event[@xml:id=$key]        return        &lt;div class=&#34;info_persname&#34;&gt;&lt;p&gt;{$event/label}&lt;/p&gt;&lt;p&gt;{$event/desc}&lt;/p&gt;&lt;/div&gt;   else(&#34;En cours&#34;)"/>
         </model>
     </elementSpec></schemaSpec>
         </body>
