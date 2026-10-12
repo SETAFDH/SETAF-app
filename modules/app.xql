@@ -52,7 +52,7 @@ declare function app:get-nodeId($node as node(), $model as map(*)) {
     
     return 
         <div class="pages-list">
-            <span id="currentPage">Page du fac-similé affichée : Page 1</span>
+            <span id="currentPage">Page du fac-similé affichée : 1</span>
             <paper-dropdown-menu id="menu" label="Sélectionner une page du fac-similé">
                 <paper-listbox slot="dropdown-content" class="dropdown-content" role="listbox">
                     {

@@ -83,6 +83,10 @@
                         </div>
                     </pb-drawer>
                     
+                    <pb-drawer toggle="biblioToggle" class="tocDrawer" emit="biblio" subscribe="transcription">
+                        <p>En cours de construction...</p>
+                    </pb-drawer>
+                    
                     <!-- Display table of contents -->
                     <pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" suscribe="transcription">
                         <span onclick="this.parentElement.removeAttribute('opened');" class="closebtn">X</span>

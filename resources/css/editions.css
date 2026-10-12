@@ -39,18 +39,37 @@
     #document-list {
         margin-left: 0 !important;
     }
-}
-
-@media (min-width : 1024px) {
-    .toolbar {
-        display: none;
+    
+    .pages-list {
+        display: none !important;
+    }
+    
+    .panels .doclist .browse {
+        column-gap: 0 !important;
+        grid-template-columns: 100% 1fr !important;
     }
 }
 
+/*@media (min-width : 1024px) {
+    .toolbar {
+        display: none;
+    }
+}*/
+
 @media (max-width : 769px) {
     pb-tify,
-    pb-facsimile {
-        display: none;
+    pb-facsimile,
+    .toolbar_button {
+        display: none !important;
+    }
+    
+    .page_corpus {
+        --pb-view-height: 100% !important;
+    }
+    
+    .panels .doclist .browse {
+        column-gap: 0 !important;
+        grid-template-columns: 100% 1fr !important;
     }
 }
 
@@ -269,7 +288,7 @@ pb-drawer #infos {
 
 .pages-list {
     position:absolute;
-    left: 60%;
+    left: 63%;
     display: inline-block;
     top: 45%;
     width: 100%;
